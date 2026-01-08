@@ -17,9 +17,9 @@ You are free to:
 - **Adapt** — remix, transform, and build upon the material
 
 Under the following terms:
-- **Attribution** — You must give appropriate credit, provide a link to the license, and indicate if changes were made.
-- **NonCommercial** — You may not use the material for commercial purposes.
-- **ShareAlike** — If you remix, transform, or build upon the material, you must distribute your contributions under the same license.
+- **Attribution**  You must give appropriate credit, provide a link to the license, and indicate if changes were made.
+- **NonCommercial**  You may not use the material for commercial purposes.
+- **ShareAlike**  If you remix, transform, or build upon the material, you must distribute your contributions under the same license.
 
 Full license text: https://creativecommons.org/licenses/by-nc-sa/4.0/
 
@@ -45,7 +45,7 @@ This Standard is a direct response to that history. It provides an actionable fr
 
 ### 1.2 Defining Indigenous Data Sovereignty
 
-Indigenous Data Sovereignty (IDS) is the inherent right of Indigenous Peoples to govern the collection, ownership, and application of their own data (Rainie et al., 2019). This principle recognizes that data pertaining to Indigenous Peoples, their lands, waters, and more-than-human relations are collective resources, generated across generations and belonging to the collective. IDS asserts the political status of Indigenous Peoples as **rights holders and sovereigns—not stakeholders**—with the autonomous authority to control the collection, ownership, access, and use of their data.
+Indigenous Data Sovereignty (IDS) is the inherent right of Indigenous Peoples to govern the collection, ownership, and application of their own data (Rainie et al., 2019). This principle recognizes that data pertaining to Indigenous Peoples, their lands, waters, and more-than-human relations are collective resources, generated across generations and belonging to the collective. IDS asserts the political status of Indigenous Peoples as **rights holders and sovereigns** and not stakeholders with the autonomous authority to control the collection, ownership, access, and use of their data.
 
 IDS is operationalized through Indigenous Data Governance (IDGov), which establishes the autonomous authority for communities to decide the *what*, *how*, and *why* of data use, ensuring it reflects Indigenous priorities and values (Carroll et al., 2020).
 
@@ -54,12 +54,12 @@ IDS is operationalized through Indigenous Data Governance (IDGov), which establi
 The core problem this Standard addresses is the colonial data paradigm, which has historically treated Indigenous Peoples and their knowledge as resources to be extracted. Dr. Maggie Walter's "5D Data" framework identifies how colonial statistics systematically emphasize **Disparity, Deprivation, Disadvantage, Dysfunction, and Difference**—framing Indigenous Peoples through deficit rather than strength (Walter et al., 2020).
 
 This paradigm perpetuates a harmful distinction between:
-- **"Data ABOUT Indigenous Peoples"** — rooted in extraction, appropriation, and harmful impacts
-- **"Data FOR Indigenous Peoples"** — positioning data as a tool for empowerment and self-determination
+- **"Data ABOUT Indigenous Peoples"** rooted in extraction, appropriation, and harmful impacts
+- **"Data FOR Indigenous Peoples"** positioning data as a tool for empowerment and self-determination
 
 When data systems fail to recognize Indigenous Nations as they see themselves, this constitutes a form of "statistical erasure" or "statistical genocide" (Walter & Andersen, 2013). This Standard rejects the colonial paradigm and enables a values-centered relational science model that restores right relations as the foundation for all data and knowledge exchange.
 
-### 1.4 The Four-Tier Innovation
+### 1.4 The Four Tier Classification Model
 
 To translate foundational principles into implementable policy, this Standard introduces the **Four-Tier Classification System**. This system is the core innovation of the Standard, providing a clear, enforceable mechanism for Indigenous Nations to govern their data relations, protect their knowledge, and exercise their sovereignty. It operationalizes CARE (Carroll et al., 2020), OCAP (FNIGC, 2014), and UNDRIP into specific, enforceable classifications.
 
@@ -97,11 +97,11 @@ This framework parallels the "Water Back" and "Land Back" movements—asserting 
 
 Data sovereignty is precarious without infrastructure sovereignty (Duarte, 2017). The Tiered Sovereignty Data Framework therefore addresses three intersecting domains:
 
-1. **Data Sovereignty** — Governance authority over information (what is stored)
-2. **Network Sovereignty** — Control over transmission infrastructure (how data moves)
-3. **Digital Sovereignty / Sovereign Compute** — Authority over computational processes (how data is processed)
+1. **Data Sovereignty** Governance authority over information (what is stored)
+2. **Network Sovereignty** Control over transmission infrastructure (how data moves)
+3. **Digital Sovereignty / Sovereign Compute** Authority over computational processes (how data is processed)
 
-This "Soil to Server" framework traces the full data lifecycle: **Source → Collection → Transmission → Storage → Application**. True Indigenous data sovereignty requires governance authority at each stage.
+This "Convergence Systems Architecture" framework traces the full data lifecycle: **Source → Collection → Transmission → Storage → Application**. True Indigenous data sovereignty requires governance authority at each stage.
 
 ---
 
@@ -133,7 +133,7 @@ The Four-Tier Data Classification system is the central innovation of the TSDF S
 
 **Purpose and Scope:** This tier is for information that an Indigenous Nation has explicitly decided to make available without restriction, such as public announcements, educational materials, or certain research findings intended for a broad audience.
 
-**Critical Principle:** Classification as T0 is an **affirmative act of Indigenous governance**. Public release is never a default—it requires deliberate sovereign decision.
+**Critical Principle:** Classification as T0 is an **affirmative act of Indigenous governance**. Public release is never a default; it requires deliberate sovereign decision.
 
 #### Sovereignty Framing
 
@@ -199,11 +199,11 @@ Data qualifies for T0 when ALL of the following apply:
 
 **Purpose and Scope:** This tier facilitates collaboration and knowledge sharing between and among Indigenous Nations and organizations that share common values and protocols. Access is governed by mutual agreements and a shared understanding of responsibility and respect, creating a secure space for InterTribal relations.
 
-**Critical Principle:** T1 embodies **reciprocity**—the foundational Indigenous value that relationships are mutual and ongoing, not transactional. Network membership itself implies shared responsibilities.
+**Critical Principle:** T1 embodies **reciprocity** as the foundational Indigenous value that relationships are mutual and ongoing, not transactional. Network membership itself implies shared responsibilities.
 
 #### Sovereignty Framing
 
-Tier 1 implements the principle that Indigenous nations can establish their own terms for inter-nation information sharing, independent of external institutions. Network membership and reciprocal agreements—not external regulations—determine access.
+Tier 1 implements the principle that Indigenous nations can establish their own terms for inter-nation information sharing, independent of external institutions. Network membership and reciprocal agreements (not external regulations) determine access.
 
 #### CARE Principles Alignment
 
@@ -359,11 +359,11 @@ Data qualifies for T2 when ALL of the following apply:
 
 **Purpose and Scope:** This tier protects sensitive, personal, and culturally restricted information. It includes data that is sacred, ceremonial, or simply not appropriate for external use. T3 data embodies the principle of **Possession** and ensures that Indigenous communities can maintain spaces of complete data autonomy.
 
-**Critical Principle:** T3 implements **architectural guarantees**—making external access technically impossible, not just policy-prohibited. This is the technical manifestation of UNDRIP Article 31's protection of cultural heritage.
+**Critical Principle:** T3 implements **architectural guarantees** making external access technically impossible, not just policy-prohibited. This is the technical manifestation of UNDRIP Article 31's protection of cultural heritage.
 
 #### Sovereignty Framing
 
-Tier 3 is the architectural guarantee of sovereignty. The technical system must make it *impossible*—not merely prohibited—for T3 data to be accessed by external parties. This is not a policy choice that can be overridden; it is a structural feature of the system.
+Tier 3 is the architectural guarantee of sovereignty. The technical system must make it *impossible* (not merely prohibited) for T3 data to be accessed by external parties. This is not a policy choice that can be overridden; it is a structural feature of the system.
 
 #### UNDRIP Alignment
 
@@ -391,7 +391,7 @@ T3 implements Article 31 through technical enforcement.
 
 #### The Role of Strategic Invisibility
 
-T3 also honors the concept of **strategic invisibility**—the conscious choice by communities to withhold information as an act of agency, resistance, and self-protection. Not all knowledge should be visible to outside systems, and the choice to remain unseen is itself an exercise of sovereignty.
+T3 also honors the concept of **strategic invisibility** the conscious choice by communities to withhold information as an act of agency, resistance, and self-protection. Not all knowledge should be visible to outside systems, and the choice to remain unseen is itself an exercise of sovereignty.
 
 #### Local Contexts Labels
 
@@ -506,13 +506,13 @@ Clear mechanisms must be in place to audit data access and use, ensuring complia
 
 Partnerships should progress toward Indigenous authority:
 
-1. **Consultation** — External entities inform communities and solicit feedback. Power remains with external partner.
+1. **Consultation** External entities inform communities and solicit feedback. Power remains with external partner.
 
-2. **Collaboration** — Partners work together, but framework/funding/governance may still be externally driven.
+2. **Collaboration** Partners work together, but framework/funding/governance may still be externally driven.
 
-3. **Knowledge Co-production** — Indigenous knowledge systems treated with equity. Shared decision-making throughout research process.
+3. **Knowledge Co-production** Indigenous knowledge systems treated with equity. Shared decision-making throughout research process.
 
-4. **Indigenous-Determined** — Indigenous communities initiate and control the entire research and data lifecycle. External partners operate under Indigenous Nation's governance.
+4. **Indigenous-Determined** Indigenous communities initiate and control the entire research and data lifecycle. External partners operate under Indigenous Nation's governance.
 
 **T2 agreements should specify the partnership level** and include mechanisms for progression toward Indigenous determination.
 

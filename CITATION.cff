@@ -1,0 +1,84 @@
+cff-version: 1.2.0
+title: "Tiered Sovereignty Data Framework: Indigenous Data Sovereignty Standard"
+message: "If you use this framework, please cite it using the metadata from this file."
+type: dataset
+authors:
+  - family-names: Freeland
+    given-names: Patrick A.
+    affiliation: Affiliated Tribes of Northwest Indians
+repository-code: "https://github.com/atniclimate/TribalSovereignDataFramework"
+url: "https://github.com/atniclimate/TribalSovereignDataFramework"
+abstract: >-
+  A comprehensive framework for Indigenous data classification and governance
+  that operationalizes Indigenous Data Sovereignty principles (CARE, OCAP, UNDRIP)
+  into implementable standards. The framework provides a four-tier classification
+  system (T0: Open, T1: Network, T2: Negotiated, T3: Sovereign) that enables
+  Indigenous Nations to govern data sharing while protecting sensitive and
+  culturally restricted information.
+keywords:
+  - Indigenous Data Sovereignty
+  - CARE Principles
+  - OCAP
+  - UNDRIP
+  - Data Governance
+  - Tribal Data
+  - Indigenous Knowledge
+  - Data Classification
+license: CC-BY-NC-SA-4.0
+version: 0.9.0
+date-released: "2025-01-07"
+references:
+  - type: article
+    authors:
+      - family-names: Carroll
+        given-names: Stephanie Russo
+      - family-names: Garba
+        given-names: Ibrahim
+      - family-names: Figueroa-Rodriguez
+        given-names: Oscar L.
+      - family-names: Holbrook
+        given-names: Jarita
+      - family-names: Lovett
+        given-names: Raymond
+      - family-names: Materechera
+        given-names: Simeon
+      - family-names: Parsons
+        given-names: Mark
+      - family-names: Raseroka
+        given-names: Kay
+      - family-names: Rodriguez-Lonebear
+        given-names: Desi
+      - family-names: Rowe
+        given-names: Robyn
+      - family-names: Sara
+        given-names: Rodrigo
+      - family-names: Walker
+        given-names: Jennifer D.
+      - family-names: Anderson
+        given-names: Jane
+      - family-names: Hudson
+        given-names: Maui
+    title: "The CARE Principles for Indigenous Data Governance"
+    journal: "Data Science Journal"
+    volume: 19
+    issue: 1
+    pages: 43
+    year: 2020
+    doi: "10.5334/dsj-2020-043"
+  - type: book
+    authors:
+      - family-names: Kukutai
+        given-names: Tahu
+      - family-names: Taylor
+        given-names: John
+    title: "Indigenous Data Sovereignty: Toward an Agenda"
+    publisher:
+      name: "ANU Press"
+    year: 2016
+  - type: book
+    authors:
+      - name: "First Nations Information Governance Centre"
+    title: "Ownership, Control, Access and Possession (OCAP): The Path to First Nations Information Governance"
+    publisher:
+      name: "FNIGC"
+    year: 2014

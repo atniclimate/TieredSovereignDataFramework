@@ -33,7 +33,7 @@ Over-classification is correctable; under-classification may cause irreversible 
 ## Repository Contents
 
 ```
-TribalSovereignDataFramework/
+TieredSovereignDataFramework/
 ├── README.md                           # This file
 ├── LICENSE                             # CC-BY-NC-SA 4.0 license text
 ├── CITATION.cff                        # Academic citation metadata

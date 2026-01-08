@@ -13,8 +13,8 @@
 This document is released under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC-BY-NC-SA 4.0).
 
 You are free to:
-- **Share** — copy and redistribute the material in any medium or format
-- **Adapt** — remix, transform, and build upon the material
+- **Share** copy, and redistribute the material in any medium or format
+- **Adapt** remix, transform, and build upon the material
 
 Under the following terms:
 - **Attribution**  You must give appropriate credit, provide a link to the license, and indicate if changes were made.
@@ -25,9 +25,12 @@ Full license text: https://creativecommons.org/licenses/by-nc-sa/4.0/
 
 ### Indigenous Governance Notice
 
+The *Tired Sovereign Data Framework (TSDF)* is currently pre-release (V 0.9.1). Additional comment and feedback is being sought, and an official 1.0 release will not occur until full authorization by resolution of the Affiliated Tribes of Northwest Indians.
+
 While this document is openly licensed, implementations of this framework that govern Indigenous community data should be developed in partnership with those communities and in accordance with applicable Indigenous data governance principles (CARE, OCAP, community-specific protocols).
 
-Proposed amendments to this framework are welcomed through the maintaining organization. The framework evolution should reflect Indigenous community priorities.
+Proposed amendments to this framework are welcomed through reaching out to climate@atnitribes.org.
+The framework evolution should reflect Indigenous community priorities.
 
 ### Suggested Citation
 

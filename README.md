@@ -140,7 +140,7 @@ If you use this framework in research or policy development, please cite:
   year = {2025},
   version = {0.9.0},
   publisher = {Affiliated Tribes of Northwest Indians},
-  url = {https://github.com/atniclimate/TribalSovereignDataFramework},
+  url = {https://github.com/atniclimate/TieredSovereignDataFramework},
   license = {CC-BY-NC-SA-4.0}
 }
 ```

@@ -6,8 +6,8 @@ authors:
   - family-names: Freeland
     given-names: Patrick A.
     affiliation: Affiliated Tribes of Northwest Indians
-repository-code: "https://github.com/atniclimate/TribalSovereignDataFramework"
-url: "https://github.com/atniclimate/TribalSovereignDataFramework"
+repository-code: "https://github.com/atniclimate/TieredSovereignDataFramework"
+url: "https://github.com/atniclimate/TieredSovereignDataFramework"
 abstract: >-
   A comprehensive framework for Indigenous data classification and governance
   that operationalizes Indigenous Data Sovereignty principles (CARE, OCAP, UNDRIP)

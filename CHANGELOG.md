@@ -2,7 +2,7 @@
 
 All notable changes to the Tiered Sovereignty Data Framework will be documented in this file.
 
-## [0.9.0] - 2025-01-07
+## [0.9.2] - 2025-01-13
 
 ### Initial Release
 
@@ -22,6 +22,7 @@ All notable changes to the Tiered Sovereignty Data Framework will be documented 
 - OCAP Principles (First Nations Information Governance Centre)
 - UNDRIP Article 31 (cultural heritage protection)
 - Local Contexts TK/BC Labels integration
+- IEEE P2890-2025 Reccomended Practice for Provenence of Indigenous Peoples's Data 
 
 ---
 
@@ -30,4 +31,4 @@ All notable changes to the Tiered Sovereignty Data Framework will be documented 
 This framework uses semantic versioning:
 - **Major versions** (1.0, 2.0): Significant structural changes to tier definitions
 - **Minor versions** (0.9, 0.10): New guidance, expanded examples, clarifications
-- **Patch versions** (0.9.1): Corrections and minor clarifications
+- **Patch versions** (0.9.2): Integration of IEEE standards for IDSov Provenence and AI Ethics

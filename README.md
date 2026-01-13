@@ -53,24 +53,24 @@ TieredSovereignDataFramework/
 
 ### For Indigenous Nations
 
-1. **Review the Standard** — Read `standard/TSDF-Standard-v0.9.md` for the complete framework
-2. **Use the Decision Guide** — Apply `standard/tier-decision-guide.md` for classification decisions
-3. **Default to T3** — When classification is uncertain, protect first
-4. **Adapt as needed** — This framework supports your existing governance structures
+1. **Review the Standard**: Read `standard/TSDF-Standard-v0.9.md` for the complete framework
+2. **Use the Decision Guide**: Apply `standard/tier-decision-guide.md` for classification decisions
+3. **Default to T3**: When classification is uncertain, protect first
+4. **Adapt as needed**: This framework supports your existing governance structures
 
 ### For Research Partners
 
-1. **Recognize Tribal sovereignty** — Indigenous Nations set data governance terms
-2. **Request access through proper channels** — T2 requires formal agreements
-3. **Honor tier restrictions** — Classification determines access, not requests
-4. **Build relationships** — FPIC is ongoing dialogue, not one-time consent
+1. **Recognize Tribal Sovereignty**: Indigenous Nations set data governance terms
+2. **Request Access Through Proper Channels**: T2 requires formal agreements
+3. **Honor Tier Restrictions**: Classification determines access, not requests
+4. **Build Relationships**: FPIC is ongoing dialogue, not one-time consent
 
 ### For Technology Providers
 
-1. **Implement tier-based access controls** — Technical enforcement, not just policy
-2. **Support architectural guarantees for T3** — Make external access impossible
-3. **Maintain audit trails** — Accountability requires documentation
-4. **Obtain explicit approval for AI/ML** — Especially for T1-T3 data
+1. **Implement Tier-based Access Controls**: Technical enforcement, not just policy
+2. **Support Architectural Guarantees for T3**: Make external access impossible
+3. **Maintain Audit Trails**: Accountability requires documentation
+4. **Obtain Explicit Approval for AI/ML**: Especially for T1-T3 data
 
 ---
 
@@ -79,8 +79,8 @@ TieredSovereignDataFramework/
 ### Sovereignty-First Design
 
 - Classification authority rests with Indigenous governing bodies
-- Tribes are sovereigns, not stakeholders
-- Data governance is an expression of inherent rights
+- Tribes are **Rights Holders and Sovereigns**, not stakeholders
+- Data governance is an expression of **Inherent Rights**
 
 ### Framework Alignment
 
@@ -106,9 +106,9 @@ TieredSovereignDataFramework/
 
 The `literature/` directory contains systematic reviews and theoretical synthesis supporting this framework:
 
-- **Indigenous Data Sovereignty in Climate Research** — Review of 22 sources on IDS frameworks for environmental data sharing
-- **Indigenous Data Governance Frameworks** — Review of 40 studies on governance mechanisms for Indigenous-controlled repositories
-- **Convergence Architecture** — Theoretical synthesis of Indigenous Data, Network, and Digital Sovereignty
+- **Indigenous Data Sovereignty in Climate Research**: Review of 22 sources on IDS frameworks for environmental data sharing
+- **Indigenous Data Governance Frameworks**: Review of 40 studies on governance mechanisms for Indigenous-controlled repositories
+- **Convergence Architecture**: Theoretical synthesis of Indigenous Data, Network, Digital, and Computational Sovereignty
 
 ---
 
@@ -154,17 +154,17 @@ See `CITATION.cff` for machine-readable citation metadata.
 This work is licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
 **You are free to:**
-- **Share** — copy and redistribute the material in any medium or format
-- **Adapt** — remix, transform, and build upon the material
+- **Share, copy, and redistribute** the material in any medium or format
+- **Adapt, remix, transform, and build upon** the material
 
 **Under the following terms:**
-- **Attribution** — You must give appropriate credit, provide a link to the license, and indicate if changes were made
-- **NonCommercial** — You may not use the material for commercial purposes
-- **ShareAlike** — If you remix, transform, or build upon the material, you must distribute your contributions under the same license
+- **Attribution**: You must give appropriate credit, provide a link to the license, and indicate if changes were made
+- **NonCommercial**: You may not use the material for commercial purposes
+- **ShareAlike**: If you remix, transform, or build upon the material, you must distribute your contributions under the same license
 
 ### Indigenous Governance Notice
 
-While this document is openly licensed, implementations of this framework that govern Indigenous community data should be developed **in partnership with those communities** and in accordance with applicable Indigenous data governance principles (CARE, OCAP, community-specific protocols).
+While this document is openly licensed, implementations of this framework that govern Indigenous community data should be developed **in partnership with those communities** and in accordance with applicable Indigenous data governance and provenence principles and standards (CARE, OCAP, IEEE-P2890-2025, community-specific protocols).
 
 ---
 
@@ -172,7 +172,7 @@ While this document is openly licensed, implementations of this framework that g
 
 This framework builds upon decades of Indigenous data sovereignty scholarship and advocacy, including:
 
-- The CARE Principles for Indigenous Data Governance
+- The **CARE Principles** for Indigenous Data Governance
 - The First Nations Information Governance Centre (FNIGC) and OCAP Principles
 - The Global Indigenous Data Alliance
 - Indigenous scholars and advocates who have led this work

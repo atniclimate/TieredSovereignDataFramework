@@ -89,7 +89,8 @@ TieredSovereignDataFramework/
 | **CARE Principles** | Collective Benefit, Authority, Responsibility, Ethics operationalized through tiers |
 | **OCAP Principles** | Ownership, Control, Access, Possession enforced by classification |
 | **UNDRIP Article 31** | Cultural heritage protection through T3 architectural guarantees |
-| **Local Contexts Labels** | TK/BC Labels integrate within any tier |
+| **IEEE P2890-2025** | IEEE Recommended Practice for Provenance of Indigenous Peoples' Data |
+| **Local Contexts Traditional Knowledge Labels** | TK/BC Labels integrate within any tier |
 
 ### AI/ML Restrictions
 
@@ -126,6 +127,8 @@ A companion technical specification, the **Federated Indigenous Data Protocol**,
 - [OCAP Principles (FNIGC)](https://fnigc.ca/ocap-training/)
 - [Local Contexts Labels](https://localcontexts.org/)
 - [UNDRIP](https://www.un.org/development/desa/indigenouspeoples/declaration-on-the-rights-of-indigenous-peoples.html)
+- [IEEE 2890-2025](https://standards.ieee.org/ieee/2890/10318/)
+  
 
 ---
 

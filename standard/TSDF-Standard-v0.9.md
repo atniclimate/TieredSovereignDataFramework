@@ -29,7 +29,7 @@ The *Tired Sovereign Data Framework (TSDF)* is currently pre-release (V 0.9.2). 
 
 While this document is openly licensed, implementations of this framework that govern Indigenous community data must be developed in partnership with those communities and in accordance with applicable Indigenous data governance principles (CARE, OCAP, community-specific protocols).
 
-Proposed amendments to this framework are welcomed through reaching out to climate@atnitribes.org.
+Proposed amendments to this framework are welcomed through reaching out to climate@atniTribes.org.
 The framework evolution should reflect Indigenous community priorities.
 
 ### Suggested Citation
@@ -255,12 +255,12 @@ The Four-Tier Data Classification system is the central innovation of the TSDF S
 
 **Purpose & Scope:** This tier facilitates collaboration and knowledge sharing between and among Indigenous Nations and organizations that share common values and protocols. Access is governed by mutual agreements and a shared understanding of responsibility and respect, creating a secure space for InterTribal relations.
 
-**Critical Principle:** T1 embodies **reciprocity**—the foundational Indigenous value that relationships are mutual and ongoing, not transactional. Network membership itself implies shared responsibilities.
+**Critical Principle:** T1 embodies **reciprocity**, the foundational Indigenous value that relationships are mutual and ongoing, not transactional. Network membership itself implies shared responsibilities.
 
 **Sharing Architecture:** T1 data is shared through the **window architecture**: network members access rendered views of data rather than receiving copies. Technically, this operates through tile servers, query APIs, or federated computation endpoints where the source Nation's infrastructure serves views to authorized recipients without transferring underlying datasets.
 
 **Sovereignty Domain Implications:**
-- **Data:** Network membership required; governed by standing protocols
+- **Data:** Network membership required, governed by standing protocols
 - **Network:** Tribally-owned or federated infrastructure preferred; transmission pathways should be accountable to network governance
 - **Digital:** Network-controlled services and platforms; data remains on source Nation infrastructure with views rendered to authorized members
 - **Computational:** Network approval required for training; inference restricted to network scope
@@ -273,8 +273,8 @@ The Four-Tier Data Classification system is the central innovation of the TSDF S
 - Health outcome data aggregated across InterTribal health boards
 - Emergency management coordination data during disaster response
 
-**Distinction from T0:** Not publicly accessible—requires network membership  
-**Distinction from T2:** Not negotiated per-instance—governed by standing network protocols
+**Distinction from T0:** Not publicly-accessible and requires network membership  
+**Distinction from T2:** Not negotiated per-instance, governed by standing network protocols
 
 **Local Contexts Labels:** TK Community Voice (TK CV), BC Multiple Communities (BC MC)
 
@@ -372,7 +372,7 @@ This "protect-first" approach prioritizes the safety and integrity of Indigenous
 
 ### 3.3 Sovereignty Domain Requirements by Tier
 
-This section specifies minimum requirements across all four sovereignty domains for each classification tier. These requirements ensure that tier classifications are meaningful across the full data lifecycle—from what is stored, through how it moves and is accessed, to how it may be transformed.
+This section specifies minimum requirements across all four sovereignty domains for each classification tier. These requirements ensure that tier classifications are meaningful across the full data lifecycle, from what is stored, through how it moves and is accessed, to how it may be transformed.
 
 #### 3.3.1 Data Sovereignty Requirements
 
@@ -524,7 +524,7 @@ The window architecture operationalizes OCAP® Possession at T1 and T2: data rem
 |**Article 23**|Right to determine development priorities|T0 release decisions|Data|
 |**Article 31**|Right to cultural heritage protection|T3 architectural guarantees|All domains|
 
-UNDRIP Article 31 specifically requires protection of Indigenous cultural heritage, traditional knowledge, and traditional cultural expressions. T3's architectural guarantees—including geographic cryptographic binding and on-nation infrastructure requirements—provide technical implementation of these protections across all four sovereignty domains.
+UNDRIP Article 31 specifically requires protection of Indigenous cultural heritage, traditional knowledge, and traditional cultural expressions. T3's architectural guarantees: including geographic cryptographic binding and Tribal infrastructure requirements, and provide technical implementation of these protections across all four sovereignty domains.
 
 ### 4.5 IEEE 2890-2025 Alignment
 
@@ -621,7 +621,7 @@ The TSDF Standard resolves this tension through the principle:
 |**Interoperable**|Yes|Network standards|Partner standards|Internal only|
 |**Reusable**|Yes (with attribution)|Network approval|Per agreement|No reuse|
 
-The window architecture further reconciles this tension: data can be Findable (discoverable in network catalogs), Accessible (via authorized view endpoints), Interoperable (through standard APIs), and Reusable (for authorized purposes)—all without transferring possession. FAIR technical goals can be achieved while CARE governance principles take precedence.
+The window architecture further reconciles this tension: data can be Findable (discoverable in network catalogs), Accessible (via authorized view endpoints), Interoperable (through standard APIs), and Reusable (for authorized purposes), all without transferring possession. FAIR technical goals can be achieved while CARE governance principles take precedence.
 
 ### 4.7 Local Contexts Labels Integration
 
@@ -653,7 +653,7 @@ These standards address technical ethics; TSDF addresses sovereignty. Partners m
 
 ## 5.0 Governance and Partnership Model
 
-This Standard is designed to support flexible, Indigenous-led governance across all four sovereignty domains. It specifies **what must be governed**, not **how** specific Indigenous governance bodies must be structured—respecting the diversity of traditional and contemporary governance systems among Indigenous Nations.
+This Standard is designed to support flexible, Indigenous-led governance across all four sovereignty domains. It specifies **what must be governed**, not **how** specific Indigenous governance bodies must be structured,respecting the diversity of traditional and contemporary governance systems among Indigenous Nations.
 
 ### 5.1 Core Governance Functions
 

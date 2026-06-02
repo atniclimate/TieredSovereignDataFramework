@@ -436,17 +436,17 @@ IEEE 2890-2025 establishes provenance parameters that vary by classification tie
 ┌─────────────────────────────────────────────────────────────────────────┐
 │                         SOVEREIGNTY BOUNDARY                            │
 │  ┌───────────────────────────────────────────────────────────────────┐  │
-│  │                           T3: SOVEREIGN                           │  │
-│  │         Never leaves community-controlled systems                 │  │
+│  │                             T0: OPEN                              │  │
+│  │           Publicly Accessible and Common Understanding            │  │
 │  │    ┌─────────────────────────────────────────────────────────┐    │  │
-│  │    │                    T2: NEGOTIATED                       │    │  │
-│  │    │      External partners via explicit agreements          │    │  │
+│  │    │                       T1: NETWORK                       │    │  │
+│  │    │        Trusted network via reciprocal protocols         │    │  │
 │  │    │    ┌───────────────────────────────────────────────┐    │    │  │
-│  │    │    │               T1: NETWORK                     │    │    │  │
-│  │    │    │    Indigenous network via reciprocal protocols│    │    │  │
+│  │    │    │                 T2: NEGOTIATED                │    │    │  │
+│  │    │    │ External partnerships via explicit agreements │    │    │  │
 │  │    │    │    ┌─────────────────────────────────────┐    │    │    │  │
-│  │    │    │    │            T0: OPEN                 │    │    │    │  │
-│  │    │    │    │   Public by sovereign decision      │    │    │    │  │
+│  │    │    │    │            T3: SOVEREIGN            │    │    │    │  │
+│  │    │    │    │   Cultural Protection and Protocol  │    │    │    │  │
 │  │    │    │    └─────────────────────────────────────┘    │    │    │  │
 │  │    │    └───────────────────────────────────────────────┘    │    │  │
 │  │    └─────────────────────────────────────────────────────────┘    │  │

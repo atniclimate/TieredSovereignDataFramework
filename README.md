@@ -11,7 +11,11 @@ A comprehensive framework for Indigenous data classification and governance that
 
 ## Overview
 
-The Tiered Sovereignty Data Framework (TSDF) provides Indigenous Nations with a clear, enforceable mechanism for data governance. It translates foundational Indigenous data sovereignty principles into practical, actionable classifications.
+Sovereignty is not bestowed, it is inherent.
+
+First, we recongnize ourselves as human beings, with both rights and responsibilities; even moreso we recognize our place within the lands and waters, and all beings who live within them, as sovereigns as well. A tiered system is never meant to represent hierarchy, rather a heightned responsibility of care for information as it is transformed into the world of ones and zeroes, in this sense, the escalating tiers are centered moreso than elevated.
+
+The Tiered Sovereignty Data Framework (TSDF) provides Indigenous Nations with a clear, enforceable mechanism for data governance in digital spaces. It translates foundational Indigenous data sovereignty principles into practical, actionable classifications for software and computational infrastructure. It is not meant to replace any Sovereign framework(s) or cultural ways-of-knowing, rather it is intended for consideration and utilization within development environments to ensure governance compliance, secure sharing and transmission of digital data. 
 
 ### The Four Tiers
 
@@ -141,7 +145,7 @@ If you use this framework in research or policy development, please cite:
   author = {Freeland, Patrick A.},
   title = {Tiered Sovereignty Data Framework: Indigenous Data Sovereignty Standard},
   year = {2025},
-  version = {0.9.0},
+  version = {0.9.4},
   publisher = {Affiliated Tribes of Northwest Indians},
   url = {https://github.com/atniclimate/TieredSovereignDataFramework},
   license = {CC-BY-NC-SA-4.0}

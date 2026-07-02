@@ -3,6 +3,8 @@
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 [![Version](https://img.shields.io/badge/version-0.9.0-blue.svg)](CHANGELOG.md)
 
+> **🌐 Interactive site:** [atniclimate.github.io/TieredSovereignDataFramework](https://atniclimate.github.io/TieredSovereignDataFramework/) — explore the four tiers, walk the classification decision tree, and see the framework applied to real project patterns.
+
 > **This repository is read-only and archived.** Issues and pull requests are disabled. For questions or proposed amendments, contact the author directly.
 
 A comprehensive framework for Indigenous data classification and governance that operationalizes Indigenous Data Sovereignty principles (CARE, OCAP, UNDRIP) into implementable standards.

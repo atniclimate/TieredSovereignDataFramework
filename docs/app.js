@@ -282,7 +282,8 @@
     return d + "Z";
   }
 
-  var TIER_COLORS = { t0: "#6fb5c9", t1: "#4ba38c", t2: "#d19a4f", t3: "#c85a60" };
+  var TIER_COLORS = { t0: "#e6e6e6", t1: "#9aa0a7", t2: "#d98a91", t3: "#c9303c" };
+  var TIER_FILL_OPACITY = { t0: 0.08, t1: 0.14, t2: 0.24, t3: 0.5 };
 
   function buildBasin() {
     var host = document.getElementById("basin");
@@ -323,7 +324,7 @@
       fill.setAttribute("class", "fill");
       fill.setAttribute("d", ringPath(cx, cy, radii[key], 7, 11 + i * 13, 22));
       fill.setAttribute("fill", TIER_COLORS[key]);
-      fill.setAttribute("fill-opacity", key === "t3" ? "0.5" : "0.28");
+      fill.setAttribute("fill-opacity", String(TIER_FILL_OPACITY[key]));
 
       var edge = document.createElementNS(NS, "path");
       edge.setAttribute("class", "edge");

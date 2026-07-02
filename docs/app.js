@@ -282,7 +282,7 @@
     return d + "Z";
   }
 
-  var TIER_COLORS = { t0: "#5d9fb3", t1: "#3a9481", t2: "#c08334", t3: "#a04a4e" };
+  var TIER_COLORS = { t0: "#6fb5c9", t1: "#4ba38c", t2: "#d19a4f", t3: "#c85a60" };
 
   function buildBasin() {
     var host = document.getElementById("basin");
@@ -306,7 +306,7 @@
       var p = document.createElementNS(NS, "path");
       p.setAttribute("d", ringPath(cx, cy, r, 5, 40 + i * 7, 26));
       p.setAttribute("fill", "none");
-      p.setAttribute("stroke", "rgba(238,240,228,0.10)");
+      p.setAttribute("stroke", "rgba(255,255,255,0.08)");
       p.setAttribute("stroke-width", "1");
       svg.appendChild(p);
     });

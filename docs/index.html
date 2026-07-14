@@ -22,7 +22,7 @@
     <a class="brand" href="#overview">
       <span class="sigil">TSDF</span>
       <span class="name">Tiered Sovereign Data Framework</span>
-      <span class="ver">v0.9 pre-release</span>
+      <span class="ver">v0.9.5 pre-release</span>
     </a>
     <nav class="tabs" aria-label="Site sections">
       <a href="#overview" data-tab="overview" class="active">Overview</a>
@@ -218,9 +218,9 @@
 <div class="tab-panel" id="panel-standard">
   <section class="band">
     <div class="wrap">
-      <p class="eyebrow"><span class="tick">///</span>TSDF Standard · v0.9 series (pre-release)</p>
+      <p class="eyebrow"><span class="tick">///</span>TSDF Standard · v0.9.5 (pre-release)</p>
       <h2>The Standard, navigable</h2>
-      <p class="section-lede">Every part of the Standard below, with a plain-language descriptor of what it does and the rules it carries. <span class="term" data-term="dotted">Dotted terms</span> open a definition; the full glossary is at the bottom. For the authoritative text, read the <a href="https://github.com/atniclimate/TieredSovereignDataFramework/blob/main/standard/TSDF-Standard-v0.94.md">standard document on GitHub</a>. An official 1.0 will not be released without full authorization by resolution of ATNI.</p>
+      <p class="section-lede">Every part of the Standard below, with a plain-language descriptor of what it does and the rules it carries. <span class="term" data-term="dotted">Dotted terms</span> open a definition; the full glossary is at the bottom. For the authoritative text, read the <a href="https://github.com/atniclimate/TieredSovereignDataFramework/blob/main/standard/TSDF-Standard-v0.95.md">standard document on GitHub</a>. An official 1.0 will not be released without full authorization by resolution of ATNI.</p>
       <div class="contour-rule" aria-hidden="true"></div>
 
       <div class="standard-layout">
@@ -342,15 +342,15 @@
                 <table class="std-table">
                   <thead><tr><th>Tier</th><th>Training</th><th>Inference</th></tr></thead>
                   <tbody>
-                    <tr><td><span class="chip t0">T0</span></td><td>Permitted</td><td>Permitted</td></tr>
+                    <tr><td><span class="chip t0">T0</span></td><td>Per release terms</td><td>Per release terms</td></tr>
                     <tr><td><span class="chip t1">T1</span></td><td>Network approval required</td><td>Network scope only</td></tr>
                     <tr><td><span class="chip t2">T2</span></td><td>Per agreement only</td><td>Per agreement only</td></tr>
-                    <tr><td><span class="chip t3">T3</span></td><td><strong>Prohibited</strong></td><td><strong>Prohibited</strong></td></tr>
+                    <tr><td><span class="chip t3">T3</span></td><td><strong>Prohibited externally</strong></td><td><strong>Prohibited externally</strong></td></tr>
                   </tbody>
                 </table>
                 <ul>
                   <li><strong>Models inherit tiers.</strong> A model trained on T1 data carries T1 restrictions on its deployment and outputs. No T3 data may enter any AI/ML system, including “anonymized” derivatives.</li>
-                  <li><strong>Attempted operations are logged even when denied</strong> (recorded as <code>denied</code> in the Standard’s custody vocabulary) for audit.</li>
+                  <li><strong>Attempted operations are logged even when denied</strong> (recorded as <code>tsdf:denied</code> in the Standard’s custody vocabulary) for audit.</li>
                   <li><strong>The 5D problem in AI:</strong> T2 agreements involving AI/ML should require Indigenous-determined bias criteria, deficit-framing review, output oversight, and the right to require model modification or termination.</li>
                   <li><strong>The limits of computation:</strong> “Knowledge is embodied. Computation without relation is not knowledge.” AI can process; it cannot be accountable to kin.</li>
                 </ul>
@@ -708,7 +708,7 @@
           <div class="func-step reveal"><span class="n">06</span><div>
             <h3>AI operations: has it entered a model?</h3>
             <p>Whether governed data was embedded, trained on, or used in inference must be answerable, and refusals leave records too: an attempted operation that was denied is still an event in the data&rsquo;s history.</p>
-            <div class="mech"><b>TSDF</b>AI/ML custody events logged in the Standard&rsquo;s vocabulary (<code>embedded</code>, <code>trained_on</code>, <code>inference_used</code>, <code>denied</code>), with denied attempts logged even where the operation is prohibited (§4.5.4).</div>
+            <div class="mech"><b>TSDF</b>AI/ML custody events logged in the Standard&rsquo;s vocabulary (<code>tsdf:embedded</code>, <code>tsdf:trained_on</code>, <code>tsdf:inference_used</code>, <code>tsdf:denied</code>), with denied attempts logged even where the operation is prohibited (§4.5.4).</div>
           </div></div>
           <div class="func-step reveal"><span class="n">07</span><div>
             <h3>Benefit: what was promised, and what was delivered?</h3>
@@ -781,7 +781,7 @@
         <p class="eyebrow reveal"><span class="tick">///</span>Auditable, Not Aspirational</p>
         <h2 class="reveal">Compliance means something a reviewer can verify</h2>
         <p class="section-lede reveal">Section 9 of the Standard carries checklists for provenance, CARE, OCAP®, Local Contexts, and each sovereignty domain, so a claim of alignment can be examined item by item rather than taken on faith. And the next layer is already in development: <a href="#geopackage" data-goto="geopackage">ATNI-GeoPackager</a> builds these requirements into the data artifact itself.</p>
-        <p class="reveal"><a class="btn btn-primary" href="https://github.com/atniclimate/TieredSovereignDataFramework/blob/main/standard/TSDF-Standard-v0.94.md">Read the Standard&rsquo;s compliance checklists</a></p>
+        <p class="reveal"><a class="btn btn-primary" href="https://github.com/atniclimate/TieredSovereignDataFramework/blob/main/standard/TSDF-Standard-v0.95.md">Read the Standard&rsquo;s compliance checklists</a></p>
       </div>
     </div>
   </section>
@@ -805,7 +805,7 @@
       <h2 class="reveal">What the wrapper adds</h2>
       <div class="anatomy">
         <div class="anat-card reveal"><h3>Classification that travels</h3><p>Every layer carries a TSDF tag (tier, framework version, who classified it, and the basis for the classification) in standard GeoPackage metadata tables. The whole artifact carries a roll-up tag equal to the most restrictive tier present; the roll-up may raise the effective tier and may never lower it. The Standard&rsquo;s asymmetric-harm rule, expressed as schema.</p></div>
-        <div class="anat-card reveal"><h3>Provenance built for IEEE 2890-2025</h3><p>Source attribution, content hashes, and derivation records ride with the artifact, structured to support the provenance parameters the Standard adopts; AI/ML operations are logged in the Standard&rsquo;s custody vocabulary, including operations that were attempted and <code>denied</code>.</p></div>
+        <div class="anat-card reveal"><h3>Provenance built for IEEE 2890-2025</h3><p>Source attribution, content hashes, and derivation records ride with the artifact, structured to support the provenance parameters the Standard adopts; AI/ML operations are logged in the Standard&rsquo;s custody vocabulary, including operations that were attempted and <code>tsdf:denied</code>.</p></div>
         <div class="anat-card reveal"><h3>An audit trail that cannot be quietly edited</h3><p>Access and custody events append to a ledger inside the artifact, enforced by database triggers: updates and deletes abort. Mechanism, not convention. The record of who did what is architectural, and corrections append rather than erase.</p></div>
         <div class="anat-card reveal"><h3>Ceremony before egress</h3><p>No export leaves a governed node without passing a sovereign authorization seam, and the authorization record is written into the audit trail, where a verifier asserts its presence; an export path that skips the seam fails loudly. T3 is refused unconditionally. No code path exports sovereign data.</p></div>
         <div class="anat-card reveal"><h3>Architectural guarantees for T3</h3><p>Sovereign-tier data is encrypted at rest, with keys under the Nation&rsquo;s control; external access is made technically impossible rather than policy-prohibited, which is exactly what the Standard requires of T3 (§3). Encryption protects confidentiality; the ledger and manifests protect integrity; the two are distinct guarantees, deliberately.</p></div>
@@ -902,12 +902,13 @@
       </div>
 
       <h2 style="margin-top: 56px" class="reveal">Cite the framework</h2>
-      <p class="reveal">Pre-release, v0.9 series. Comment and proposed amendments are welcomed at <a href="mailto:climate@atniTribes.org">climate@atniTribes.org</a>. An official 1.0 release will not occur without full authorization by resolution of the Affiliated Tribes of Northwest Indians.</p>
+      <p class="reveal">Pre-release, v0.9.5. Comment and proposed amendments are welcomed at <a href="mailto:climate@atniTribes.org">climate@atniTribes.org</a>. An official 1.0 release will not occur without full authorization by resolution of the Affiliated Tribes of Northwest Indians.</p>
       <div class="cite-block reveal">@misc{freeland2025tsdf,
   author    = {Freeland, Patrick A.},
   title     = {Tiered Sovereign Data Framework:
                Indigenous Data Sovereignty Standard},
   year      = {2025},
+  version   = {0.9.5},
   publisher = {Affiliated Tribes of Northwest Indians},
   url       = {https://github.com/atniclimate/
                TieredSovereignDataFramework},
@@ -938,7 +939,7 @@
     <div>
       <h4>Repository</h4>
       <a href="https://github.com/atniclimate/TieredSovereignDataFramework">GitHub</a>
-      <a href="https://github.com/atniclimate/TieredSovereignDataFramework/blob/main/standard/TSDF-Standard-v0.94.md">Standard (full text)</a>
+      <a href="https://github.com/atniclimate/TieredSovereignDataFramework/blob/main/standard/TSDF-Standard-v0.95.md">Standard (full text)</a>
       <a href="https://github.com/atniclimate/TieredSovereignDataFramework/blob/main/standard/tier-decision-guide.md">Tier Decision Guide</a>
       <a href="https://github.com/atniclimate/TieredSovereignDataFramework/tree/main/literature">Literature (source)</a>
     </div>

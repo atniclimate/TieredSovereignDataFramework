@@ -24,7 +24,7 @@
         Data: "Open access; attribution requirements may apply",
         Network: "May traverse any transmission infrastructure",
         Digital: "May reside on public platforms and services",
-        Computational: "AI/ML training and inference permitted"
+        Computational: "Training and inference per the terms of the sovereign release"
       },
       labels: "Local Contexts: TK Attribution (TK A), TK Verified (TK V)"
     },

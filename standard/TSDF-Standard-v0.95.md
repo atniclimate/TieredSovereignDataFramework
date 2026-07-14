@@ -1,6 +1,7 @@
 # TSDF Indigenous Data Sovereignty Standard
 
-**Version:** 0.9.2
+**Version:** 0.9.5
+**Revised:** 2026-07-14
 **Author:** Patrick A. Freeland
 **Organization:** Affiliated Tribes of Northwest Indians
 **License:** CC-BY-NC-SA 4.0
@@ -25,7 +26,7 @@ Full license text: https://creativecommons.org/licenses/by-nc-sa/4.0/
 
 ### Indigenous Governance Notice
 
-The *Tired Sovereign Data Framework (TSDF)* is currently pre-release (V 0.9.2). Additional comment and feedback is being sought to improve depth and incorporate broadly current standards and guidence for work with Indigenous data ecosystems. An official 1.0 release will not occur wihtout full authorization by resolution of the Affiliated Tribes of Northwest Indians.
+The *Tiered Sovereign Data Framework (TSDF)* is currently pre-release (v0.9.5). Additional comment and feedback is being sought to improve depth and incorporate broadly current standards and guidance for work with Indigenous data ecosystems. An official 1.0 release will not occur without full authorization by resolution of the Affiliated Tribes of Northwest Indians.
 
 While this document is openly licensed, implementations of this framework that govern Indigenous community data must be developed in partnership with those communities and in accordance with applicable Indigenous data governance principles (CARE, OCAP, community-specific protocols).
 
@@ -34,7 +35,7 @@ The framework evolution should reflect Indigenous community priorities.
 
 ### Suggested Citation
 
-Freeland, P. A. (2025). Tiered Sovereign Data Framework: Indigenous Data Sovereignty Standard, Version 0.9.2. Affiliated Tribes of Northwest Indians. Licensed under CC-BY-NC-SA 4.0.
+Freeland, P. A. (2025). Tiered Sovereign Data Framework: Indigenous Data Sovereignty Standard, Version 0.9.5. Affiliated Tribes of Northwest Indians. Licensed under CC-BY-NC-SA 4.0.
 
 ---
 
@@ -44,7 +45,7 @@ Freeland, P. A. (2025). Tiered Sovereign Data Framework: Indigenous Data Soverei
 
 For centuries, Indigenous Peoples have experienced a dominant colonial paradigm in research characterized by extractive practices that treat Indigenous knowledge as a resource to be mined rather than a relationship to be honored (Kukutai & Taylor, 2016). This history of data colonialism has disrupted the intergenerational transmission of Indigenous Knowledge through the dispossession and removal of Indigenous Peoples from their ancestral lands, forced assimilation, and cultural suppression. The General Allotment Act of 1887 (Dawes Act) alone resulted in the loss of over 100 million acres of Tribal homelands, severing peoples from the primary source of their knowledge.
 
-This Standard is a direct response to that history, while honoring the work of countless Indigenous leaders, scholars, and cultural practioners who have asserted the primacy of Indigneous Sovereignty. This framework provides an actionable set of standards to operationalize the long-standing principles of Indigenous rights, self-determination, and resurgence. It is designed to restore balance, support Indigenous-led solutions to complex social-ecological issues, and ensure that data and knowledge serve the collective continuance of Indigenous Peoples for generations to come.
+This Standard is a direct response to that history, while honoring the work of countless Indigenous leaders, scholars, and cultural practitioners who have asserted the primacy of Indigenous Sovereignty. This framework provides an actionable set of standards to operationalize the long-standing principles of Indigenous rights, self-determination, and resurgence. It is designed to restore balance, support Indigenous-led solutions to complex social-ecological issues, and ensure that data and knowledge serve the collective continuance of Indigenous Peoples for generations to come.
 
 ### 1.2 Defining Indigenous Data Sovereignty
 
@@ -236,7 +237,7 @@ The Four-Tier Data Classification system is the central innovation of the TSDF S
 - **Data:** Open access; attribution requirements may apply
 - **Network:** May traverse any transmission infrastructure
 - **Digital:** May reside on public platforms and services
-- **Computational:** Training and inference permitted without restriction
+- **Computational:** Training and inference permitted per the terms of the sovereign release. A release decision may attach license or label conditions that constrain AI/ML use; public availability alone is never the authorization, the sovereign release is
 
 **Examples:**
 - Published Tribal government press releases
@@ -265,7 +266,7 @@ The Four-Tier Data Classification system is the central innovation of the TSDF S
 - **Digital:** Network-controlled services and platforms; data remains on source Nation infrastructure with views rendered to authorized members
 - **Computational:** Network approval required for training; inference restricted to network scope
 
-**Provenance Inheritance:** Derivative products created from T1 data carry embedded provenance metadata identifying the source Nation, the relationship that enabled access, and inherited obligations. Derivatives may be shared within the network (as T1) but external sharing requires source Nation authorization. This Standard anticipates alignment with IEEE P2890 (Recommended Practice for Provenance of Indigenous Peoples' Data) upon publication.
+**Provenance Inheritance:** Derivative products created from T1 data carry embedded provenance metadata identifying the source Nation, the relationship that enabled access, and inherited obligations. Derivatives may be shared within the network (as T1) but external sharing requires source Nation authorization. This Standard's provenance inheritance is designed to support IEEE 2890-2025 (Recommended Practice for Provenance of Indigenous Peoples' Data).
 
 **Examples:**
 - Climate adaptation data shared among ATNI member Tribes
@@ -296,7 +297,7 @@ The Four-Tier Data Classification system is the central innovation of the TSDF S
 - **Digital:** Platform and storage requirements specified in agreement; preference for data remaining on Tribal infrastructure with partner access via secure views
 - **Computational:** Training and inference permitted only per explicit agreement terms; AI/ML applications require specific authorization
 
-**Provenance Inheritance:** Derivative products created under T2 agreements carry embedded provenance metadata identifying the source Nation, the governing agreement, permitted uses, and inherited constraints. Derivatives inherit the authorization scope of their source data; uses beyond the original agreement require renegotiation. This Standard anticipates alignment with IEEE P2890 provenance specifications upon publication.
+**Provenance Inheritance:** Derivative products created under T2 agreements carry embedded provenance metadata identifying the source Nation, the governing agreement, permitted uses, and inherited constraints. Derivatives inherit the authorization scope of their source data; uses beyond the original agreement require renegotiation. This Standard's provenance inheritance is designed to support IEEE 2890-2025 provenance practice.
 
 **Partner Categories:**
 - Federal agencies (subject to FOIA considerations; see Section 7.4)
@@ -410,9 +411,9 @@ This section specifies minimum requirements across all four sovereignty domains 
 | T2 | Per-agreement only | Per-agreement only | Provenance inheritance; uses bound by agreement scope; renegotiation required for expanded use |
 | T3 | Prohibited externally | Prohibited externally | Internal governance only; no external derivatives permitted |
 
-#### 3.3.5 IEEE 2890-2025 Provenance Requirements by Tier
+#### 3.3.5 Provenance Requirements by Tier (TSDF Implementation Profile)
 
-IEEE 2890-2025 establishes provenance parameters that vary by classification tier:
+This Standard establishes provenance requirements that vary by classification tier. The profile below is TSDF's own construction, designed to support IEEE 2890-2025; a clause-level conformance mapping against the published IEEE text is pending (see Section 4.5.6):
 
 |Tier|Provenance Visibility|Chain of Custody|AI/ML Logging|Benefit Sharing|
 |---|---|---|---|---|
@@ -421,7 +422,7 @@ IEEE 2890-2025 establishes provenance parameters that vary by classification tie
 |T2|Agreement parties|Required (no gaps)|Required|Required in agreement|
 |T3|Sovereign authority only|Mandatory (no gaps); all locations Indigenous-controlled|Required even if prohibited|Not applicable|
 
-**T3 Specific Requirements:** For T3 data, IEEE 2890-2025 provenance tracking requires:
+**T3 Specific Requirements:** For T3 data, this Standard's provenance profile requires:
 
 - Chain of custody is **mandatory** with no gaps permitted
 - All custody locations must be Indigenous-controlled
@@ -473,7 +474,7 @@ The TSDF classification system is designed to align with and operationalize majo
 
 |Standard|Organization|Status|TSDF Integration|
 |---|---|---|---|
-|IEEE 2890-2025|IEEE Standards Association|Active (Nov 2025)|Provenance schema, Data Actor Model|
+|IEEE 2890-2025|IEEE Standards Association|Published (Nov 2025)|Provenance profile designed to support the standard (verification pending)|
 |CARE Principles|Global Indigenous Data Alliance|Active|Tier-to-principle mapping|
 |OCAP®|First Nations Information Governance Centre|Active|Governance requirements|
 |FAIR Principles|GO FAIR|Active|Conditional alignment (sovereignty-first)|
@@ -495,7 +496,7 @@ CARE principles apply across all four sovereignty domains. Authority to Control,
 
 **Implementation Requirements:**
 
-- **C - Collective Benefit:** T2 agreements MUST include benefit-sharing provisions; benefits tracked in IEEE 2890 provenance
+- **C - Collective Benefit:** T2 agreements MUST include benefit-sharing provisions; benefits tracked in provenance per Section 3.3.5
 - **A - Authority to Control:** Only Indigenous authorities can downgrade tier classification; consent revocable at any time
 - **R - Responsibility:** Audit logging for all data access; clear accountability chains
 - **E - Ethics:** Consent records linked to all non-T0 data; cultural protocols respected in system design
@@ -528,23 +529,23 @@ UNDRIP Article 31 specifically requires protection of Indigenous cultural herita
 
 ### 4.5 IEEE 2890-2025 Alignment
 
-**IEEE 2890-2025: IEEE Recommended Practice for Provenance of Indigenous Peoples' Data** is the first international standard for Indigenous data provenance, published November 14, 2025. This Standard adopts IEEE 2890-2025 as the authoritative reference for provenance implementation.
+**IEEE 2890-2025: IEEE Recommended Practice for Provenance of Indigenous Peoples' Data** is the first standard developed for Indigenous Peoples' data, published November 14, 2025, and available free of charge (with registration) from the IEEE. This Standard adopts IEEE 2890-2025 as its provenance reference. The implementation profile described in this section is TSDF's own construction, designed to support the standard; a clause-level conformance mapping against the published text is pending and will be incorporated in a future revision.
 
 #### 4.5.1 IEEE 2890-2025 Scope
 
-IEEE 2890-2025 establishes:
+Per its published scope, IEEE 2890-2025 details the process for describing and recording the provenance of data about or related to Indigenous Peoples and their cultures, lands, and knowledge systems. It establishes a common set of parameters for the provenance of Indigenous Peoples' data, including information that facilitates Indigenous Peoples' governance, decision-making, participation, collaboration, and engagement in current and future uses of that data, and it supports the appropriate disclosure of Indigenous Peoples' relationships and links to data.
+
+Working from that scope, this Standard implements the following elements as its provenance profile (TSDF's reading, to be validated clause-by-clause against the published text):
 
 - Common parameters for provenance of Indigenous Peoples' data
-- Controlled vocabulary for metadata fields
-- Data Actor Model (human and non-human entities)
-- Interoperability requirements for ML/AI and biodiversity contexts
+- Controlled vocabulary for metadata fields (namespaced `tsdf:` pending vocabulary mapping)
+- A Data Actor Model spanning human and non-human entities
+- Provenance continuity through ML/AI processing
 - Benefit-sharing documentation mechanisms
-
-The provenance framework facilitates Indigenous Peoples' governance, decision-making, participation, collaboration, and engagement in current and future uses of Indigenous Peoples' data.
 
 #### 4.5.2 Data Actor Model
 
-IEEE 2890-2025 introduces the concept of "data actors" that includes non-human entities, with humans ultimately responsible for their actions:
+Building on IEEE 2890-2025's treatment of data actors, this Standard defines a Data Actor Model in which non-human entities act on data while humans remain ultimately responsible for their actions:
 
 **Human Actors:**
 
@@ -561,48 +562,48 @@ IEEE 2890-2025 introduces the concept of "data actors" that includes non-human e
 - Database
 - Repository
 
-**TSDF Implementation Rule:** All non-human data actors MUST have a responsible human identified. This implements the IEEE 2890-2025 principle that humans are ultimately accountable for machine operations on Indigenous data, aligning with Convergence Principle 5: "Human Accountability for Human Artifacts."
+**TSDF Implementation Rule:** All non-human data actors MUST have a responsible human identified. This implements the principle that humans are ultimately accountable for machine operations on Indigenous data, aligning with Convergence Principle 5: "Human Accountability for Human Artifacts."
 
 #### 4.5.3 TSDF-IEEE 2890-2025 Component Alignment
 
-|TSDF Component|IEEE 2890-2025 Alignment|
+|TSDF Component|Design intent (verification pending)|
 |---|---|
-|Provenance metadata (Section 3.3.5)|Aligned with IEEE 2890-2025 provenance parameters|
-|Provenance inheritance rules|Implements IEEE 2890-2025 data lineage specifications|
-|Derivative tracking|Follows IEEE 2890-2025 relationship disclosure requirements|
-|Source Nation attribution|Aligns with IEEE 2890-2025 governance facilitation goals|
-|Benefit sharing tracking|Implements IEEE 2890-2025 benefit documentation|
-|AI/ML audit logging|Follows IEEE 2890-2025 custody event actions|
+|Provenance metadata (Section 3.3.5)|Designed to support IEEE 2890-2025 provenance parameters|
+|Provenance inheritance rules|Designed to support data-lineage documentation|
+|Derivative tracking|Designed to support relationship disclosure|
+|Source Nation attribution|Designed to support the standard's governance-facilitation purpose|
+|Benefit sharing tracking|Designed to support benefit documentation|
+|AI/ML audit logging|Designed to support custody-event recording|
 
 #### 4.5.4 AI/ML Provenance Tracking
 
-IEEE 2890-2025 recognizes that AI/ML systems increasingly process Indigenous data. TSDF tracks these operations through IEEE 2890-2025 custody event actions:
+AI/ML systems increasingly process Indigenous data. TSDF tracks these operations through a custody-event vocabulary defined in this Standard's implementation profile (namespaced `tsdf:`, to be mapped to the published IEEE 2890-2025 vocabulary as verification completes):
 
 |Action|Description|
 |---|---|
-|`embedded`|Data converted to vector embedding|
-|`trained_on`|Data used for model training|
-|`inference_used`|Data used for model inference|
-|`denied`|Operation attempted but prohibited|
+|`tsdf:embedded`|Data converted to vector embedding|
+|`tsdf:trained_on`|Data used for model training|
+|`tsdf:inference_used`|Data used for model inference|
+|`tsdf:denied`|Operation attempted but prohibited|
 
-**Enforcement Rule:** Even when AI/ML operations are **prohibited** (T3 data), attempted operations should be logged with action `denied` for audit purposes.
+**Enforcement Rule:** Even when AI/ML operations are **prohibited** (T3 data), attempted operations should be logged with action `tsdf:denied` for audit purposes.
 
 #### 4.5.5 Benefit Sharing Documentation
 
-IEEE 2890-2025 supports benefit-sharing documentation. For T2 agreements, benefit tracking includes:
+This Standard requires benefit-sharing documentation as part of its provenance profile, consistent with CARE Collective Benefit. For T2 agreements, benefit tracking includes:
 
 - Benefit types (capacity building, data return, co-authorship, etc.)
 - Benefit recipients (Nation identifiers)
 - Benefits delivered (with verification)
 - Benefits pending (with expected dates)
 
-#### 4.5.6 Implementation Status
+#### 4.5.6 Implementation and Verification Status
 
-This integration aligns with the published IEEE 2890-2025 standard. Implementations should:
+This Standard's provenance profile is designed to support IEEE 2890-2025. Clause-level conformance has not yet been verified against the published text; that verification, producing a clause-by-clause mapping with the standard's own normative language, is planned work (see the current release plan). Until it completes, implementers should describe systems built on this profile as “designed to support IEEE 2890-2025,” not as IEEE-compliant. Implementations should:
 
-- Adopt IEEE 2890-2025 compliant provenance tracking
-- Recognize IEEE 2890-2025 compliance as evidence of meeting TSDF provenance requirements
-- Update controlled vocabulary fields as IEEE 2890-2025 tooling becomes available
+- Adopt provenance tracking per this profile (Section 3.3.5)
+- Treat documented IEEE 2890-2025 conformance, once the mapping exists, as evidence of meeting TSDF provenance requirements
+- Update controlled-vocabulary mappings as the verification work and IEEE tooling mature
 
 ### 4.6 Relationship with FAIR and Open Science
 
@@ -634,7 +635,7 @@ The Traditional Knowledge (TK) and Biocultural (BC) Labels developed by Local Co
 |T2|TK Non-Commercial, TK Outreach, BC Research Use|Use restriction specification|
 |T3|TK Secret/Sacred, TK Culturally Sensitive, TK Clan|Internal protocol markers|
 
-Labels provide cultural specificity; Tiers provide governance enforcement. Both are necessary. Local Contexts Labels travel with data through provenance inheritance, ensuring that cultural protocols are communicated even when data moves through the window architecture.
+The tier-label pairings above are illustrative of common combinations, not assignments: Local Contexts Labels are community-defined expressions, and only the originating community selects, applies, or changes its labels. A tier never implies a label, and a label is never auto-assigned by classification software. Labels provide cultural specificity; Tiers provide governance enforcement. Both are necessary. Local Contexts Labels travel with data through provenance inheritance, ensuring that cultural protocols are communicated even when data moves through the window architecture.
 
 **Interoperability:** TSDF provenance links to Local Contexts Hub via project identifiers, enabling cross-system label recognition.
 
@@ -647,7 +648,7 @@ This Standard maintains awareness of related IEEE standards that may inform impl
 |**IEEE 7000-2021**|Addressing Ethical Concerns in System Design|Corporate partner prerequisites (Section 7.2)|
 |**IEEE 7001-2021**|Transparency of Autonomous Systems|Audit logging transparency requirements|
 |**IEEE 7003-2024**|Algorithmic Bias Considerations|AI/ML bias assessment for T1/T2 training|
-|**IEEE P7018**|Generative AI Security Framework|LLM inference restriction guidance|
+|**IEEE generative-AI standards work** (published as project P7018 at the time of writing; verify current designation and status)|Generative AI security|LLM training/inference restriction guidance|
 
 These standards address technical ethics; TSDF addresses sovereignty. Partners may demonstrate IEEE compliance as evidence of meeting T2 technical obligations, but IEEE compliance does not substitute for Indigenous governance approval.
 
@@ -672,7 +673,7 @@ Any entity implementing this Standard must establish clear governance for:
 - **Digital:** Consent for storage platforms and access mechanisms
 - **Computational:** Consent for algorithmic processing and AI/ML applications
 
-Consent must be obtained from both the appropriate Indigenous governing body and individual knowledge holders. All grants of consent, including specific conditions or limitations, must be formally documented and linked to the associated data through IEEE 2890-2025 compliant provenance tracking.
+Consent must be obtained from the appropriate Indigenous governing body and, where the data concerns identifiable individuals or individually held knowledge, from the knowledge holders concerned. Collective authority and individual consent are distinct records; neither substitutes for the other, and not every dataset has an identifiable individual knowledge holder. All grants of consent, including specific conditions or limitations, must be formally documented and linked to the associated data through provenance tracking per Section 3.3.5.
 
 **Authority to Reclassify (Data Sovereignty)** The authority to downgrade a data classification (e.g., from T3 to T2) rests **exclusively** with authorized Indigenous individuals or the designated governance body. This is a critical control point that:
 
@@ -690,7 +691,7 @@ Systems may automate protective upgrades (e.g., T2 → T3 upon agreement expiry)
 - Authorization of computational processes, especially AI/ML applications
 - Audit and accountability across all infrastructure layers
 
-**Audit and Accountability (All Domains)** Clear mechanisms must be in place to audit data access and use across all four sovereignty domains, ensuring compliance with tier requirements and associated agreements. An auditable trail provides the accountability necessary to enforce the Standard and build trust with partners. Audit mechanisms should align with IEEE 2890-2025 provenance specifications.
+**Audit and Accountability (All Domains)** Clear mechanisms must be in place to audit data access and use across all four sovereignty domains, ensuring compliance with tier requirements and associated agreements. An auditable trail provides the accountability necessary to enforce the Standard and build trust with partners. Audit mechanisms should follow this Standard's provenance profile (Section 3.3.5), designed to support IEEE 2890-2025.
 
 ### 5.2 The Partnership Spectrum
 
@@ -749,7 +750,9 @@ Artificial intelligence and machine learning technologies present unique risks a
 |T0|Permitted|Permitted|Public release implies broad use authorization|
 |T1|Network approval required|Network scope only|AI benefits should remain within Indigenous network|
 |T2|Per agreement only|Per agreement only|Explicit consent required for each AI application|
-|T3|Prohibited|Prohibited|Sovereign data must never enter AI systems|
+|T3|Prohibited externally|Prohibited externally|Sovereign data never enters external AI systems; see rule below|
+
+**The T3 Rule, stated precisely:** No T3 data may ever enter an external AI/ML system, service, provider, prompt, embedding store, or training pipeline, in any form, including anonymized or derived forms. Whether strictly internal, on-Nation computation over T3 data is permitted at all is itself a sovereign decision: where a Nation's governance has explicitly authorized a specific, locally controlled process, that computation occurs entirely within on-Nation infrastructure under community governance (Section 3.1); where no such authorization exists, the default is an absolute prohibition. A community may also choose an absolute ban that admits no internal exception.
 
 ### 6.2 Computational Sovereignty for AI/ML
 
@@ -760,7 +763,7 @@ AI/ML applications implicate Computational Sovereignty directly. The following r
 - T1 data may only train models that remain under Indigenous network governance
 - T2 training requires explicit, informed consent specifying model use cases, training methodology, and output restrictions
 - No T3 data may be used for any AI/ML purpose, including "anonymized" derivatives
-- Training on Indigenous data requires documentation of data lineage per IEEE 2890-2025
+- Training on Indigenous data requires documentation of data lineage per Section 3.3.5
 
 **Inference Restrictions**
 
@@ -772,7 +775,7 @@ AI/ML applications implicate Computational Sovereignty directly. The following r
 
 - Models trained on Indigenous data are themselves subject to tier classification
 - A model trained on T1 data inherits T1 restrictions on its deployment and outputs
-- Model provenance must document all Indigenous data sources per IEEE 2890-2025
+- Model provenance must document all Indigenous data sources per Section 3.3.5
 
 **Compute Location Requirements**
 
@@ -854,17 +857,17 @@ For purposes of this section, **"Large Corporate Entity"** means any for-profit 
 
 Large Corporate Entities seeking T2 access must demonstrate compliance across all four sovereignty domains:
 
-#### 7.3.1 Required Certifications
+#### 7.3.1 Required Compliance Evidence
 
-Partners must provide evidence of compliance with recognized AI ethics and data governance standards prior to agreement negotiation:
+Partners must provide named, reviewable evidence of compliance with recognized AI ethics and data governance standards prior to agreement negotiation. Evidence means artifacts the Indigenous governing authority can examine, not self-declared certification:
 
-a) **IEEE 7000-2021 Compliance Documentation** demonstrating value-based engineering processes that explicitly identified and prioritized Indigenous data sovereignty as a core value, including documented stakeholder engagement with the Indigenous governing authority;
+a) **IEEE 7000-2021 Process Evidence:** documentation demonstrating that a value-based engineering process consistent with IEEE 7000-2021 was applied, explicitly identifying and prioritizing Indigenous data sovereignty as a core value, and including documented engagement with the Indigenous governing authority as a rights holder (value register, ethical-risk register, and value-traceable requirements, or equivalent artifacts);
 
-b) **IEEE 7003-2024 Bias Assessment** for all AI/ML systems that will process, analyze, or derive insights from Indigenous data, with specific attestation that systems have been audited for deficit-framing bias patterns;
+b) **Bias Assessment consistent with IEEE 7003-2024** for all AI/ML systems that will process, analyze, or derive insights from Indigenous data, with specific attestation that systems have been audited for deficit-framing bias patterns (a TSDF requirement) using criteria the Indigenous partner determines;
 
-c) **IEEE 7001-2021 Transparency Certification** for any autonomous or semi-autonomous systems, with commitment to provide explainability documentation upon request;
+c) **Transparency Documentation consistent with IEEE 7001-2021** for any autonomous or semi-autonomous systems, with commitment to provide explainability documentation upon request;
 
-d) **IEEE 2890-2025 Provenance Implementation** demonstrating compliant provenance tracking from collection through application;
+d) **Provenance Implementation** demonstrating provenance tracking from collection through application per Section 3.3.5, designed to support IEEE 2890-2025;
 
 e) **Designated Compliance Officer** with authority to halt data processing upon notice of potential violation;
 
@@ -892,7 +895,7 @@ f) **Consent to Audit** granting the Indigenous governing authority or its desig
 
 **Computational Sovereignty Compliance**
 
-- Full IEEE standards compliance as specified above
+- Full compliance evidence as specified in Section 7.3.1
 - Bias audit documentation using Indigenous-determined criteria
 - Measurable transparency levels for any automated systems processing Indigenous data
 
@@ -995,7 +998,7 @@ e) **Repository Restrictions.** Data shall not be deposited in institutional or 
 - Signed commitment to CARE Principles
 - Data management plan aligned with TSDF tier requirements across all four sovereignty domains
 - Evidence of prior Indigenous community research relationships (preferred)
-- IEEE 2890-2025 compliant provenance tracking plan
+- Provenance tracking plan per Section 3.3.5 (designed to support IEEE 2890-2025)
 - **Institutional Data Sovereignty Acknowledgment** (Section 7.4.2)
 - **IP Exception Documentation** (Section 7.4.4)
 
@@ -1072,7 +1075,7 @@ Federal agencies are reminded that trust responsibility extends to protection of
 - Government-to-government consultation protocols must be honored
 - Tribal law recognized as governing data use within Tribal jurisdiction
 - Annual reporting on data use and outcomes
-- IEEE 2890-2025 compliant provenance tracking required for research applications
+- Provenance tracking per Section 3.3.5 required for research applications
 - **Data Return Protocol** ensuring data return or destruction upon project completion, with certification of destruction where applicable
 
 ---
@@ -1141,7 +1144,7 @@ This Standard integrates IEEE standards for partner accountability without subor
 |IEEE 7000-2021|Ethical system design|Corporate (required)|
 |IEEE 7001-2021|Transparency assessment|Corporate (required)|
 |IEEE 7003-2024|Bias considerations|Corporate (required); Academic (optional)|
-|IEEE P7018|Generative AI governance|All partners using generative AI|
+|IEEE generative-AI standards work (designation to be verified)|Generative AI governance|All partners using generative AI|
 
 **Critical Distinction:** IEEE standards address technical ethics and provenance; TSDF addresses sovereignty. Partners demonstrating IEEE compliance provide evidence of technical capacity, but **IEEE compliance does not substitute for Indigenous governance approval**.
 
@@ -1168,7 +1171,7 @@ This Standard integrates IEEE standards for partner accountability without subor
 3. **Ensure** data systems can enforce tier-based access controls across all four sovereignty domains
 4. **Implement** window architecture for view-only access where feasible
 5. **Document** all data under tier classification in research data management plans
-6. **Implement** IEEE 2890-2025 compliant provenance tracking
+6. **Implement** provenance tracking per Section 3.3.5 (designed to support IEEE 2890-2025)
 7. **Obtain institutional acknowledgment** of Indigenous data sovereignty (Section 7.4.2)
 8. **Return or destroy** data per agreement terms upon project completion
 9. **Review** Section 7.4 requirements and prepare appropriate documentation
@@ -1177,13 +1180,13 @@ This Standard integrates IEEE standards for partner accountability without subor
 
 1. **Implement** tier-based access control in system architecture
 2. **Support** window architecture (rendered views, compute-at-source, API-based access)
-3. **Provide** audit logging compliant with IEEE 2890-2025 provenance requirements
+3. **Provide** audit logging aligned with this Standard's provenance profile (Section 3.3.5)
 4. **Support** Local Contexts Labels in metadata schemas
 5. **Ensure** encryption with Indigenous-controlled keys for T2/T3 data
 6. **Implement** geographic controls for T3 data where requested
 7. **Implement** Data Actor Model with responsible human tracking for all non-human actors
 8. **Obtain** explicit approval before any AI/ML training on Indigenous data
-9. **Review** Section 7.3 requirements for corporate partners; prepare IEEE compliance documentation
+9. **Review** Section 7.3 requirements for corporate partners; prepare the compliance evidence named in Section 7.3.1
 
 ### 8.4 For Federal Partners
 
@@ -1191,7 +1194,7 @@ This Standard integrates IEEE standards for partner accountability without subor
 2. **Establish** government-to-government consultation protocols
 3. **Address** FOIA considerations in T2 agreements
 4. **Ensure** data systems honor Tribal jurisdiction assertions
-5. **Implement** IEEE 2890-2025 compliant provenance tracking for research applications
+5. **Implement** provenance tracking per Section 3.3.5 for research applications
 6. **Document** sovereignty domain compliance across all four domains
 
 ### 8.5 For Network Operators (InterTribal Data Networks)
@@ -1208,7 +1211,7 @@ This Standard integrates IEEE standards for partner accountability without subor
 
 ## 9.0 Compliance Checklists
 
-### 9.1 IEEE 2890-2025 Compliance
+### 9.1 Provenance Profile (designed to support IEEE 2890-2025)
 
 - [ ]  Data Actor schema implemented
 - [ ]  Extended provenance schema implemented
@@ -1217,7 +1220,7 @@ This Standard integrates IEEE standards for partner accountability without subor
 - [ ]  Derivation tracking for all transformations
 - [ ]  Benefit sharing documentation for T2 data
 - [ ]  AI/ML operations logged (including denied operations)
-- [ ]  Controlled vocabulary fields aligned with IEEE 2890-2025
+- [ ]  Controlled-vocabulary fields namespaced (`tsdf:`) pending mapping to the published IEEE vocabulary
 
 ### 9.2 CARE Compliance
 
@@ -1233,9 +1236,10 @@ This Standard integrates IEEE standards for partner accountability without subor
 - [ ]  Access controlled per classification
 - [ ]  Possession tracking in custody chain
 
-### 9.4 Local Contexts Compliance
+### 9.4 Local Contexts Integration
 
 - [ ]  TK/BC Label metadata schema implemented
+- [ ]  Labels selected and authorized by the originating community (never auto-assigned by tier)
 - [ ]  Local Contexts Hub project linking enabled
 - [ ]  Label display in user interfaces
 

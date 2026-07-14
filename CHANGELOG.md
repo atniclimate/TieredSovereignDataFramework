@@ -23,7 +23,7 @@ All notable changes to the Tiered Sovereign Data Framework will be documented in
 - Corrected the framework name site-wide and repo-wide: Tiered Sovereign Data Framework
 - Three new pages: Literature (both systematic reviews and the Convergence Systems Architecture, with a finding-to-mechanism map), IEEE Compliance (IEEE 2890-2025 explicated functionally, the responsible-design 7000-series as partner qualification, and AI/LLM boundaries tier by tier), and ATNI-GeoPackager (the data wrapper in development that carries TSDF classification, provenance, and an append-only audit record inside the artifact)
 - Convergence Systems Architecture framing elevated on the Overview, with a Go Deeper section linking the new pages
-- Standards-claim language tightened following an external adversarial review: TSDF is described as designed to support IEEE 2890-2025, with clause-level conformance verification pending; TSDF-specific constructions (tier provenance profile, custody vocabulary, Data Actor rule) are identified as TSDF's own implementation profile
+- Standards-claim language tightened: TSDF is described as designed to support IEEE 2890-2025, with clause-level conformance verification pending; TSDF-specific constructions (tier provenance profile, custody vocabulary, Data Actor rule) are identified as TSDF's own implementation profile
 - Full prose pass across site copy for house style
 - README hygiene: published-standard designation (IEEE 2890-2025, not P2890), standard filename, and version references aligned
 

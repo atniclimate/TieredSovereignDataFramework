@@ -1,5 +1,5 @@
 /* ============================================================
-   TSDF — Tiered Sovereignty Data Framework
+   TSDF — Tiered Sovereign Data Framework
    Design system v2: ATNI deep red · greys · dark mode
    Type: League Spartan (titles/subtitles) · Lexend (subheadings/labels)
          Calibri (body) · Spline Sans Mono (code blocks only)
@@ -564,13 +564,116 @@ section.band h2 { font-size: clamp(27px, 3.2vw, 38px); margin-bottom: 14px; }
   padding: 24px 28px; margin-top: 18px; overflow-x: auto; white-space: pre;
 }
 
+/* ---------- literature tab ---------- */
+.lit-feature {
+  background: var(--panel);
+  border: 1px solid var(--line-soft);
+  border-top: 4px solid var(--red);
+  border-radius: 0;
+  padding: 34px 38px;
+  margin-top: 34px;
+  box-shadow: var(--shadow-soft);
+}
+.lit-feature .k { font-family: var(--font-sub); font-size: 12px; font-weight: 600; letter-spacing: 0.12em; color: var(--red-bright); text-transform: uppercase; }
+.lit-feature h3 { font-size: clamp(22px, 2.6vw, 29px); margin: 10px 0 12px; }
+.lit-feature p { font-size: 16px; color: var(--ink-soft); max-width: 78ch; }
+
+.quoteblock {
+  border-left: 3px solid var(--red);
+  background: var(--ground-2);
+  padding: 20px 26px;
+  margin: 24px 0;
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: clamp(18px, 2vw, 22px);
+  line-height: 1.45;
+  color: var(--ink);
+}
+.quoteblock .who { display: block; font-family: var(--font-sub); font-weight: 400; font-size: 13px; color: var(--ink-faint); margin-top: 10px; letter-spacing: 0.04em; }
+
+.pillar-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin: 22px 0 6px; }
+.pillar { background: var(--ground-2); border: 1px solid var(--line-soft); border-radius: 0; padding: 16px 18px; }
+.pillar b { display: block; font-family: var(--font-sub); font-weight: 600; font-size: 13.5px; margin-bottom: 4px; }
+.pillar b .rn { color: var(--red-bright); margin-right: 8px; }
+.pillar span { font-size: 14px; color: var(--ink-soft); }
+
+.review-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 30px; }
+.review-card {
+  background: var(--panel); border: 1px solid var(--line-soft); border-top: 3px solid var(--t1);
+  border-radius: 0; padding: 26px 28px; box-shadow: var(--shadow-soft);
+}
+.review-card .k { font-family: var(--font-sub); font-size: 11.5px; font-weight: 600; letter-spacing: 0.11em; color: var(--ink-faint); text-transform: uppercase; }
+.review-card h3 { font-size: 21px; margin: 8px 0 8px; }
+.review-card .funnel { font-family: var(--font-display); font-weight: 600; font-size: 30px; color: var(--red-soft); margin: 4px 0 8px; }
+.review-card .funnel small { font-family: var(--font-sub); font-weight: 400; font-size: 13px; color: var(--ink-faint); letter-spacing: 0.03em; }
+.review-card p { font-size: 15px; color: var(--ink-soft); }
+.review-card .gave { border-top: 1px dashed var(--line-soft); margin-top: 14px; padding-top: 12px; font-size: 14.5px; }
+.review-card .gave b { font-family: var(--font-sub); font-weight: 600; font-size: 11.5px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--red-soft); display: block; margin-bottom: 4px; }
+
+/* ---------- compliance tab ---------- */
+.first-callout {
+  display: grid; grid-template-columns: auto 1fr; gap: 26px; align-items: center;
+  background:
+    radial-gradient(700px 300px at 90% 0%, rgba(158, 43, 51, 0.20), transparent 60%),
+    var(--dusk-2);
+  border: 1px solid rgba(158, 43, 51, 0.35);
+  padding: 30px 36px; margin-top: 30px;
+}
+.first-callout .big { font-family: var(--font-display); font-weight: 600; font-size: 52px; line-height: 1; color: var(--red-soft); white-space: nowrap; }
+.first-callout h3 { font-size: 22px; margin-bottom: 6px; }
+.first-callout p { font-size: 15.5px; color: var(--ink-soft); margin: 0; max-width: 72ch; }
+
+.func-steps { margin-top: 26px; }
+.func-step { display: grid; grid-template-columns: 52px 1fr; gap: 20px; padding: 18px 0; border-bottom: 1px solid var(--line-soft); }
+.func-step:last-child { border-bottom: none; }
+.func-step .n { font-family: var(--font-sub); font-size: 14px; font-weight: 600; color: var(--red-bright); padding-top: 3px; }
+.func-step h3 { font-size: 18px; margin-bottom: 4px; }
+.func-step p { font-size: 15px; color: var(--ink-soft); margin: 0 0 6px; }
+.func-step .mech { font-size: 14px; color: var(--ink-soft); background: var(--ground-2); border-left: 3px solid var(--t1); padding: 8px 14px; }
+.func-step .mech b { font-family: var(--font-sub); font-weight: 600; font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-faint); margin-right: 8px; }
+
+.verify-note {
+  border: 1px dashed var(--line);
+  background: var(--ground-2);
+  padding: 16px 22px;
+  margin-top: 26px;
+  font-size: 14.5px;
+  color: var(--ink-soft);
+}
+.verify-note b { font-family: var(--font-sub); font-weight: 600; font-size: 11.5px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--red-soft); display: block; margin-bottom: 4px; }
+
+/* ---------- geopackage tab ---------- */
+.anatomy { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin-top: 30px; counter-reset: anat; }
+.anat-card { background: var(--panel); border: 1px solid var(--line-soft); border-radius: 0; padding: 20px 22px; box-shadow: var(--shadow-soft); }
+.anat-card::before {
+  counter-increment: anat;
+  content: counter(anat, decimal-leading-zero);
+  font-family: var(--font-sub); font-size: 11.5px; font-weight: 600; color: var(--red-bright); display: block; margin-bottom: 8px;
+}
+.anat-card h3 { font-size: 18px; margin-bottom: 6px; }
+.anat-card p { font-size: 14.5px; color: var(--ink-soft); margin: 0; }
+.anat-card code { font-size: 13px; color: var(--t2-deep); }
+
+/* ---------- cross-link cards (overview) ---------- */
+.xlinks { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 30px; }
+.xlink {
+  display: block; text-decoration: none;
+  background: var(--panel); border: 1px solid var(--line-soft); border-top: 3px solid var(--red);
+  padding: 20px 22px; transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+}
+.xlink:hover { transform: translateY(-3px); background: var(--panel-2); box-shadow: var(--shadow); }
+.xlink .k { font-family: var(--font-sub); font-size: 11px; font-weight: 600; letter-spacing: 0.12em; color: var(--red-bright); text-transform: uppercase; }
+.xlink h3 { font-size: 19px; margin: 8px 0 6px; color: var(--ink); }
+.xlink p { font-size: 14.5px; color: var(--ink-soft); margin: 0 0 10px; }
+.xlink .go { font-family: var(--font-sub); font-size: 13px; color: var(--red-soft); }
+
 /* ---------- reveal on scroll ---------- */
 .reveal { opacity: 0; transform: translateY(18px); transition: opacity 0.6s ease, transform 0.6s ease; }
 .reveal.in { opacity: 1; transform: none; }
 
 /* ---------- footer ---------- */
 footer.site-foot { background: var(--dusk); color: var(--dusk-faint); border-top: 1px solid var(--line-soft); margin-top: 60px; }
-footer .wrap { padding: 44px 28px; display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 36px; font-size: 14.5px; }
+footer .wrap { padding: 44px 28px; display: grid; grid-template-columns: 1.3fr 0.9fr 1fr 0.9fr; gap: 36px; font-size: 14.5px; }
 footer h4 { color: var(--ink); font-family: var(--font-sub); font-weight: 600; font-size: 12px; letter-spacing: 0.11em; text-transform: uppercase; margin-bottom: 10px; }
 footer a { color: var(--ink-soft); text-decoration: none; display: block; padding: 3px 0; }
 footer a:hover { color: var(--red-soft); }
@@ -582,6 +685,13 @@ footer .fine { grid-column: 1 / -1; border-top: 1px solid var(--line-soft); padd
   .brand .name { font-size: 15px; }
 }
 @media (max-width: 1120px) {
+  .brand .name { display: none; }
+}
+@media (max-width: 1560px) {
+  .brand .ver { display: none; }
+  nav.tabs a { padding: 8px 9px; font-size: 13px; }
+}
+@media (max-width: 1360px) {
   .brand .name { display: none; }
 }
 @media (max-width: 980px) {
@@ -596,6 +706,8 @@ footer .fine { grid-column: 1 / -1; border-top: 1px solid var(--line-soft); padd
   .principles { grid-template-columns: 1fr 1fr; }
   .license-grid { grid-template-columns: 1fr; }
   .align-strip { grid-template-columns: 1fr 1fr; }
+  .review-grid, .pillar-grid, .anatomy { grid-template-columns: 1fr; }
+  .xlinks { grid-template-columns: 1fr; }
   footer .wrap { grid-template-columns: 1fr; }
 }
 @media (max-width: 620px) {
@@ -605,6 +717,10 @@ footer .fine { grid-column: 1 / -1; border-top: 1px solid var(--line-soft); padd
   .site-head .wrap { gap: 10px; }
   .callout-t3 { grid-template-columns: 1fr; padding: 24px; }
   .decider { padding: 28px 22px; }
+  .first-callout { grid-template-columns: 1fr; padding: 24px; }
+  .func-step { grid-template-columns: 36px 1fr; gap: 12px; }
+  .lit-feature { padding: 24px 22px; }
+  .std-table { display: block; overflow-x: auto; }
 }
 
 @media (prefers-reduced-motion: reduce) {

@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Tiered Sovereignty Data Framework — Indigenous Data Sovereignty Standard</title>
-<meta name="description" content="The Tiered Sovereignty Data Framework (TSDF) gives Indigenous Nations a clear, enforceable four-tier system for governing data — operationalizing CARE, OCAP, and UNDRIP into implementable standards. Published by the Affiliated Tribes of Northwest Indians.">
-<meta property="og:title" content="Tiered Sovereignty Data Framework">
+<title>Tiered Sovereign Data Framework · Indigenous Data Sovereignty Standard</title>
+<meta name="description" content="The Tiered Sovereign Data Framework (TSDF) gives Indigenous Nations a clear, enforceable four-tier system for governing data, operationalizing CARE, OCAP, and UNDRIP, with provenance designed to support IEEE 2890-2025. Literature, compliance walkthroughs, and the ATNI-GeoPackager data wrapper. Published by the Affiliated Tribes of Northwest Indians.">
+<meta property="og:title" content="Tiered Sovereign Data Framework">
 <meta property="og:description" content="A four-tier Indigenous Data Sovereignty standard: T0 Open · T1 Network · T2 Negotiated · T3 Sovereign. When in doubt, classify as T3.">
 <meta property="og:type" content="website">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23000000'/%3E%3Ccircle cx='50' cy='50' r='38' fill='none' stroke='%23e6e6e6' stroke-width='4'/%3E%3Ccircle cx='50' cy='50' r='27' fill='none' stroke='%239aa0a7' stroke-width='4'/%3E%3Ccircle cx='50' cy='50' r='17' fill='none' stroke='%23d98a91' stroke-width='4'/%3E%3Ccircle cx='50' cy='50' r='8' fill='%23c9303c'/%3E%3C/svg%3E">
@@ -21,7 +21,7 @@
   <div class="wrap">
     <a class="brand" href="#overview">
       <span class="sigil">TSDF</span>
-      <span class="name">Tiered Sovereignty Data Framework</span>
+      <span class="name">Tiered Sovereign Data Framework</span>
       <span class="ver">v0.9 pre-release</span>
     </a>
     <nav class="tabs" aria-label="Site sections">
@@ -29,6 +29,9 @@
       <a href="#standard" data-tab="standard">The Standard</a>
       <a href="#practice" data-tab="practice">In Practice</a>
       <a href="#evidence" data-tab="evidence">Evidence</a>
+      <a href="#literature" data-tab="literature">Literature</a>
+      <a href="#compliance" data-tab="compliance">IEEE Compliance</a>
+      <a href="#geopackage" data-tab="geopackage">GeoPackager</a>
       <a href="#adopt" data-tab="adopt">Use &amp; Adapt</a>
     </nav>
     <a class="gh-link" href="https://github.com/atniclimate/TieredSovereignDataFramework" aria-label="GitHub repository">
@@ -48,7 +51,7 @@
       <div>
         <p class="eyebrow"><span class="tick">///</span>An Indigenous Data Sovereignty Standard · Affiliated Tribes of Northwest Indians</p>
         <h1>Sovereignty forward, <em>not an afterthought.</em></h1>
-        <p class="lede">The Tiered Sovereignty Data Framework gives Indigenous Nations a clear, enforceable mechanism for governing data in digital spaces — translating CARE, OCAP®, and UNDRIP from principle into practice through four tiers of escalating care.</p>
+        <p class="lede">The Tiered Sovereign Data Framework gives Indigenous Nations a clear, enforceable mechanism for governing data in digital spaces; translating CARE, OCAP®, and UNDRIP from principle into practice through four tiers of escalating care.</p>
         <div class="actions">
           <a class="btn btn-primary" href="#standard">Read the Standard</a>
           <a class="btn btn-ghost" href="#practice" data-goto="practice">Which tier is my data? →</a>
@@ -56,7 +59,7 @@
       </div>
       <div class="basin-wrap">
         <div id="basin"></div>
-        <p class="basin-caption">The tiers are <em>centered, not elevated</em> — inward means heightened responsibility of care. <span class="mono">Select a ring.</span></p>
+        <p class="basin-caption">The tiers are <em>centered, not elevated</em>; inward means heightened responsibility of care. <span class="mono">Select a ring.</span></p>
       </div>
     </div>
   </section>
@@ -65,7 +68,7 @@
     <div class="wrap">
       <p class="eyebrow reveal"><span class="tick">///</span>The Four Tiers</p>
       <h2 class="reveal">Four tiers, one direction of care</h2>
-      <p class="section-lede reveal">Every piece of Indigenous data — from public press releases to ceremonial knowledge — is classified into one of four tiers. Each tier answers the same four questions: what is stored, how it moves, how it is accessed, and how it may be transformed.</p>
+      <p class="section-lede reveal">Every piece of Indigenous data, from public press releases to ceremonial knowledge, is classified into one of four tiers. Each tier answers the same four questions: what is stored, how it moves, how it is accessed, and how it may be transformed.</p>
 
       <div class="tier-cards reveal" role="tablist" aria-label="Tier selector">
         <button class="tier-card" style="--tc: var(--t0)" data-tier="t0" role="tab">
@@ -86,7 +89,7 @@
         <button class="tier-card" style="--tc: var(--t3)" data-tier="t3" role="tab">
           <span class="code">T3 · SOVEREIGN</span>
           <h3>Sovereign</h3>
-          <p>Complete Indigenous control. Never leaves community systems — by architecture, not just policy.</p>
+          <p>Complete Indigenous control. Never leaves community systems, by architecture and not just policy.</p>
         </button>
       </div>
 
@@ -96,7 +99,7 @@
         <div class="mark">T3</div>
         <div>
           <h3>When in doubt, classify as T3.</h3>
-          <p>The harm is asymmetric: over-classification delays access until review — correctable. Under-classification can publish sacred knowledge or disclose a burial site — often irreversible. Only authorized human decision-makers may downgrade a classification. Systems may automate protective upgrades, never downgrades.</p>
+          <p>The harm is asymmetric: over-classification delays access until review, and that is correctable. Under-classification can publish sacred knowledge or disclose a burial site, and that is often irreversible. Only authorized human decision-makers may downgrade a classification. Systems may automate protective upgrades, never downgrades.</p>
         </div>
       </div>
     </div>
@@ -106,7 +109,7 @@
     <div class="wrap">
       <p class="eyebrow reveal"><span class="tick">///</span>Convergence Systems Architecture</p>
       <h2 class="reveal">Sovereignty across four domains, or extraction through the gap</h2>
-      <p class="section-lede reveal">Classifying data is not enough. Data governed at rest can still be extracted in motion, in storage, or in processing. TSDF traces the full lifecycle and requires governance authority at every stage — because <strong>gaps in any layer create openings for extraction</strong>.</p>
+      <p class="section-lede reveal">Classifying data is not enough. Data governed at rest can still be extracted in motion, in storage, or in processing. TSDF traces the full lifecycle and requires governance authority at every stage, because <strong>gaps in any layer create openings for extraction</strong>.</p>
 
       <div class="lifecycle reveal" aria-label="Data lifecycle">
         <span class="step">Source</span><span class="arrow">→</span>
@@ -135,8 +138,15 @@
         <div class="domain-card reveal">
           <h3>Computational Sovereignty</h3>
           <p class="q">“Who determines how our data is transformed, and toward what ends?”</p>
-          <p>The transformation layer: analysis, statistical inference, AI/ML. When Indigenous data enters a model it is transformed in ways that can escape governance entirely — unless authority is asserted here too.</p>
+          <p>The transformation layer: analysis, statistical inference, AI/ML. When Indigenous data enters a model it is transformed in ways that can escape governance entirely unless authority is asserted here too.</p>
         </div>
+      </div>
+
+      <div class="quoteblock reveal" style="margin-top: 30px">“Data flows through networks. Networks depend on infrastructure. Infrastructure enables or constrains digital futures. Sovereignty must extend across all layers or gaps emerge where extraction enters.”<span class="who">Convergence Systems Architecture (Freeland, ATNI); the synthesis TSDF is built from</span></div>
+      <p class="reveal" style="margin: 18px 0 0">The four domains above are not a taxonomy; they are one argument, made across four layers, in a synthesis that reads the field's central scholars and finds the boundaries between data, network, digital, and computational sovereignty collapsing. The Standard is what that argument looks like as enforceable rules.</p>
+      <div class="reveal" style="margin-top: 20px; display: flex; gap: 12px; flex-wrap: wrap">
+        <a class="btn btn-primary" href="#literature" data-goto="literature">Explore the literature</a>
+        <a class="btn btn-ghost" href="#evi-convergence" data-goto="evi-convergence">The twelve principles →</a>
       </div>
     </div>
   </section>
@@ -145,7 +155,7 @@
     <div class="wrap">
       <p class="eyebrow reveal"><span class="tick">///</span>Sharing as Relation, Not Extraction</p>
       <h2 class="reveal">Windows, not copies</h2>
-      <p class="section-lede reveal">When a Nation shares data under TSDF, it does not transfer assets. It <strong>opens a window that remains in its own house</strong>: partners see rendered views, run approved analyses that execute at the source, and receive results — while the underlying data never leaves its origin, and every derivative carries its provenance home.</p>
+      <p class="section-lede reveal">When a Nation shares data under TSDF, it does not transfer assets. It <strong>opens a window that remains in its own house</strong>: partners see rendered views, run approved analyses that execute at the source, and receive results, while the underlying data never leaves its origin, and every derivative carries its provenance home.</p>
 
       <table class="extract-table reveal">
         <thead><tr><th>Extraction model</th><th>Relational model</th></tr></thead>
@@ -164,13 +174,41 @@
     <div class="wrap">
       <p class="eyebrow reveal"><span class="tick">///</span>Standing on Established Ground</p>
       <h2 class="reveal">Built to operationalize, not replace</h2>
-      <p class="section-lede reveal">TSDF doesn’t invent new principles — it makes existing ones enforceable in software and infrastructure. It is not meant to replace any sovereign framework or cultural ways-of-knowing.</p>
+      <p class="section-lede reveal">TSDF does not invent new principles; it makes existing ones enforceable in software and infrastructure. It is not meant to replace any sovereign framework or cultural ways-of-knowing.</p>
       <div class="align-strip reveal">
-        <div class="align-item"><b>CARE Principles</b><span>Collective Benefit, Authority, Responsibility, Ethics — operationalized through tiers</span></div>
-        <div class="align-item"><b>OCAP®</b><span>Ownership, Control, Access, Possession — enforced by classification (FNIGC)</span></div>
+        <div class="align-item"><b>CARE Principles</b><span>Collective Benefit, Authority, Responsibility, Ethics, operationalized through tiers</span></div>
+        <div class="align-item"><b>OCAP®</b><span>Ownership, Control, Access, Possession, enforced by classification (FNIGC)</span></div>
         <div class="align-item"><b>UNDRIP</b><span>Art. 19 FPIC → T2 · Art. 23 → T0 · Art. 31 heritage → T3 guarantees</span></div>
-        <div class="align-item"><b>IEEE 2890-2025</b><span>First international standard for provenance of Indigenous Peoples’ data</span></div>
+        <div class="align-item"><b>IEEE 2890-2025</b><span>The first standard developed for Indigenous Peoples’ data; TSDF’s provenance reference</span></div>
         <div class="align-item"><b>Local Contexts</b><span>TK/BC Labels give cultural specificity inside every tier</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="deeper">
+    <div class="wrap">
+      <p class="eyebrow reveal"><span class="tick">///</span>Go Deeper</p>
+      <h2 class="reveal">Three more rooms in this house</h2>
+      <p class="section-lede reveal">The tiers are the doorway. Behind them: the documented record the framework is built from, the standards work that makes “compliance” mean something, and the artifact that carries it all into practice.</p>
+      <div class="xlinks">
+        <a class="xlink reveal" href="#literature" data-goto="literature">
+          <span class="k">The Written Foundations</span>
+          <h3>Literature</h3>
+          <p>Two systematic reviews and the Convergence Systems Architecture; the record of what has been documented, and the synthesis that turned it into architecture.</p>
+          <span class="go">Read the foundations →</span>
+        </a>
+        <a class="xlink reveal" href="#compliance" data-goto="compliance">
+          <span class="k">Standards Alignment</span>
+          <h3>IEEE Compliance</h3>
+          <p>IEEE 2890-2025 provenance explicated functionally, the responsible-design 7000-series, and AI/LLM boundaries tier by tier.</p>
+          <span class="go">See what conformance asks →</span>
+        </a>
+        <a class="xlink reveal" href="#geopackage" data-goto="geopackage">
+          <span class="k">From Standard to Artifact</span>
+          <h3>ATNI-GeoPackager</h3>
+          <p>A data wrapper in development that carries classification, provenance, and an unerasable audit record inside the file itself.</p>
+          <span class="go">Meet the wrapper →</span>
+        </a>
       </div>
     </div>
   </section>
@@ -182,7 +220,7 @@
     <div class="wrap">
       <p class="eyebrow"><span class="tick">///</span>TSDF Standard · v0.9 series (pre-release)</p>
       <h2>The Standard, navigable</h2>
-      <p class="section-lede">Every part of the Standard below, with a plain-language descriptor of what it does and the rules it carries. <span class="term" data-term="dotted">Dotted terms</span> open a definition — the full glossary is at the bottom. For the authoritative text, read the <a href="https://github.com/atniclimate/TieredSovereignDataFramework/blob/main/standard/TSDF-Standard-v0.94.md">standard document on GitHub</a>. An official 1.0 will not be released without full authorization by resolution of ATNI.</p>
+      <p class="section-lede">Every part of the Standard below, with a plain-language descriptor of what it does and the rules it carries. <span class="term" data-term="dotted">Dotted terms</span> open a definition; the full glossary is at the bottom. For the authoritative text, read the <a href="https://github.com/atniclimate/TieredSovereignDataFramework/blob/main/standard/TSDF-Standard-v0.94.md">standard document on GitHub</a>. An official 1.0 will not be released without full authorization by resolution of ATNI.</p>
       <div class="contour-rule" aria-hidden="true"></div>
 
       <div class="standard-layout">
@@ -206,10 +244,10 @@
               <summary><span class="num">01</span><h3>Theoretical Foundations</h3><span class="twirl">▶</span></summary>
               <div class="body">
                 <p class="what">What this part does</p>
-                <p>Names the problem and the response. Centuries of extractive research treated Indigenous knowledge as a resource to be mined rather than a relationship to be honored. The Standard responds by defining <span class="term" data-term="IDSov">Indigenous Data Sovereignty</span> — the inherent right of Indigenous Peoples to govern the collection, ownership, and application of their own data — and rejecting the colonial data paradigm.</p>
+                <p>Names the problem and the response. Centuries of extractive research treated Indigenous knowledge as a resource to be mined rather than a relationship to be honored. The Standard responds by defining <span class="term" data-term="IDSov">Indigenous Data Sovereignty</span>, the inherent right of Indigenous Peoples to govern the collection, ownership, and application of their own data, and rejecting the colonial data paradigm.</p>
                 <p class="what">Key ideas</p>
                 <ul>
-                  <li><strong>The colonial data paradigm.</strong> Dr. Maggie Walter’s <span class="term" data-term="5D Data">“5D Data”</span> critique: colonial statistics emphasize Disparity, Deprivation, Disadvantage, Dysfunction, and Difference — framing Peoples through deficit rather than strength.</li>
+                  <li><strong>The colonial data paradigm.</strong> Dr. Maggie Walter’s <span class="term" data-term="5D Data">“5D Data”</span> critique: colonial statistics emphasize Disparity, Deprivation, Disadvantage, Dysfunction, and Difference, framing Peoples through deficit rather than strength.</li>
                   <li><strong>Data ABOUT vs. data FOR.</strong> Data <em>about</em> Indigenous Peoples is rooted in extraction; data <em>for</em> Indigenous Peoples is a tool of self-determination.</li>
                   <li><strong>The four-tier model</strong> as the mechanism that moves these principles from aspiration to enforceable policy.</li>
                 </ul>
@@ -227,9 +265,9 @@
                 <ul>
                   <li><strong>Tribes are <span class="term" data-term="Rights Holders vs. Stakeholders">sovereigns, not stakeholders</span>.</strong> All data exchange happens through government-to-government relations.</li>
                   <li><strong><span class="term" data-term="Data Residency vs. Data Sovereignty">Residency ≠ sovereignty</span>.</strong> Where a server sits is not whose law governs the data. Authority remains with the Nation regardless of storage location.</li>
-                  <li><strong>Scope is holistic.</strong> Collective &amp; cultural data, individual &amp; administrative data, and biophysical &amp; relational data — the land itself is “the original knowledge organization system.” Data from Indigenous territories carries the same sovereignty claims as the territories themselves.</li>
+                  <li><strong>Scope is holistic.</strong> Collective &amp; cultural data, individual &amp; administrative data, and biophysical &amp; relational data; the land itself is “the original knowledge organization system.” Data from Indigenous territories carries the same sovereignty claims as the territories themselves.</li>
                   <li><strong>The Convergence Systems Architecture.</strong> Four interdependent sovereignty domains (Data, Network, Digital, Computational) and the <span class="term" data-term="Window Architecture">window architecture</span>: view-only federated access where sharing opens windows rather than copying files, and <span class="term" data-term="Compute-at-Source">computation travels to the data</span>.</li>
-                  <li><strong>Federated commons.</strong> A shared T0 base layer every network member holds locally — no single point of failure — with sovereign overlays that never leave each Nation’s infrastructure.</li>
+                  <li><strong>Federated commons.</strong> A shared T0 base layer every network member holds locally (no single point of failure) with sovereign overlays that never leave each Nation’s infrastructure.</li>
                 </ul>
               </div>
             </details>
@@ -244,18 +282,18 @@
                 <table class="std-table">
                   <thead><tr><th>Tier</th><th>Definition</th><th>Critical principle</th></tr></thead>
                   <tbody>
-                    <tr><td><span class="chip t0">T0 OPEN</span></td><td>Formally and publicly released by the sovereign Indigenous entity for collective benefit</td><td>Release is an affirmative act of governance — never a default</td></tr>
-                    <tr><td><span class="chip t1">T1 NETWORK</span></td><td>Shared among trusted Indigenous network members under reciprocal protocols</td><td>Reciprocity — relationships are mutual and ongoing, not transactional</td></tr>
-                    <tr><td><span class="chip t2">T2 NEGOTIATED</span></td><td>Shared with specific external partners through explicit, documented agreements</td><td><span class="term" data-term="FPIC">FPIC</span> as an ongoing, revocable relationship — not a one-time transaction</td></tr>
-                    <tr><td><span class="chip t3">T3 SOVEREIGN</span></td><td>Complete Indigenous control; never leaves community-controlled systems</td><td>Architectural guarantees — external access technically impossible, not just prohibited</td></tr>
+                    <tr><td><span class="chip t0">T0 OPEN</span></td><td>Formally and publicly released by the sovereign Indigenous entity for collective benefit</td><td>Release is an affirmative act of governance, never a default</td></tr>
+                    <tr><td><span class="chip t1">T1 NETWORK</span></td><td>Shared among trusted Indigenous network members under reciprocal protocols</td><td>Reciprocity: relationships are mutual and ongoing, not transactional</td></tr>
+                    <tr><td><span class="chip t2">T2 NEGOTIATED</span></td><td>Shared with specific external partners through explicit, documented agreements</td><td><span class="term" data-term="FPIC">FPIC</span> as an ongoing, revocable relationship, not a one-time transaction</td></tr>
+                    <tr><td><span class="chip t3">T3 SOVEREIGN</span></td><td>Complete Indigenous control; never leaves community-controlled systems</td><td>Architectural guarantees: external access technically impossible, not just prohibited</td></tr>
                   </tbody>
                 </table>
                 <p class="what">Rules that travel with every tier</p>
                 <ul>
                   <li><strong>Default to T3</strong> when classification is uncertain or unassigned (the asymmetric-harm principle).</li>
-                  <li><strong>Inward movement (toward T3) may be automated</strong> — triggered by agreement expiry, protocol violation, or provenance break. <strong>Outward movement requires an authorized human decision</strong>, documented with rationale. Automated downgrade is prohibited.</li>
-                  <li><strong>T3 honors <span class="term" data-term="Strategic Invisibility">strategic invisibility</span></strong> — the choice to remain unseen is itself an exercise of sovereignty. T3 also carries internal protocols: the tier restricts external access; internal governance (clan, gender, ceremonial role) determines internal access.</li>
-                  <li><strong>Each tier specifies requirements across all four domains</strong> — transmission pathways, storage platforms, access mechanisms, and AI/ML authorization — plus IEEE 2890-2025 provenance parameters.</li>
+                  <li><strong>Inward movement (toward T3) may be automated</strong>, triggered by agreement expiry, protocol violation, or provenance break. <strong>Outward movement requires an authorized human decision</strong>, documented with rationale. Automated downgrade is prohibited.</li>
+                  <li><strong>T3 honors <span class="term" data-term="Strategic Invisibility">strategic invisibility</span></strong>; the choice to remain unseen is itself an exercise of sovereignty. T3 also carries internal protocols: the tier restricts external access; internal governance (clan, gender, ceremonial role) determines internal access.</li>
+                  <li><strong>Each tier specifies requirements across all four domains</strong> (transmission pathways, storage platforms, access mechanisms, and AI/ML authorization) plus per-tier provenance requirements designed to support IEEE 2890-2025.</li>
                 </ul>
               </div>
             </details>
@@ -266,13 +304,13 @@
               <summary><span class="num">04</span><h3>Framework Alignment &amp; Interoperability</h3><span class="twirl">▶</span></summary>
               <div class="body">
                 <p class="what">What this part does</p>
-                <p>Maps every tier to the established frameworks it operationalizes, so adopting TSDF is evidence of honoring them — not a parallel obligation.</p>
+                <p>Maps every tier to the established frameworks it operationalizes, so adopting TSDF is evidence of honoring them, not a parallel obligation.</p>
                 <ul>
                   <li><strong><span class="term" data-term="CARE Principles">CARE</span> alignment:</strong> tier-by-principle mapping with implementation requirements (benefit-sharing mandatory in T2 agreements; only Indigenous authorities downgrade; audit logging; consent records linked to all non-T0 data).</li>
-                  <li><strong><span class="term" data-term="OCAP">OCAP®</span> alignment:</strong> the window architecture operationalizes <em>Possession</em> — data stays in the source Nation’s custody while authorized parties see rendered views. Where OCAP® exceeds TSDF, OCAP® prevails for First Nations data.</li>
+                  <li><strong><span class="term" data-term="OCAP">OCAP®</span> alignment:</strong> the window architecture operationalizes <em>Possession</em>: data stays in the source Nation’s custody while authorized parties see rendered views. Where OCAP® exceeds TSDF, OCAP® prevails for First Nations data.</li>
                   <li><strong><span class="term" data-term="UNDRIP">UNDRIP</span>:</strong> Article 19 (FPIC) → T2 mechanism; Article 23 → T0 release decisions; Article 31 (cultural heritage) → T3 architectural guarantees.</li>
-                  <li><strong>IEEE 2890-2025:</strong> adopted as the authoritative provenance reference, including the <span class="term" data-term="Data Actor Model">Data Actor Model</span> — every non-human actor (algorithm, database, AI system) must have a responsible human identified.</li>
-                  <li><strong><span class="term" data-term="FAIR Principles">FAIR</span> reconciliation:</strong> “As open as possible, as closed as necessary.” FAIR applies only where CARE is satisfied first — and the window architecture lets data be findable, accessible, interoperable, and reusable <em>without transferring possession</em>.</li>
+                  <li><strong>IEEE 2890-2025:</strong> adopted as the Standard’s provenance reference, with a <span class="term" data-term="Data Actor Model">Data Actor rule</span> built on its treatment of data actors: every non-human actor (algorithm, database, AI system) must have a responsible human identified.</li>
+                  <li><strong><span class="term" data-term="FAIR Principles">FAIR</span> reconciliation:</strong> “As open as possible, as closed as necessary.” FAIR applies only where CARE is satisfied first, and the window architecture lets data be findable, accessible, interoperable, and reusable <em>without transferring possession</em>.</li>
                   <li><strong><span class="term" data-term="Local Contexts Labels">Local Contexts TK/BC Labels</span>:</strong> labels provide cultural specificity; tiers provide governance enforcement. Both travel with the data.</li>
                 </ul>
               </div>
@@ -284,7 +322,7 @@
               <summary><span class="num">05</span><h3>Governance &amp; Partnership Model</h3><span class="twirl">▶</span></summary>
               <div class="body">
                 <p class="what">What this part does</p>
-                <p>Specifies <em>what must be governed</em>, never <em>how</em> a Nation must structure its governance — respecting the diversity of traditional and contemporary governance systems.</p>
+                <p>Specifies <em>what must be governed</em>, never <em>how</em> a Nation must structure its governance, respecting the diversity of traditional and contemporary governance systems.</p>
                 <ul>
                   <li><strong>Core functions:</strong> classification authority, consent mechanisms across all four domains, exclusive reclassification authority, infrastructure governance, and audit.</li>
                   <li><strong>The partnership spectrum</strong> (after David-Chavez 2024): Consultation → Collaboration → Knowledge Co-production → Indigenous-Determined. T2 agreements should name the level and build in progression toward Indigenous determination.</li>
@@ -300,7 +338,7 @@
               <summary><span class="num">06</span><h3>AI/ML Governance</h3><span class="twirl">▶</span></summary>
               <div class="body">
                 <p class="what">What this part does</p>
-                <p>Draws hard boundaries for machine learning on Indigenous data — the domain where transformation most easily escapes governance.</p>
+                <p>Draws hard boundaries for machine learning on Indigenous data: the domain where transformation most easily escapes governance.</p>
                 <table class="std-table">
                   <thead><tr><th>Tier</th><th>Training</th><th>Inference</th></tr></thead>
                   <tbody>
@@ -311,8 +349,8 @@
                   </tbody>
                 </table>
                 <ul>
-                  <li><strong>Models inherit tiers.</strong> A model trained on T1 data carries T1 restrictions on its deployment and outputs. No T3 data may enter any AI/ML system — including “anonymized” derivatives.</li>
-                  <li><strong>Attempted operations are logged even when denied</strong> (IEEE 2890-2025 custody action <code>denied</code>) for audit.</li>
+                  <li><strong>Models inherit tiers.</strong> A model trained on T1 data carries T1 restrictions on its deployment and outputs. No T3 data may enter any AI/ML system, including “anonymized” derivatives.</li>
+                  <li><strong>Attempted operations are logged even when denied</strong> (recorded as <code>denied</code> in the Standard’s custody vocabulary) for audit.</li>
                   <li><strong>The 5D problem in AI:</strong> T2 agreements involving AI/ML should require Indigenous-determined bias criteria, deficit-framing review, output oversight, and the right to require model modification or termination.</li>
                   <li><strong>The limits of computation:</strong> “Knowledge is embodied. Computation without relation is not knowledge.” AI can process; it cannot be accountable to kin.</li>
                 </ul>
@@ -332,10 +370,10 @@
                     <tr><td>Corporate (&gt;$50M revenue, or data/AI business)</td><td>Contract + IEEE attestation</td><td>IEEE 7000/7001/7003/2890 certifications, designated compliance officer, consent to audit, binding arbitration recognizing Tribal jurisdiction, liquidated damages</td></tr>
                     <tr><td>Academic</td><td>Institutional policy + IRB</td><td>Institution-level (Provost/VPR) acknowledgment that IDSov supersedes university IP policy; publication review rights; Bayh-Dole handling; Tribal IRB primacy</td></tr>
                     <tr><td>Federal / governmental</td><td>Trust responsibility</td><td>EO 13175 consultation documentation, FOIA exemption strategy required in agreements, data return protocol; failures may breach trust responsibility</td></tr>
-                    <tr><td>Small org / NGO (&lt;$5M)</td><td>Relational, resolution-based</td><td>Tribal resolution grants trust; revocable by subsequent resolution without formal legal process — relationships, not contracts, are the primary governance mechanism</td></tr>
+                    <tr><td>Small org / NGO (&lt;$5M)</td><td>Relational, resolution-based</td><td>Tribal resolution grants trust; revocable by subsequent resolution without formal legal process; relationships, not contracts, are the primary governance mechanism</td></tr>
                   </tbody>
                 </table>
-                <p>The jurisdictional argument that resolves the academic IP conflict: Indigenous data originates under Tribal jurisdiction — university IP policies cannot retroactively claim what was never theirs.</p>
+                <p>The jurisdictional argument that resolves the academic IP conflict: Indigenous data originates under Tribal jurisdiction; university IP policies cannot retroactively claim what was never theirs.</p>
               </div>
             </details>
           </div>
@@ -356,7 +394,7 @@
               <summary><span class="num">09</span><h3>Compliance Checklists</h3><span class="twirl">▶</span></summary>
               <div class="body">
                 <p class="what">What this part does</p>
-                <p>Auditable checklists for each alignment: IEEE 2890-2025 (data-actor schema, custody chains, benefit-sharing documentation, denied-operation logging), CARE, OCAP®, Local Contexts, and one checklist per sovereignty domain — so “compliance” means something a reviewer can verify, not a vibe.</p>
+                <p>Auditable checklists for each alignment: IEEE 2890-2025 (data-actor schema, custody chains, benefit-sharing documentation, denied-operation logging), CARE, OCAP®, Local Contexts, and one checklist per sovereignty domain, so “compliance” means something a reviewer can verify, not a vibe.</p>
               </div>
             </details>
           </div>
@@ -388,9 +426,9 @@
         <div class="case-head"><span class="k">Walkthrough 01</span><h3>Infrastructure siting</h3></div>
         <div class="case-body">
           <div class="narr">
-            <p>An agency is evaluating corridors for new transmission lines and asks Tribes to “identify cultural resources and sensitive sites within the study area” — the classic extractive ask. Disclosed locations enter agency records, where public-records law and FOIA can reach them.</p>
+            <p>An agency is evaluating corridors for new transmission lines and asks Tribes to “identify cultural resources and sensitive sites within the study area”; the classic extractive ask. Disclosed locations enter agency records, where public-records law and FOIA can reach them.</p>
             <h4>The TSDF pattern</h4>
-            <p>Site locations, burial grounds, and gathering areas are classified <span class="chip t3">T3</span> and never transmitted. Instead, the Nation runs the corridor screening <em>inside its own systems</em> (compute-at-source) and returns a constraint surface — “avoid these polygons, weighted by concern” — as a <span class="chip t2">T2</span> rendered view under a formal agreement with FOIA-exemption strategy specified. The agency gets exactly what siting requires: where <em>not</em> to build, without ever holding coordinates of why.</p>
+            <p>Site locations, burial grounds, and gathering areas are classified <span class="chip t3">T3</span> and never transmitted. Instead, the Nation runs the corridor screening <em>inside its own systems</em> (compute-at-source) and returns a constraint surface (“avoid these polygons, weighted by concern”) as a <span class="chip t2">T2</span> rendered view under a formal agreement with FOIA-exemption strategy specified. The agency gets exactly what siting requires: where <em>not</em> to build, without ever holding coordinates of why.</p>
           </div>
           <div class="inv">
             <h4>Data inventory</h4>
@@ -409,9 +447,9 @@
         <div class="case-head"><span class="k">Walkthrough 02</span><h3>Policy scanner</h3></div>
         <div class="case-body">
           <div class="narr">
-            <p>A climate program builds a tool that scans federal and state policy documents and generates per-Tribe advocacy briefs. The inputs look harmless — policy text is public — but the <em>configuration</em> is not: each Tribe’s priorities, vulnerabilities, and positions are strategy.</p>
+            <p>A climate program builds a tool that scans federal and state policy documents and generates per-Tribe advocacy briefs. The inputs look harmless (policy text is public) but the <em>configuration</em> is not: each Tribe’s priorities, vulnerabilities, and positions are strategy.</p>
             <h4>The TSDF pattern</h4>
-            <p>Source policy corpus is <span class="chip t0">T0</span> (external public data). Each Tribe’s priority profile is <span class="chip t3">T3</span> or <span class="chip t2">T2</span> — held by the Tribe or under agreement, never pooled. Generated briefs inherit the tier of their most restricted input (<span class="term" data-term="Provenance (Provenance Inheritance)">provenance inheritance</span>): the brief belongs to the Tribe it was generated for, who alone decides whether to release it. And because tier restrictions govern AI/ML, no Tribe’s profile can be used to train models or generate another Tribe’s outputs.</p>
+            <p>Source policy corpus is <span class="chip t0">T0</span> (external public data). Each Tribe’s priority profile is <span class="chip t3">T3</span> or <span class="chip t2">T2</span>, held by the Tribe or under agreement, never pooled. Generated briefs inherit the tier of their most restricted input (<span class="term" data-term="Provenance (Provenance Inheritance)">provenance inheritance</span>): the brief belongs to the Tribe it was generated for, who alone decides whether to release it. And because tier restrictions govern AI/ML, no Tribe’s profile can be used to train models or generate another Tribe’s outputs.</p>
           </div>
           <div class="inv">
             <h4>Data inventory</h4>
@@ -419,7 +457,7 @@
               <tr><td>Federal/state policy documents</td><td><span class="chip t0">T0</span></td></tr>
               <tr><td>Shared scanning methodology &amp; templates</td><td><span class="chip t1">T1</span></td></tr>
               <tr><td>Tribe-specific priority profiles</td><td><span class="chip t3">T3</span></td></tr>
-              <tr><td>Generated advocacy briefs</td><td>inherit — released only by that Tribe’s decision</td></tr>
+              <tr><td>Generated advocacy briefs</td><td>inherit; released only by that Tribe’s decision</td></tr>
             </table>
             <div class="never"><b>Never pooled</b>One Nation’s priorities are never visible to another’s outputs, and never enter model training.</div>
           </div>
@@ -430,9 +468,9 @@
         <div class="case-head"><span class="k">Walkthrough 03</span><h3>Rapid-response information sharing</h3></div>
         <div class="case-body">
           <div class="narr">
-            <p>During flood or wildfire response, Tribes need to share conditions fast — but emergency data is exactly where sensitive information leaks: evacuation routes that reveal site locations, vulnerability maps that identify households.</p>
+            <p>During flood or wildfire response, Tribes need to share conditions fast, but emergency data is exactly where sensitive information leaks: evacuation routes that reveal site locations, vulnerability maps that identify households.</p>
             <h4>The TSDF pattern</h4>
-            <p>A federated <span class="chip t0">T0</span> commons carries public alerts and baseline conditions — each Nation holds a local copy that syncs when connected and persists when the network fails. Real-time gauge readings and condition reports flow as <span class="chip t1">T1</span> among verified network members under standing protocols — no per-incident negotiation when minutes matter. Coordination with FEMA or the state happens through <span class="chip t2">T2</span> views. Household-level vulnerability data stays <span class="chip t3">T3</span>: responders inside the Nation’s systems see it; the network sees only aggregated need.</p>
+            <p>A federated <span class="chip t0">T0</span> commons carries public alerts and baseline conditions; each Nation holds a local copy that syncs when connected and persists when the network fails. Real-time gauge readings and condition reports flow as <span class="chip t1">T1</span> among verified network members under standing protocols; no per-incident negotiation when minutes matter. Coordination with FEMA or the state happens through <span class="chip t2">T2</span> views. Household-level vulnerability data stays <span class="chip t3">T3</span>: responders inside the Nation’s systems see it; the network sees only aggregated need.</p>
           </div>
           <div class="inv">
             <h4>Data inventory</h4>
@@ -442,7 +480,7 @@
               <tr><td>State/FEMA coordination views</td><td><span class="chip t2">T2</span></td></tr>
               <tr><td>Household vulnerability, routes near sites</td><td><span class="chip t3">T3</span></td></tr>
             </table>
-            <div class="never"><b>Standing protocols, not standing exposure</b>T1 means the network is already trusted when the water rises — and T3 means speed never becomes disclosure.</div>
+            <div class="never"><b>Standing protocols, not standing exposure</b>T1 means the network is already trusted when the water rises, and T3 means speed never becomes disclosure.</div>
           </div>
         </div>
       </div>
@@ -454,7 +492,7 @@
         <div class="q" id="dec-q"></div>
         <div class="opts" id="dec-opts"></div>
         <div class="verdict" id="dec-verdict"></div>
-        <p class="note">This tool walks the Standard’s published decision tree. It is guidance, not governance — classification authority rests exclusively with each Nation’s designated governance body. When in doubt: T3.</p>
+        <p class="note">This tool walks the Standard’s published decision tree. It is guidance, not governance; classification authority rests exclusively with each Nation’s designated governance body. When in doubt: T3.</p>
       </div>
 
       <div style="margin-top: 56px">
@@ -483,7 +521,7 @@
   <section class="band">
     <div class="wrap">
       <p class="eyebrow"><span class="tick">///</span>Evidence</p>
-      <h2>Why a tiered standard — and why now</h2>
+      <h2>Why a tiered standard, and why now</h2>
       <p class="section-lede">TSDF is not a preference; it is a response to a documented record. The evidence comes in three parts: the extractive history of asking Nations to disclose what is sensitive, the maturity of Indigenous Data Sovereignty as an operational discipline, and a policy landscape that requires consultation but under-protects what consultation reveals.</p>
 
       <div class="evi-grid">
@@ -497,28 +535,28 @@
           <h3>The framework’s own literature base</h3>
           <div class="evi-stat teal">999&nbsp;→&nbsp;62</div>
           <p>TSDF rests on two systematic reviews: 499 papers screened to 22 sources on IDSov in climate research, and 500 screened to 40 on Indigenous data-governance frameworks.</p>
-          <p class="evi-src">Freeland (2025), ATNI Climate Resilience Committee — <a href="https://github.com/atniclimate/TieredSovereignDataFramework/blob/main/literature/idsov-climate-review.md">review 1</a> · <a href="https://github.com/atniclimate/TieredSovereignDataFramework/blob/main/literature/idsov-governance-review.md">review 2</a></p>
+          <p class="evi-src">Freeland (2025), ATNI Climate Resilience Committee: <a href="https://github.com/atniclimate/TieredSovereignDataFramework/blob/main/literature/idsov-climate-review.md">review 1</a> · <a href="https://github.com/atniclimate/TieredSovereignDataFramework/blob/main/literature/idsov-governance-review.md">review 2</a></p>
         </div>
       </div>
 
       <div id="evi-claims-extraction" style="margin-top: 44px">
         <p class="eyebrow reveal"><span class="tick">///</span>Claim 1 · Documented in peer review</p>
         <h2 class="reveal">Asking Nations to identify what is sensitive has been extractive</h2>
-        <p class="section-lede reveal">Vulnerability assessments, hazard mitigation plans, siting studies, and research projects routinely ask Tribes to disclose culturally sensitive sites, economically vulnerable assets, and TEK — and the record of what happens next is documented.</p>
+        <p class="section-lede reveal">Vulnerability assessments, hazard mitigation plans, siting studies, and research projects routinely ask Tribes to disclose culturally sensitive sites, economically vulnerable assets, and TEK; the record of what happens next is documented.</p>
         <div class="claim-list" id="claims-1"></div>
       </div>
 
       <div id="evi-claims-maturity" style="margin-top: 52px">
         <p class="eyebrow reveal"><span class="tick">///</span>Claim 2 · Documented in peer review</p>
-        <h2 class="reveal">IDSov is now a robust discipline with clear metrics and processes</h2>
-        <p class="section-lede reveal">This is no longer aspirational language. Indigenous Data Sovereignty, network sovereignty, and computational sovereignty have published principles, assessment processes, institutional adoption, and — as of IEEE 2890-2025 — an international standard.</p>
+        <h2 class="reveal">IDSov is now a working discipline with clear metrics and processes</h2>
+        <p class="section-lede reveal">This is no longer aspirational language. Indigenous Data Sovereignty, network sovereignty, and computational sovereignty have published principles, assessment processes, institutional adoption, and, as of IEEE 2890-2025, an international standard.</p>
         <div class="claim-list" id="claims-2"></div>
       </div>
 
       <div id="evi-policy" style="margin-top: 52px">
         <p class="eyebrow reveal"><span class="tick">///</span>The Policy Landscape</p>
         <h2 class="reveal">Consultation is required. Protection is partial.</h2>
-        <p class="section-lede reveal">Federal and state law mandates consultation with Tribal Nations — and those same processes are where sensitive information is asked for. The protections that exist are exemption-by-exemption, not structural. TSDF is designed for exactly this gap.</p>
+        <p class="section-lede reveal">Federal and state law mandates consultation with Tribal Nations, and those same processes are where sensitive information is asked for. The protections that exist are exemption-by-exemption, not structural. TSDF is designed for exactly this gap.</p>
         <h3 style="margin-top: 30px" class="reveal">Federal</h3>
         <div class="policy-acc reveal" id="policy-federal"></div>
         <h3 style="margin-top: 34px" class="reveal">State example: Washington</h3>
@@ -528,7 +566,7 @@
       <div id="evi-convergence" style="margin-top: 52px">
         <p class="eyebrow reveal"><span class="tick">///</span>Convergence Systems Architecture</p>
         <h2 class="reveal">A process exploring convergence</h2>
-        <p class="section-lede reveal">TSDF is one output of a broader theoretical synthesis. In mathematical terms, convergence describes lines that grow closer while never intersecting: different Peoples orient around a shared problem while each retains their identity, methods, and ways of knowing. Applied to sovereignty, the argument is that data, network, digital, and computational sovereignty are <em>indivisible</em> — “sovereignty must extend across all layers or gaps emerge where extraction enters.” Twelve principles guide the architecture:</p>
+        <p class="section-lede reveal">TSDF is one output of a broader theoretical synthesis. In mathematical terms, convergence describes lines that grow closer while never intersecting: different Peoples orient around a shared problem while each retains their identity, methods, and ways of knowing. Applied to sovereignty, the argument is that data, network, digital, and computational sovereignty are <em>indivisible</em>: “sovereignty must extend across all layers or gaps emerge where extraction enters.” Twelve principles guide the architecture:</p>
         <div class="principles reveal">
           <div class="prin"><b>Sovereignty is Indivisible</b><span>Data, network, digital, and computational sovereignty are interdependent. Gaps in any layer create openings for extraction.</span></div>
           <div class="prin"><b>Data is Relational</b><span>Data describes Beings, emerges from relationships, and carries obligations. It is never neutral raw material.</span></div>
@@ -538,14 +576,254 @@
           <div class="prin"><b>Self-Determination, Not Inclusion</b><span>Not access to systems designed elsewhere, but authority to design systems that reflect Indigenous values.</span></div>
           <div class="prin"><b>Knowledge is Embodied</b><span>Wisdom emerges through lived relationship with land, kin, and ceremony. Computation without relation is not knowledge.</span></div>
           <div class="prin"><b>Convergence Without Homogenization</b><span>Different Peoples orient around shared problems while retaining distinct identities, methods, and ways of knowing.</span></div>
-          <div class="prin"><b>Data for Governance, Not Governance of Data</b><span>Data reflecting Indigenous priorities — not comparative statistics serving state administration.</span></div>
+          <div class="prin"><b>Data for Governance, Not Governance of Data</b><span>Data reflecting Indigenous priorities, not comparative statistics serving state administration.</span></div>
           <div class="prin"><b>Living Systems, Not Archives</b><span>Digitization without sovereignty creates museum specimens, not preservation.</span></div>
           <div class="prin"><b>The Question is Balance</b><span>Who benefits? Who decides? Accountable to whom? Technical questions are governance questions.</span></div>
           <div class="prin"><b>No Neutral Ground</b><span>Every system either serves Indigenous self-determination or reproduces colonial logics. Architecture encodes values.</span></div>
         </div>
-        <div class="claim reveal" style="margin-top: 26px">The U.S. National Science Foundation names <strong>Growing Convergence Research</strong> among its ten “Big Ideas,” defining convergence as problem-driven, deep integration across disciplines — the recognized research tradition TSDF’s Convergence Systems Architecture builds on.<span class="src">NSF 10 Big Ideas; solicitation NSF 19-551 — <a href="https://www.nsf.gov/od/oia/ia/growing-convergence-research-nsf">source</a></span></div>
+        <div class="claim reveal" style="margin-top: 26px">The U.S. National Science Foundation names <strong>Growing Convergence Research</strong> among its ten “Big Ideas,” defining convergence as problem-driven, deep integration across disciplines; the recognized research tradition TSDF’s Convergence Systems Architecture builds on.<span class="src">NSF 10 Big Ideas; solicitation NSF 19-551 · <a href="https://www.nsf.gov/od/oia/ia/growing-convergence-research-nsf">source</a></span></div>
         <p style="margin-top: 22px; font-size: 14px; color: var(--ink-faint)">Read the full synthesis: <a href="https://github.com/atniclimate/TieredSovereignDataFramework/blob/main/literature/convergence-architecture.md">Convergence Systems Architecture</a> (Freeland, ATNI).</p>
       </div>
+    </div>
+  </section>
+</div>
+
+<!-- ============================== LITERATURE ============================== -->
+<div class="tab-panel" id="panel-literature">
+  <section class="band">
+    <div class="wrap">
+      <p class="eyebrow"><span class="tick">///</span>The Written Foundations</p>
+      <h2>The literature beneath the framework</h2>
+      <p class="section-lede">TSDF did not begin as a technical specification; it began as a reading of the record. Two systematic reviews establish what the peer-reviewed literature documents, and a theoretical synthesis draws those findings into the architecture the Standard enforces. All three are published in this repository, openly licensed, with their methods stated in full.</p>
+
+      <div class="lit-feature reveal">
+        <span class="k">The Synthesis · Freeland, ATNI</span>
+        <h3>Convergence Systems Architecture: The Relationality of Indigenous, Network, and Digital Sovereignty</h3>
+        <p>Academic and policy language treats Data Sovereignty, Network Sovereignty, and Digital Sovereignty as separate domains; separate conferences, separate funding streams, separate specialists. The synthesis reads the field&rsquo;s central scholars (Dr. Dominique David-Chavez, Dr. Lydia Jennings, Dr. Stephanie Russo Carroll, Dr. Tahu Kukutai, Dr. Maggie Walter, Dr. Marisa Elena Duarte) and finds those distinctions collapsing: data flows through networks, networks depend on infrastructure, and infrastructure enables or constrains digital futures. Govern one layer and not the others, and the gap is where extraction enters.</p>
+        <div class="quoteblock">&ldquo;When different Peoples with different worldviews and Knowledge systems converge, they do not arrive at a single point of agreement but rather orient themselves around a shared problem or purpose. Each retains their identity, their methods, their ways of knowing.&rdquo;<span class="who">Convergence Systems Architecture, on convergence without homogenization</span></div>
+        <div class="pillar-grid">
+          <div class="pillar"><b><span class="rn">I</span>Indigenous Data Sovereignty: the governance layer</b><span>From exclusion to inclusion to sovereignty; Dr. Walter&rsquo;s &ldquo;5D Data&rdquo; critique of deficit statistics; data <em>for</em> governance, not governance <em>of</em> data; CARE as the operational ethics of the whole system.</span></div>
+          <div class="pillar"><b><span class="rn">II</span>Interrelationality: relatives, not resources</b><span>Biophysical data (soil, water, biodiversity) is Indigenous data; the extraction logic of data mining mirrors metal mining; Water Back links the rematriation of waters to the rematriation of data about them.</span></div>
+          <div class="pillar"><b><span class="rn">III</span>Network Sovereignty: the infrastructure layer</b><span>Dr. Duarte&rsquo;s definitive framing: without control of transmission (fiber, towers, spectrum) data governance is &ldquo;assertion without capacity.&rdquo; Infrastructure is territory, and spectrum scarcity is manufactured.</span></div>
+          <div class="pillar"><b><span class="rn">IV</span>Digital Sovereignty: the jurisdictional layer</b><span>Residency is not sovereignty; cloud jurisdiction can override community claims. And AI: language becomes probability, &ldquo;the sacred becomes a coordinate,&rdquo; and computation without relation is not knowledge.</span></div>
+        </div>
+        <p>The synthesis lands in twelve principles, from &ldquo;Sovereignty is Indivisible&rdquo; to &ldquo;No Neutral Ground,&rdquo; that the Standard carries into enforceable requirements: the four sovereignty domains every tier must satisfy, the rule that every non-human actor answers to a responsible human, and the AI/ML boundaries that keep transformation governed. It closes with a sixteen-entry annotated bibliography of the field&rsquo;s foundational texts, from <em>Indigenous Data Sovereignty: Toward an Agenda</em> (2016) to Indigenous AI position papers.</p>
+        <div style="display: flex; gap: 12px; flex-wrap: wrap; margin-top: 6px">
+          <a class="btn btn-primary" href="https://github.com/atniclimate/TieredSovereignDataFramework/blob/main/literature/convergence-architecture.md">Read the full synthesis</a>
+          <a class="btn btn-ghost" href="#evi-convergence" data-goto="evi-convergence">The twelve principles →</a>
+        </div>
+      </div>
+
+      <div class="review-grid">
+        <div class="review-card reveal">
+          <span class="k">Systematic Review 01 · ATNI Climate Resilience Committee, 2025</span>
+          <h3>Indigenous Data Sovereignty in Climate Research</h3>
+          <div class="funnel">499 → 22 <small>papers screened → sources synthesized · 2011&ndash;2025</small></div>
+          <p><strong>The question:</strong> what does the peer-reviewed literature establish about IDSov frameworks for climate and environmental data sharing across jurisdictions and institutions?</p>
+          <p><strong>What the record shows:</strong> the CARE Principles are the most-referenced framework across fire, forestry, water, and climate contexts, and the field is generating its own instruments: the Indigenous Fire Data Sovereignty framework, the WAMPUM adaptation framework for sea level rise, the Piikani Well-being Index, the Four Rs, and Tribally specific protocols such as the Karuk Tribe&rsquo;s Practicing Pikyav. Five themes recur: the collision between open science and sovereignty, colonial legacies in land-management institutions, Indigenous Knowledge as the foundation of adaptation, research fatigue in heavily studied communities, and the consistent call for Indigenous leadership over data governance.</p>
+          <p><strong>Honest limits:</strong> citation-impact data proved scarce across this literature; the review measures influence through policy adoption, framework uptake, and funding instead, and says so plainly.</p>
+          <div class="gave"><b>What it gave the Standard</b>Standing T1 protocols answer research fatigue; T2&rsquo;s public-records exposure requirements answer the confidentiality catch-22; the partnership spectrum (§5) turns &ldquo;collaboration&rdquo; into a measurable scale.</div>
+          <p style="margin: 14px 0 0"><a href="https://github.com/atniclimate/TieredSovereignDataFramework/blob/main/literature/idsov-climate-review.md">Read the review →</a></p>
+        </div>
+        <div class="review-card reveal">
+          <span class="k">Systematic Review 02 · ATNI Climate Resilience Committee, 2025</span>
+          <h3>Indigenous Data Governance Frameworks</h3>
+          <div class="funnel">500 → 40 <small>papers screened → studies synthesized · U.S. Tribes &amp; First Nations</small></div>
+          <p><strong>The question:</strong> what governance frameworks exist for Indigenous-controlled environmental data repositories in partnership with federal, state, or academic institutions?</p>
+          <p><strong>What the record shows:</strong> working governance combines three components. Formal sovereignty standards (CARE, OCAP®, UNDRIP) supply the principles; legal and statutory mandates (Treatment as State, land-claim agreements, environmental statutes) supply the leverage; and community-based review structures (Tribal Research Review Boards, advisory councils) keep decisions about collection, storage, and use accountable to the community. Academic partners appear in 27 of the 40 studies and federal institutions in 18; power-sharing varies widely, and the arrangements that work are the ones where Indigenous authority is formal, resourced, and recognized.</p>
+          <div class="gave"><b>What it gave the Standard</b>The three-component pattern became TSDF&rsquo;s governance model (§5): specify <em>what</em> must be governed, never <em>how</em> a Nation must govern; Tribal research codes recognized as enforceable law; federated governance for InterTribal networks.</div>
+          <p style="margin: 14px 0 0"><a href="https://github.com/atniclimate/TieredSovereignDataFramework/blob/main/literature/idsov-governance-review.md">Read the review →</a></p>
+        </div>
+      </div>
+
+      <div style="margin-top: 52px">
+        <p class="eyebrow reveal"><span class="tick">///</span>From the Record to the Rule</p>
+        <h2 class="reveal">Every mechanism answers a documented finding</h2>
+        <p class="section-lede reveal">The Standard&rsquo;s rules are not preferences. Each one traces to something the literature documents; a few of the load-bearing connections:</p>
+        <table class="std-table reveal" style="margin-top: 26px">
+          <thead><tr><th>What the literature documents</th><th>What the Standard does about it</th></tr></thead>
+          <tbody>
+            <tr><td>87% of climate studies engaged Indigenous communities extractively (David-Chavez &amp; Gavin, 2018)</td><td>The partnership spectrum: T2 agreements name their level and build progression toward Indigenous-determined research</td></tr>
+            <tr><td>The &ldquo;confidentiality catch-22&rdquo;: consultation compels disclosure that public-records law can then reach</td><td>T2 agreements must specify a FOIA-exemption strategy; T3 site data never transmits at all, constraint surfaces travel instead</td></tr>
+            <tr><td>University open-research policies conflict with Tribal data ownership, delaying and derailing partnerships (Wick et al., 2024)</td><td>Institution-level acknowledgment that IDSov supersedes university IP policy, before any data moves</td></tr>
+            <tr><td>Research fatigue: communities pressed by constant, misaligned research demands (Brewer et al., 2023)</td><td>T1 standing reciprocal protocols replace per-project renegotiation among trusted network members</td></tr>
+            <tr><td>Tribal Research Review Boards and research codes operating as working governance (Kuhn et al., 2024)</td><td>Tribal research codes recognized as enforceable law; the primary legal basis of every T2 agreement (§5.3)</td></tr>
+            <tr><td>AI as a new extraction frontier: Indigenous Knowledge scraped into training corpora without consent</td><td>Tier-based AI/ML boundaries; models inherit the tier of their training data; denied operations still logged (§6)</td></tr>
+          </tbody>
+        </table>
+        <div class="verify-note reveal"><b>Method, stated plainly</b>Both systematic reviews used semantic search across more than 138 million academic papers, structured screening criteria, and LLM-assisted data extraction, with every criterion and every extraction instruction published in the review documents themselves. A framework that governs AI use owes its readers the same disclosure about its own methods.</div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ============================== IEEE COMPLIANCE ============================== -->
+<div class="tab-panel" id="panel-compliance">
+  <section class="band">
+    <div class="wrap">
+      <p class="eyebrow"><span class="tick">///</span>Standards Alignment</p>
+      <h2>IEEE compliance, made explicit</h2>
+      <p class="section-lede">TSDF adopts IEEE 2890-2025 as its provenance reference and uses the IEEE 7000-series as partner-qualification infrastructure. This page explains what those standards are, what a system holding Indigenous data must be able to do, and where the boundary sits: IEEE compliance is evidence of technical capacity; it is never a substitute for Indigenous governance approval.</p>
+
+      <div class="first-callout reveal">
+        <div class="big">Nº 1</div>
+        <div>
+          <h3>IEEE 2890-2025 · Recommended Practice for Provenance of Indigenous Peoples&rsquo; Data</h3>
+          <p>The first standard developed for Indigenous Peoples&rsquo; data. Approved and published by the IEEE Standards Association in November 2025, developed as project P2890 with Indigenous leadership at every stage: an Indigenous Caucus, consultation with Indigenous Peoples supported by the Global Indigenous Data Alliance, and open access as a condition of the work. The text is <a href="https://standards.ieee.org/ieee/2890/10318/">available free of charge, with registration, from IEEE</a>.</p>
+        </div>
+      </div>
+
+      <p class="reveal" style="margin-top: 26px; max-width: 80ch; color: var(--ink-soft)">What it answers: the proliferation of unreliable data about Indigenous Peoples; the exclusion of Indigenous Peoples from participation, control, and governance over the circulation of their own data; and the misappropriation and misuse of Indigenous data and information. What it provides: a common set of parameters for describing and recording the provenance of data about or related to Indigenous Peoples and their cultures, lands, and Knowledge systems, recorded so that Indigenous governance, decision-making, participation, collaboration, and engagement are facilitated rather than foreclosed.</p>
+
+      <div style="margin-top: 44px">
+        <p class="eyebrow reveal"><span class="tick">///</span>Functional Walkthrough</p>
+        <h2 class="reveal">Seven questions provenance must answer</h2>
+        <p class="section-lede reveal">Provenance in this setting is more than technical lineage; a lineage graph that records software steps but loses the originating Nation, the governing authority, and the conditions of use is not Indigenous-data provenance. Read functionally, a system holding Indigenous data should be able to answer seven questions at any moment, for any object it holds. Each maps to a mechanism the Standard specifies.</p>
+        <div class="func-steps">
+          <div class="func-step reveal"><span class="n">01</span><div>
+            <h3>Origin: whose data is this?</h3>
+            <p>Which Nation, community, lands, and relations does this data come from, and who supplied that attribution? Multi-Nation, disputed, and deliberately withheld origins must all be representable; a repository or researcher can never be silently substituted as the source.</p>
+            <div class="mech"><b>TSDF</b>Source-Nation attribution required in provenance metadata; strategic invisibility honored, so &ldquo;withheld&rdquo; is itself a valid, sovereign answer.</div>
+          </div></div>
+          <div class="func-step reveal"><span class="n">02</span><div>
+            <h3>Actors: who has touched it?</h3>
+            <p>Every actor that collects, holds, transforms, or discloses the data is identified, and the actors are not only human: devices, applications, algorithms, AI systems, databases, and repositories act on data too.</p>
+            <div class="mech"><b>TSDF</b>Every non-human data actor must have a responsible human identified (§4.5.2); Convergence Principle 5, &ldquo;Human Accountability for Human Artifacts,&rdquo; as an implementation rule.</div>
+          </div></div>
+          <div class="func-step reveal"><span class="n">03</span><div>
+            <h3>Custody: where has it been?</h3>
+            <p>An ordered, timestamped chain of custody: who held it, who received it, under what basis, with hand-offs matched to receipts, so a reviewer can reconstruct the object&rsquo;s history from collection to current state.</p>
+            <div class="mech"><b>TSDF</b>Custody recommended at T0, required at T1/T2, and mandatory with no gaps at T3, where every custody location must be Indigenous-controlled (§3.3.5).</div>
+          </div></div>
+          <div class="func-step reveal"><span class="n">04</span><div>
+            <h3>Authority &amp; consent: under whose decision does it move?</h3>
+            <p>Every authorized use links to the Indigenous authority and consent records that permit it: issuer, scope, purpose, conditions, expiry, and current status. Community authorization and individual consent are distinct records; neither substitutes for the other, and consent can be withdrawn.</p>
+            <div class="mech"><b>TSDF</b>Consent records linked to all non-T0 data; FPIC treated as ongoing and revocable in every T2 agreement (§4.2, §5).</div>
+          </div></div>
+          <div class="func-step reveal"><span class="n">05</span><div>
+            <h3>Transformation: what has been derived?</h3>
+            <p>Subsets, aggregates, maps, embeddings, and models are all derivatives, and obligations must survive the transformation; provenance that stops at the first derivative is an invitation to launder data through processing.</p>
+            <div class="mech"><b>TSDF</b>Provenance inheritance: derivatives carry the source Nation, the enabling relationship or agreement, and inherited constraints; uses beyond the original scope require renegotiation (§3.3).</div>
+          </div></div>
+          <div class="func-step reveal"><span class="n">06</span><div>
+            <h3>AI operations: has it entered a model?</h3>
+            <p>Whether governed data was embedded, trained on, or used in inference must be answerable, and refusals leave records too: an attempted operation that was denied is still an event in the data&rsquo;s history.</p>
+            <div class="mech"><b>TSDF</b>AI/ML custody events logged in the Standard&rsquo;s vocabulary (<code>embedded</code>, <code>trained_on</code>, <code>inference_used</code>, <code>denied</code>), with denied attempts logged even where the operation is prohibited (§4.5.4).</div>
+          </div></div>
+          <div class="func-step reveal"><span class="n">07</span><div>
+            <h3>Benefit: what was promised, and what was delivered?</h3>
+            <p>Benefit-sharing commitments are provenance, not marketing: the types of benefit, the recipient communities, what has been delivered with verification, and what remains pending with expected dates.</p>
+            <div class="mech"><b>TSDF</b>Benefit tracking required in every T2 agreement: types, recipients, delivered, and pending (§4.5.5); collective benefit as an auditable record.</div>
+          </div></div>
+        </div>
+
+        <h3 class="reveal" style="margin-top: 40px">The TSDF provenance profile, tier by tier</h3>
+        <p class="reveal" style="color: var(--ink-soft); max-width: 76ch">The Standard turns those obligations into per-tier requirements. This table is TSDF&rsquo;s own implementation profile, designed to support IEEE 2890-2025:</p>
+        <table class="std-table reveal">
+          <thead><tr><th>Tier</th><th>Provenance visibility</th><th>Chain of custody</th><th>AI/ML logging</th><th>Benefit sharing</th></tr></thead>
+          <tbody>
+            <tr><td><span class="chip t0">T0</span></td><td>Public</td><td>Recommended</td><td>Optional</td><td>Not applicable</td></tr>
+            <tr><td><span class="chip t1">T1</span></td><td>Network members</td><td>Required</td><td>Required</td><td>Network-determined</td></tr>
+            <tr><td><span class="chip t2">T2</span></td><td>Agreement parties</td><td>Required, no gaps</td><td>Required</td><td>Required in agreement</td></tr>
+            <tr><td><span class="chip t3">T3</span></td><td>Sovereign authority only</td><td>Mandatory, no gaps; all locations Indigenous-controlled</td><td>Required even when the operation is denied</td><td>Not applicable</td></tr>
+          </tbody>
+        </table>
+        <div class="verify-note reveal"><b>A note on the word &ldquo;compliance&rdquo;</b>TSDF is designed to support an IEEE 2890-2025 implementation; clause-level conformance has not yet been verified against the published text, and the profile above is TSDF&rsquo;s own construction. The authoritative text is the IEEE publication itself, free with registration; implementers should verify against it rather than against this summary. As the verification work completes, this page will carry the clause mapping.</div>
+      </div>
+
+      <div style="margin-top: 52px">
+        <p class="eyebrow reveal"><span class="tick">///</span>Responsible Design</p>
+        <h2 class="reveal">The 7000-series as partner qualification</h2>
+        <p class="section-lede reveal">TSDF does not ask partners to be virtuous; it asks them to show their work. For corporate partners, who carry the highest extraction risk, documented responsible-design practice is a prerequisite of T2 access, written into agreements as material terms whose breach carries consequences (§7.3).</p>
+        <table class="std-table reveal" style="margin-top: 26px">
+          <thead><tr><th>Standard</th><th>Subject</th><th>What TSDF asks partners to evidence</th><th>Applies to</th></tr></thead>
+          <tbody>
+            <tr><td><b>IEEE 7000-2021</b></td><td>Model process for addressing ethical concerns during system design</td><td>Documented value-based engineering that identified Indigenous data sovereignty as a core value, with engagement with the Indigenous governing authority: value registers, risk registers, requirements traceable to values</td><td>Corporate: required</td></tr>
+            <tr><td><b>IEEE 7001-2021</b></td><td>Transparency of autonomous systems</td><td>Transparency documentation for any autonomous or semi-autonomous system, with explainability documentation available on request; transparency scoped so it never discloses T3 data or culturally restricted rationale</td><td>Corporate: required</td></tr>
+            <tr><td><b>IEEE 7002</b></td><td>Data privacy process</td><td>Privacy engineering across the data lifecycle wherever Tribal data can identify persons, households, or places; individual de-identification alone does not resolve collective, territorial, or cultural harms</td><td>Any partner handling personal data</td></tr>
+            <tr><td><b>IEEE 7003-2024</b></td><td>Algorithmic bias considerations</td><td>Bias assessment for AI/ML systems processing Indigenous data, audited specifically for deficit-framing (&ldquo;5D&rdquo;) patterns against criteria the Indigenous partner determines</td><td>Corporate: required · Academic: supplementary</td></tr>
+            <tr><td><b>Generative-AI standards work</b></td><td>IEEE&rsquo;s emerging generative-AI security and governance projects</td><td>Controls for prompt and retrieval leakage, provider retention and training settings, and output disclosure; conduct TSDF requires regardless of which standard finally names it</td><td>Any partner using generative AI</td></tr>
+          </tbody>
+        </table>
+        <div class="callout-t3 reveal" style="margin-top: 30px">
+          <div class="mark">§</div>
+          <div>
+            <h3>The critical distinction</h3>
+            <p>IEEE standards address technical ethics and provenance; TSDF addresses Sovereignty. A partner&rsquo;s IEEE documentation is evidence of technical capacity and seriousness. It does not grant authority, cure missing consent, override Tribal law, or substitute for the approval of an Indigenous governing body. Nothing certifies a partner into a relationship.</p>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top: 52px">
+        <p class="eyebrow reveal"><span class="tick">///</span>AI &amp; LLM Usage Along the Tiers</p>
+        <h2 class="reveal">Where machine learning may touch the data, and where it may never</h2>
+        <p class="section-lede reveal">Transformation is the domain where governance most easily escapes; a model trained on data can outlive every agreement about the data. The Standard draws the boundaries by tier and makes them travel with the models themselves.</p>
+        <table class="std-table reveal" style="margin-top: 26px">
+          <thead><tr><th>Tier</th><th>Training</th><th>Inference</th><th>In practice</th></tr></thead>
+          <tbody>
+            <tr><td><span class="chip t0">T0</span></td><td>Permitted under the release terms</td><td>Permitted under the release terms</td><td>Release is an affirmative sovereign act, and the release decision with its license and label terms defines what &ldquo;public&rdquo; authorizes, including AI use. Public availability alone is never the authorization; the sovereign release is.</td></tr>
+            <tr><td><span class="chip t1">T1</span></td><td>Network approval required</td><td>Network scope only</td><td>Models, embeddings, and outputs inherit T1 and remain under network governance; no submission of T1 material to public model APIs.</td></tr>
+            <tr><td><span class="chip t2">T2</span></td><td>Per agreement only</td><td>Per agreement only</td><td>Agreements must name the AI use specifically (a generic &ldquo;analysis&rdquo; clause is not consent to train), specify compute location, and preserve the right to require model modification or termination.</td></tr>
+            <tr><td><span class="chip t3">T3</span></td><td><strong>Prohibited</strong></td><td><strong>Prohibited</strong></td><td>No T3 data may enter any external AI system, including &ldquo;anonymized&rdquo; derivatives; computational processing of any kind occurs only within on-Nation infrastructure, and even denied attempts are logged for audit.</td></tr>
+          </tbody>
+        </table>
+        <ul class="reveal" style="margin-top: 22px; padding-left: 20px; color: var(--ink-soft); font-size: 15.5px; max-width: 82ch">
+          <li style="margin-bottom: 8px"><strong>Models inherit tiers.</strong> A model trained on T1 data is a T1 artifact; its deployment, outputs, embeddings, and checkpoints carry the restriction, and model provenance documents every Indigenous data source.</li>
+          <li style="margin-bottom: 8px"><strong>Refusal leaves a record.</strong> Attempted operations are logged even when denied, so audit can see not only what happened but what was attempted.</li>
+          <li style="margin-bottom: 8px"><strong>The 5D problem rides into AI.</strong> Systems trained on colonial statistics reproduce deficit framing; T2 agreements involving AI/ML should require Indigenous-determined bias criteria, deficit-framing review, and output oversight (§6.3).</li>
+          <li><strong>Generative caution.</strong> Web-trained LLMs may already hold Indigenous Knowledge harvested without consent; inference involving Indigenous contexts requires review, and generated content derived from Indigenous data carries provenance markers naming it as AI-generated (§6.4).</li>
+        </ul>
+        <div class="quoteblock reveal">&ldquo;Knowledge is Embodied. Wisdom emerges through lived relationship with land, kin, and ceremony. Computation without relation is not knowledge.&rdquo;<span class="who">TSDF Standard §6.5, carried in from the Convergence Systems Architecture</span></div>
+        <p class="reveal" style="color: var(--ink-soft); max-width: 76ch">AI systems can process information, identify patterns, and generate predictions. They cannot know in the relational sense Indigenous epistemologies recognize; they cannot be accountable to kin. That limit informs every boundary above.</p>
+      </div>
+
+      <div style="margin-top: 52px">
+        <p class="eyebrow reveal"><span class="tick">///</span>Auditable, Not Aspirational</p>
+        <h2 class="reveal">Compliance means something a reviewer can verify</h2>
+        <p class="section-lede reveal">Section 9 of the Standard carries checklists for provenance, CARE, OCAP®, Local Contexts, and each sovereignty domain, so a claim of alignment can be examined item by item rather than taken on faith. And the next layer is already in development: <a href="#geopackage" data-goto="geopackage">ATNI-GeoPackager</a> builds these requirements into the data artifact itself.</p>
+        <p class="reveal"><a class="btn btn-primary" href="https://github.com/atniclimate/TieredSovereignDataFramework/blob/main/standard/TSDF-Standard-v0.94.md">Read the Standard&rsquo;s compliance checklists</a></p>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ============================== ATNI-GEOPACKAGE ============================== -->
+<div class="tab-panel" id="panel-geopackage">
+  <section class="band">
+    <div class="wrap">
+      <p class="eyebrow"><span class="tick">///</span>From Standard to Artifact · In Development</p>
+      <h2>ATNI-GeoPackager: governance that travels with the file</h2>
+      <p class="section-lede">A standard is only as strong as the artifacts that carry it. ATNI-GeoPackager is a data wrapper in development at ATNI: an exchange profile and enforcement envelope around the open OGC GeoPackage format that embeds TSDF classification, provenance designed to support IEEE 2890-2025, and an append-only audit record inside the file itself. When the data moves, its governance moves with it.</p>
+
+      <h3 class="reveal" style="margin-top: 36px">Why a wrapper</h3>
+      <p class="reveal" style="max-width: 80ch; color: var(--ink-soft)">Most geospatial data leaves home as bare files (a shapefile, a CSV, a GeoTIFF) while its governance lives somewhere else: an email thread, an agreement PDF, a colleague&rsquo;s memory. Downstream tools strip metadata, derivatives lose their origins, and by the third hand-off nobody can answer the questions that matter. Whose data is this? Under what authority does it move? What may be done with it, and what may never be? ATNI-GeoPackager answers by making the artifact itself carry the record; classification, provenance, and audit ride inside the container, in the format&rsquo;s own standard metadata mechanism.</p>
+
+      <h3 class="reveal" style="margin-top: 30px">Built on open ground</h3>
+      <p class="reveal" style="max-width: 80ch; color: var(--ink-soft)">The wrapper extends the OGC GeoPackage standard: a SQLite-based container readable by QGIS, ArcGIS, GDAL, and nearly every modern GIS. Choosing an open format is itself a sovereignty decision; an artifact only one vendor can read is a dependency, not an asset. A Nation&rsquo;s data staff can open the packages it produces with the tools they already use, and the sovereignty layer rides in the standard&rsquo;s own metadata tables rather than a proprietary annex.</p>
+
+      <p class="eyebrow reveal" style="margin-top: 44px"><span class="tick">///</span>Anatomy</p>
+      <h2 class="reveal">What the wrapper adds</h2>
+      <div class="anatomy">
+        <div class="anat-card reveal"><h3>Classification that travels</h3><p>Every layer carries a TSDF tag (tier, framework version, who classified it, and the basis for the classification) in standard GeoPackage metadata tables. The whole artifact carries a roll-up tag equal to the most restrictive tier present; the roll-up may raise the effective tier and may never lower it. The Standard&rsquo;s asymmetric-harm rule, expressed as schema.</p></div>
+        <div class="anat-card reveal"><h3>Provenance built for IEEE 2890-2025</h3><p>Source attribution, content hashes, and derivation records ride with the artifact, structured to support the provenance parameters the Standard adopts; AI/ML operations are logged in the Standard&rsquo;s custody vocabulary, including operations that were attempted and <code>denied</code>.</p></div>
+        <div class="anat-card reveal"><h3>An audit trail that cannot be quietly edited</h3><p>Access and custody events append to a ledger inside the artifact, enforced by database triggers: updates and deletes abort. Mechanism, not convention. The record of who did what is architectural, and corrections append rather than erase.</p></div>
+        <div class="anat-card reveal"><h3>Ceremony before egress</h3><p>No export leaves a governed node without passing a sovereign authorization seam, and the authorization record is written into the audit trail, where a verifier asserts its presence; an export path that skips the seam fails loudly. T3 is refused unconditionally. No code path exports sovereign data.</p></div>
+        <div class="anat-card reveal"><h3>Architectural guarantees for T3</h3><p>Sovereign-tier data is encrypted at rest, with keys under the Nation&rsquo;s control; external access is made technically impossible rather than policy-prohibited, which is exactly what the Standard requires of T3 (§3). Encryption protects confidentiality; the ledger and manifests protect integrity; the two are distinct guarantees, deliberately.</p></div>
+        <div class="anat-card reveal"><h3>Zero-source-disclosure products</h3><p>When a derived product is shared (a constraint surface for a siting agency, for instance), the export pipeline re-opens its own output and refuses release unless it contains only the product: whitelisted fields, the geometries that were drawn, and nothing that republishes a source feature. The guarantee is a verifier, not a promise.</p></div>
+        <div class="anat-card reveal"><h3>Honest sidecars for legacy formats</h3><p>Formats without an in-band metadata channel (a shapefile, for instance) receive a <code>.tsdf.json</code> sidecar carrying tier and provenance for human readers; the ledger remains the authoritative record. A format&rsquo;s weakness is documented, never papered over.</p></div>
+        <div class="anat-card reveal"><h3>Tamper evidence, stated plainly</h3><p>Hashes and manifests make alteration detectable; they do not make it impossible. The wrapper&rsquo;s integrity claims are verifiable evidence for the relationships and agreements that govern the exchange, not a substitute for them.</p></div>
+      </div>
+
+      <div class="callout-t3 reveal" style="margin-top: 36px">
+        <div class="mark">≠</div>
+        <div>
+          <h3>What a wrapper cannot do</h3>
+          <p>A tier tag does not enforce itself on someone else&rsquo;s laptop. Once bytes leave governed infrastructure, markings are only as strong as the agreements and relationships behind them. That is why the Standard&rsquo;s window architecture prefers rendered views and compute-at-source over copies; why T3 never crosses an external boundary in any format; and why the wrapper&rsquo;s job is to make governance legible, auditable, and provable. Within governed infrastructure the guarantees are mechanical. Beyond it, they are evidence.</p>
+        </div>
+      </div>
+
+      <h3 class="reveal" style="margin-top: 40px">Status</h3>
+      <p class="reveal" style="max-width: 80ch; color: var(--ink-soft)">ATNI-GeoPackager is working software in active development at ATNI, maturing alongside the Standard&rsquo;s v0.9 series as part of a broader sovereign geospatial platform. The sovereign ceremony process and clause-level IEEE 2890-2025 verification are the current front of the work, and design details will continue to be refined with the Nations the tooling serves. Conformance language here follows the same honesty rule as the rest of this site: designed to support IEEE 2890-2025, with verification underway. Questions and interest: <a href="mailto:climate@atniTribes.org">climate@atniTribes.org</a>.</p>
     </div>
   </section>
 </div>
@@ -556,18 +834,18 @@
     <div class="wrap">
       <p class="eyebrow"><span class="tick">///</span>Use &amp; Adapt</p>
       <h2>Openly licensed, deliberately conditioned</h2>
-      <p class="section-lede">Everything in this repository is released under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)</a>. The conditions are not fine print — they are the license doing sovereignty work.</p>
+      <p class="section-lede">Everything in this repository is released under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)</a>. The conditions are not fine print; they are the license doing sovereignty work.</p>
 
       <div class="license-grid">
         <div class="lic-card ok">
           <span class="lic-k">YOU MAY</span>
           <h3>Share &amp; adapt</h3>
-          <p>Copy and redistribute in any medium or format. Remix, transform, and build upon the material — adopt the tiers whole, or adapt components into your Nation’s or institution’s own governance documents.</p>
+          <p>Copy and redistribute in any medium or format. Remix, transform, and build upon the material: adopt the tiers whole, or adapt components into your Nation’s or institution’s own governance documents.</p>
         </div>
         <div class="lic-card cond">
           <span class="lic-k">PROVIDED THAT</span>
           <h3>Attribution &amp; ShareAlike</h3>
-          <p>Credit ATNI and the author, link the license, note changes — and release anything you build on it under the same license, so downstream versions stay open on the same terms.</p>
+          <p>Credit ATNI and the author, link the license, note changes, and release anything you build on it under the same license, so downstream versions stay open on the same terms.</p>
         </div>
         <div class="lic-card no">
           <span class="lic-k">YOU MAY NOT</span>
@@ -597,14 +875,14 @@
           <span class="n">02</span>
           <div>
             <h3>Research partners</h3>
-            <p>Recognize the Standard as authoritative for partner Nations · incorporate tiers into IRB protocols and data-management plans · obtain institution-level acknowledgment that IDSov supersedes university IP policy · implement IEEE 2890-2025 provenance · return or destroy data per agreement.</p>
+            <p>Recognize the Standard as authoritative for partner Nations · incorporate tiers into IRB protocols and data-management plans · obtain institution-level acknowledgment that IDSov supersedes university IP policy · implement IEEE 2890-2025-aligned provenance · return or destroy data per agreement.</p>
           </div>
         </div>
         <div class="adopt-step reveal">
           <span class="n">03</span>
           <div>
             <h3>Technology providers</h3>
-            <p>Implement tier-based access control in architecture · support rendered views and compute-at-source · audit logging per IEEE 2890-2025 · Local Contexts Labels in metadata schemas · Indigenous-controlled encryption keys for T2/T3 · explicit approval before any AI/ML use.</p>
+            <p>Implement tier-based access control in architecture · support rendered views and compute-at-source · audit logging aligned with IEEE 2890-2025 · community-authorized Local Contexts Labels in metadata schemas · Indigenous-controlled encryption keys for T2/T3 · explicit approval before any AI/ML use.</p>
           </div>
         </div>
         <div class="adopt-step reveal">
@@ -627,7 +905,7 @@
       <p class="reveal">Pre-release, v0.9 series. Comment and proposed amendments are welcomed at <a href="mailto:climate@atniTribes.org">climate@atniTribes.org</a>. An official 1.0 release will not occur without full authorization by resolution of the Affiliated Tribes of Northwest Indians.</p>
       <div class="cite-block reveal">@misc{freeland2025tsdf,
   author    = {Freeland, Patrick A.},
-  title     = {Tiered Sovereignty Data Framework:
+  title     = {Tiered Sovereign Data Framework:
                Indigenous Data Sovereignty Standard},
   year      = {2025},
   publisher = {Affiliated Tribes of Northwest Indians},
@@ -637,7 +915,7 @@
 }</div>
 
       <h2 style="margin-top: 56px" class="reveal">Related work</h2>
-      <p class="reveal">This repository is <strong>Part 1: the governance standard</strong>. A companion technical specification — the <em>Federated Indigenous Data Protocol</em> — provides implementation details for federated data infrastructure, licensed separately under Apache 2.0.</p>
+      <p class="reveal">This repository is <strong>Part 1: the governance standard</strong>. A companion technical specification, the <em>Federated Indigenous Data Protocol</em>, provides implementation details for federated data infrastructure, licensed separately under Apache 2.0.</p>
       <p class="reveal" style="font-size: 14.5px; color: var(--ink-soft)">Related frameworks: <a href="https://www.gida-global.org/care">CARE Principles</a> · <a href="https://fnigc.ca/ocap-training/">OCAP® (FNIGC)</a> · <a href="https://localcontexts.org/">Local Contexts</a> · <a href="https://www.un.org/development/desa/indigenouspeoples/declaration-on-the-rights-of-indigenous-peoples.html">UNDRIP</a> · <a href="https://standards.ieee.org/ieee/2890/10318/">IEEE 2890-2025</a></p>
     </div>
   </section>
@@ -648,15 +926,21 @@
 <footer class="site-foot">
   <div class="wrap">
     <div>
-      <h4>Tiered Sovereignty Data Framework</h4>
+      <h4>Tiered Sovereign Data Framework</h4>
       <p style="max-width: 40ch">An Indigenous Data Sovereignty standard by Patrick A. Freeland, Affiliated Tribes of Northwest Indians. CC BY-NC-SA 4.0.</p>
+    </div>
+    <div>
+      <h4>On This Site</h4>
+      <a href="#literature" data-goto="literature">Literature</a>
+      <a href="#compliance" data-goto="compliance">IEEE Compliance</a>
+      <a href="#geopackage" data-goto="geopackage">ATNI-GeoPackager</a>
     </div>
     <div>
       <h4>Repository</h4>
       <a href="https://github.com/atniclimate/TieredSovereignDataFramework">GitHub</a>
       <a href="https://github.com/atniclimate/TieredSovereignDataFramework/blob/main/standard/TSDF-Standard-v0.94.md">Standard (full text)</a>
       <a href="https://github.com/atniclimate/TieredSovereignDataFramework/blob/main/standard/tier-decision-guide.md">Tier Decision Guide</a>
-      <a href="https://github.com/atniclimate/TieredSovereignDataFramework/tree/main/literature">Literature</a>
+      <a href="https://github.com/atniclimate/TieredSovereignDataFramework/tree/main/literature">Literature (source)</a>
     </div>
     <div>
       <h4>Contact</h4>

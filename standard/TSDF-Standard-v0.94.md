@@ -34,7 +34,7 @@ The framework evolution should reflect Indigenous community priorities.
 
 ### Suggested Citation
 
-Freeland, P. A. (2025). Tiered Sovereignty Data Framework: Indigenous Data Sovereignty Standard, Version 0.9.2. Affiliated Tribes of Northwest Indians. Licensed under CC-BY-NC-SA 4.0.
+Freeland, P. A. (2025). Tiered Sovereign Data Framework: Indigenous Data Sovereignty Standard, Version 0.9.2. Affiliated Tribes of Northwest Indians. Licensed under CC-BY-NC-SA 4.0.
 
 ---
 
@@ -133,7 +133,7 @@ Applied to Sovereignty: **gaps in any layer create openings for extraction.**
 - Digital sovereignty without computational sovereignty means Tribally-controlled storage feeds algorithms that transform data beyond governance reach.
 - Computational sovereignty without data sovereignty means processing authority over information that was never rightfully collected.
 
-**True sovereignty requires governance authority across all four domains.** The Tiered Sovereignty Data Framework provides the classification and governance layer (Data Sovereignty) while recognizing that implementation requires attention to infrastructure (Network), services and access (Digital), and processing (Computational).
+**True sovereignty requires governance authority across all four domains.** The Tiered Sovereign Data Framework provides the classification and governance layer (Data Sovereignty) while recognizing that implementation requires attention to infrastructure (Network), services and access (Digital), and processing (Computational).
 
 ### 2.4.3 Sharing as Relation, Not Extraction
 

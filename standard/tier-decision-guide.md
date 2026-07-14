@@ -1,6 +1,6 @@
 # TSDF Tier Classification Decision Guide
 
-Practical guidance for classifying Indigenous data using the Tiered Sovereignty Data Framework.
+Practical guidance for classifying Indigenous data using the Tiered Sovereign Data Framework.
 
 **Version:** 0.9.0
 **Author:** Patrick A. Freeland

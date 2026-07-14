@@ -1,7 +1,7 @@
-# Tiered Sovereignty Data Framework: Indigenous Data Sovereignty Standard
+# Tiered Sovereign Data Framework: Indigenous Data Sovereignty Standard
 
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
-[![Version](https://img.shields.io/badge/version-0.9.0-blue.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-0.9.4-blue.svg)](CHANGELOG.md)
 
 > **🌐 Interactive site:** [atniclimate.github.io/TieredSovereignDataFramework](https://atniclimate.github.io/TieredSovereignDataFramework/) — explore the four tiers, walk the classification decision tree, and see the framework applied to real project patterns.
 
@@ -15,9 +15,9 @@ A comprehensive framework for Indigenous data classification and governance that
 
 Sovereignty is not bestowed, it is inherent.
 
-First, we recongnize ourselves as human beings, with both rights and responsibilities; even moreso we recognize our place within the lands and waters, and all beings who live within them, as sovereigns as well. A tiered system is never meant to represent hierarchy, rather a heightned responsibility of care for information as it is transformed into the world of ones and zeroes, in this sense, the escalating tiers are centered moreso than elevated.
+First, we recognize ourselves as human beings, with both rights and responsibilities; even moreso we recognize our place within the lands and waters, and all beings who live within them, as sovereigns as well. A tiered system is never meant to represent hierarchy, rather a heightened responsibility of care for information as it is transformed into the world of ones and zeroes, in this sense, the escalating tiers are centered moreso than elevated.
 
-The Tiered Sovereignty Data Framework (TSDF) provides Indigenous Nations with a clear, enforceable mechanism for data governance in digital spaces. It translates foundational Indigenous data sovereignty principles into practical, actionable classifications for software and computational infrastructure. It is not meant to replace any Sovereign framework(s) or cultural ways-of-knowing, rather it is intended for consideration and utilization within development environments to ensure governance compliance, secure sharing and transmission of digital data. 
+The Tiered Sovereign Data Framework (TSDF) provides Indigenous Nations with a clear, enforceable mechanism for data governance in digital spaces. It translates foundational Indigenous data sovereignty principles into practical, actionable classifications for software and computational infrastructure. It is not meant to replace any Sovereign framework(s) or cultural ways-of-knowing, rather it is intended for consideration and utilization within development environments to ensure governance compliance, secure sharing and transmission of digital data. 
 
 ### The Four Tiers
 
@@ -45,7 +45,7 @@ TieredSovereignDataFramework/
 ├── CITATION.cff                        # Academic citation metadata
 ├── CHANGELOG.md                        # Version history
 ├── standard/
-│   ├── TSDF-Standard-v0.9.md           # Full standard document
+│   ├── TSDF-Standard-v0.94.md           # Full standard document
 │   └── tier-decision-guide.md          # Classification decision guide
 └── literature/
     ├── idsov-climate-review.md         # Systematic review: IDS in climate research
@@ -59,7 +59,7 @@ TieredSovereignDataFramework/
 
 ### For Indigenous Nations
 
-1. **Review the Standard**: Read `standard/TSDF-Standard-v0.9.md` for the complete framework
+1. **Review the Standard**: Read `standard/TSDF-Standard-v0.94.md` for the complete framework
 2. **Use the Decision Guide**: Apply `standard/tier-decision-guide.md` for classification decisions
 3. **Default to T3**: When classification is uncertain, protect first
 4. **Adapt as needed**: This framework supports your existing governance structures
@@ -95,7 +95,7 @@ TieredSovereignDataFramework/
 | **CARE Principles** | Collective Benefit, Authority, Responsibility, Ethics operationalized through tiers |
 | **OCAP Principles** | Ownership, Control, Access, Possession enforced by classification |
 | **UNDRIP Article 31** | Cultural heritage protection through T3 architectural guarantees |
-| **IEEE P2890-2025** | IEEE Recommended Practice for Provenance of Indigenous Peoples' Data |
+| **IEEE 2890-2025** | IEEE Recommended Practice for Provenance of Indigenous Peoples' Data |
 | **Local Contexts Traditional Knowledge Labels** | TK/BC Labels integrate within any tier |
 
 ### AI/ML Restrictions
@@ -145,7 +145,7 @@ If you use this framework in research or policy development, please cite:
 ```bibtex
 @misc{freeland2025tsdf,
   author = {Freeland, Patrick A.},
-  title = {Tiered Sovereignty Data Framework: Indigenous Data Sovereignty Standard},
+  title = {Tiered Sovereign Data Framework: Indigenous Data Sovereignty Standard},
   year = {2025},
   version = {0.9.4},
   publisher = {Affiliated Tribes of Northwest Indians},
@@ -173,7 +173,7 @@ This work is licensed under the [Creative Commons Attribution-NonCommercial-Shar
 
 ### Indigenous Governance Notice
 
-While this document is openly licensed, implementations of this framework that govern Indigenous community data should be developed **in partnership with those communities** and in accordance with applicable Indigenous data governance and provenence principles and standards (CARE, OCAP, IEEE-P2890-2025, community-specific protocols).
+While this document is openly licensed, implementations of this framework that govern Indigenous community data should be developed **in partnership with those communities** and in accordance with applicable Indigenous data governance and provenence principles and standards (CARE, OCAP, IEEE 2890-2025, community-specific protocols).
 
 ---
 
@@ -190,5 +190,5 @@ This framework builds upon decades of Indigenous data sovereignty scholarship an
 
 **Author:** Patrick A. Freeland
 **Organization:** Affiliated Tribes of Northwest Indians
-**Version:** 0.9.0
+**Version:** 0.9.4
 **License:** CC BY-NC-SA 4.0

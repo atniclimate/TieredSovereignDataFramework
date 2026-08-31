@@ -1,6 +1,6 @@
 # TSDF Indigenous Data Sovereignty Standard
 
-**Version:** 0.9.5
+**Version:** 0.9.6
 **Revised:** 2026-07-14
 **Author:** Patrick A. Freeland
 **Organization:** Affiliated Tribes of Northwest Indians
@@ -26,7 +26,7 @@ Full license text: https://creativecommons.org/licenses/by-nc-sa/4.0/
 
 ### Indigenous Governance Notice
 
-The *Tiered Sovereign Data Framework (TSDF)* is currently pre-release (v0.9.5). Additional comment and feedback is being sought to improve depth and incorporate broadly current standards and guidance for work with Indigenous data ecosystems. An official 1.0 release will not occur without full authorization by resolution of the Affiliated Tribes of Northwest Indians.
+The *Tiered Sovereign Data Framework (TSDF)* is currently pre-release (v0.9.6). Additional comment and feedback is being sought to improve depth and incorporate broadly current standards and guidance for work with Indigenous data ecosystems. An official 1.0 release will not occur without full authorization by resolution of the Affiliated Tribes of Northwest Indians.
 
 While this document is openly licensed, implementations of this framework that govern Indigenous community data must be developed in partnership with those communities and in accordance with applicable Indigenous data governance principles (CARE, OCAP, community-specific protocols).
 
@@ -35,7 +35,7 @@ The framework evolution should reflect Indigenous community priorities.
 
 ### Suggested Citation
 
-Freeland, P. A. (2025). Tiered Sovereign Data Framework: Indigenous Data Sovereignty Standard, Version 0.9.5. Affiliated Tribes of Northwest Indians. Licensed under CC-BY-NC-SA 4.0.
+Freeland, P. A. (2025). Tiered Sovereign Data Framework: Indigenous Data Sovereignty Standard, Version 0.9.6. Affiliated Tribes of Northwest Indians. Licensed under CC-BY-NC-SA 4.0.
 
 ---
 

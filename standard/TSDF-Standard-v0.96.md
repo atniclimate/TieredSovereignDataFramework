@@ -1,11 +1,11 @@
-# TSDF Indigenous Data Sovereignty Standard
+# Tiered Sovereign Data Framework
 
 **Version:** 0.9.6
 **Revised:** 2026-07-14
 **Author:** Patrick A. Freeland
 **Organization:** Affiliated Tribes of Northwest Indians
 **License:** CC-BY-NC-SA 4.0
-**Effective Date:** 2025
+**Effective Date:** 2025-09-15
 
 ---
 

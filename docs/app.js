@@ -246,6 +246,39 @@
     if (go) { location.hash = go.dataset.goto; }
   });
 
+  var navToggle = document.querySelector(".nav-toggle");
+  var siteNav = document.getElementById("site-nav");
+
+  function closeNav() {
+    if (!navToggle || !siteNav) return;
+    navToggle.setAttribute("aria-expanded", "false");
+    siteNav.classList.remove("open");
+  }
+
+  function openNav() {
+    if (!navToggle || !siteNav) return;
+    navToggle.setAttribute("aria-expanded", "true");
+    siteNav.classList.add("open");
+  }
+
+  if (navToggle && siteNav) {
+    navToggle.addEventListener("click", function () {
+      if (siteNav.classList.contains("open")) { closeNav(); } else { openNav(); }
+    });
+    siteNav.addEventListener("click", function (e) {
+      if (e.target.closest("a")) { closeNav(); }
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") { closeNav(); }
+    });
+    document.addEventListener("click", function (e) {
+      if (!e.target.closest(".site-head")) { closeNav(); }
+    });
+    window.addEventListener("resize", function () {
+      if (window.innerWidth > 1120) { closeNav(); }
+    });
+  }
+
   /* ================= BASIN VISUALIZATION ================= */
   function seededRand(seed) {
     var s = seed;
@@ -429,6 +462,12 @@
     }
   }
 
+  function wireTierCards() {
+    document.querySelectorAll(".tier-card").forEach(function (c) {
+      c.addEventListener("click", function () { selectTier(c.dataset.tier, true); });
+    });
+  }
+
   /* ================= GLOSSARY ================= */
   function buildGlossary() {
     var grid = document.getElementById("glossary-grid");
@@ -449,12 +488,18 @@
     pop.classList.add("show");
     pop.setAttribute("aria-hidden", "false");
     var r = target.getBoundingClientRect();
-    var px = window.scrollX + r.left;
-    var py = window.scrollY + r.bottom + 8;
+    var margin = 12;
     pop.style.left = "0px"; pop.style.top = "0px";
     var pw = pop.offsetWidth;
-    if (px + pw > window.scrollX + document.documentElement.clientWidth - 16) {
-      px = window.scrollX + document.documentElement.clientWidth - pw - 16;
+    var ph = pop.offsetHeight;
+    var px = window.scrollX + r.left;
+    var minPx = window.scrollX + margin;
+    var maxPx = window.scrollX + window.innerWidth - pw - margin;
+    if (px > maxPx) px = maxPx;
+    if (px < minPx) px = minPx;
+    var py = window.scrollY + r.bottom + 8;
+    if (r.bottom + ph + 8 > window.innerHeight) {
+      py = window.scrollY + r.top - ph - 8;
     }
     pop.style.left = px + "px";
     pop.style.top = py + "px";
@@ -475,6 +520,9 @@
     });
     document.addEventListener("click", hidePop);
     window.addEventListener("scroll", hidePop, { passive: true });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") hidePop();
+    });
   }
 
   /* ================= DECISION TOOL ================= */
@@ -594,6 +642,7 @@
     renderDecStep();
     initReveal();
     wireToc();
+    wireTierCards();
     selectTier("t3", false); // open on the center: protect-first
     handleHash();
   });

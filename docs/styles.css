@@ -731,12 +731,9 @@ section.band h2 { font-size: clamp(27px, 3.2vw, 38px); margin-bottom: 14px; }
 
 /* ---------- footer ---------- */
 footer.site-foot { background: var(--dusk); color: var(--dusk-faint); border-top: 1px solid var(--line-soft); margin-top: 60px; }
-footer .wrap { padding: 44px 28px; display: grid; grid-template-columns: 1.3fr 0.9fr 1fr; gap: 36px; font-size: 14.5px; }
-footer h4 { color: var(--ink); font-family: var(--font-sub); font-weight: 600; font-size: 12px; letter-spacing: 0.11em; text-transform: uppercase; margin-bottom: 10px; }
+footer .wrap { padding: 24px 28px; font-size: 14.5px; }
 footer .footer-red { color: var(--red-bright); }
-footer a { color: var(--ink-soft); text-decoration: none; display: block; padding: 3px 0; overflow-wrap: anywhere; }
-footer a:hover { color: var(--red-soft); }
-footer .fine { grid-column: 1 / -1; border-top: 1px solid var(--line-soft); padding-top: 18px; font-size: 13px; }
+footer .fine { margin: 0; font-size: 13px; }
 
 /* ---------- responsive ---------- */
 @media (max-width: 1280px) {
@@ -778,7 +775,6 @@ footer .fine { grid-column: 1 / -1; border-top: 1px solid var(--line-soft); padd
   .align-strip { grid-template-columns: 1fr 1fr; }
   .review-grid, .pillar-grid, .anatomy { grid-template-columns: 1fr; }
   .xlinks { grid-template-columns: 1fr; }
-  footer .wrap { grid-template-columns: 1fr; }
 }
 @media (max-width: 620px) {
   .basin-wrap { margin-top: 0; }

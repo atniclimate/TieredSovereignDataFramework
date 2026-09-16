@@ -12,12 +12,12 @@
       name: "Open / Public Access",
       color: "var(--t0)",
       def: "Data formally released for public access by an authorized source, including documented public federal or state sources.",
-      principle: "For Indigenous-governed information, T0 is an affirmative act of Indigenous governance. Public release is never presumed; source conditions remain in effect.",
+      principle: "For Indigenous-governed information, T0 is an affirmative act of Indigenous governance.<br><span class=\"principle-red\">Public release is never presumed; source conditions remain in effect, despite TSDF classification.</span>",
       examples: [
         "Published Tribal government press releases",
         "Educational materials explicitly released for public use",
         "Research findings the Nation approved for open publication",
-        "Federal reports created through government-to-government consultation",
+        "Federal Reports from government-to-government consultation",
         "Shared environmental baselines in federated commons layers"
       ],
       domains: {

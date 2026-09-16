@@ -92,11 +92,11 @@ TieredSovereignDataFramework/
 
 | Framework | TSDF Implementation |
 |-----------|---------------------|
-| **CARE Principles** | Collective Benefit, Authority, Responsibility, Ethics operationalized through tiers |
+| **CARE Principles** | Collective Benefit, Authority to Control, Responsibility and Ethics |
 | **OCAP®** | Ownership, Control, Access, Possession, enforced by classification (FNIGC) |
-| **UNDRIP Article 31** | Cultural heritage protection through T3 architectural guarantees |
+| **UNDRIP** | Articles 19, 23, & 31, United Nations Declaration on the Rights of Indigenous Peoples |
 | **IEEE 2890-2025** | IEEE Recommended Practice for Provenance of Indigenous Peoples' Data |
-| **Local Contexts Traditional Knowledge Labels** | TK/BC Labels integrate within any tier |
+| **TK/BC Labels** | Local Context Traditional Knowledge and Biocultural applied rights and disclosure labels |
 
 ### AI/ML Restrictions
 

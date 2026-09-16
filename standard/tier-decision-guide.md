@@ -2,7 +2,7 @@
 
 Practical guidance for classifying Indigenous data using the Tiered Sovereign Data Framework.
 
-**Version:** 0.9.5
+**Version:** 0.9.7
 **Author:** Patrick A. Freeland
 **Organization:** Affiliated Tribes of Northwest Indians
 **License:** CC-BY-NC-SA 4.0

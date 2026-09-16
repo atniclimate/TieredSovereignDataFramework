@@ -285,6 +285,6 @@ Tags: #Hardware, #Compute, #Sustainability, #Future
 
 *Patrick A Freeland, Affiliated Tribes of Northwest Indians*
 *2026.01.08*
-*Version: 0.9.4*
+*Version: 0.9.7*
 
 *CC BY-NC-SA 4.0 International*

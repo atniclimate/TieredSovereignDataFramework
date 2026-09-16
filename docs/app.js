@@ -5,7 +5,7 @@
 
   var REDUCED = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-  /* ================= TIER DATA (from TSDF-Standard v0.9) ================= */
+  /* ================= TIER DATA (from TSDF-Standard v0.9.7) ================= */
   var TIERS = {
     t0: {
       code: "T0 · OPEN / PUBLIC",
@@ -119,7 +119,7 @@
     "Strategic Invisibility": { t: "Strategic invisibility", d: "The conscious choice to withhold information as an act of agency, resistance, and self-protection. Not all knowledge should be visible; remaining unseen is itself sovereignty." },
     "Data Actor Model": { t: "Data Actor Model", d: "TSDF's provenance rule, built on IEEE 2890-2025's treatment of data actors: both humans and non-humans (algorithms, databases, AI systems) act on data, and every non-human actor must have a responsible human identified." },
     "Rights Holders vs. Stakeholders": { t: "Rights holders, not stakeholders", d: "Indigenous Nations are sovereign political entities with government-to-government standing under treaties and UNDRIP, not one interest group among several. “Tribes are sovereigns, not stakeholders.”" },
-    "Local Contexts Labels": { t: "Local Contexts TK/BC Labels", d: "Machine-embeddable metadata labels (TK Attribution, TK Secret/Sacred, BC Research Use…) that carry a community's protocols with the data. Labels give cultural specificity; tiers give governance enforcement." },
+    "Local Contexts Labels": { t: "Local Contexts TK/BC Labels", d: "Machine-embeddable metadata labels (TK Attribution, TK Secret/Sacred, BC Research Use…) that carry a community's protocols with the data. Labels give cultural specificity; tiers provide operational governance." },
     "5D Data": { t: "5D Data", d: "Dr. Maggie Walter's critique: colonial statistics cluster on Disparity, Deprivation, Disadvantage, Dysfunction, and Difference, framing Peoples as problems rather than peoples." },
     "Data for Governance": { t: "Data for governance", d: "Nations need data reflecting their own priorities (language fluency, knowledge transmission, environmental health), not comparative statistics designed for state administration." },
     "Treatment as State": { t: "Treatment as State (TAS)", d: "A Clean Water Act provision letting federally recognized Tribes set their own water-quality standards; 44 Tribes have, sometimes stricter than neighboring states." },

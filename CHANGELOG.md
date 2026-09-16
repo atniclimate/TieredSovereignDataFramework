@@ -2,6 +2,15 @@
 
 All notable changes to the Tiered Sovereign Data Framework will be documented in this file.
 
+## [0.9.7] - 2026-07-14
+
+### Changed
+
+- Updated current standard and repository metadata to version 0.9.7.
+- Recast descriptions of the TSDF and its classifications as operational rather than enforceable.
+- Acknowledged Tribal law and regulations as supreme, with the TSDF honoring and adhering to them.
+- Corrected the public contact address to `climate@atnitribes.org`.
+
 ## [0.9.5] - 2026-07-14
 
 ### Changed

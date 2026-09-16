@@ -1,6 +1,6 @@
 # Tiered Sovereign Data Framework
 
-**Version:** 0.9.6
+**Version:** 0.9.7
 **Revised:** 2026-07-14
 **Author:** Patrick A. Freeland
 **Organization:** Affiliated Tribes of Northwest Indians
@@ -26,16 +26,16 @@ Full license text: https://creativecommons.org/licenses/by-nc-sa/4.0/
 
 ### Indigenous Governance Notice
 
-The *Tiered Sovereign Data Framework (TSDF)* is currently pre-release (v0.9.6). Additional comment and feedback is being sought to improve depth and incorporate broadly current standards and guidance for work with Indigenous data ecosystems. An official 1.0 release will not occur without full authorization by resolution of the Affiliated Tribes of Northwest Indians.
+The *Tiered Sovereign Data Framework (TSDF)* is currently pre-release (v0.9.7). Additional comment and feedback is being sought to improve depth and incorporate broadly current standards and guidance for work with Indigenous data ecosystems. An official 1.0 release will not occur without full authorization by resolution of the Affiliated Tribes of Northwest Indians.
 
 While this document is openly licensed, implementations of this framework that govern Indigenous community data must be developed in partnership with those communities and in accordance with applicable Indigenous data governance principles (CARE, OCAP, community-specific protocols).
 
-Proposed amendments to this framework are welcomed through reaching out to climate@atniTribes.org.
+Proposed amendments to this framework are welcomed through reaching out to climate@atnitribes.org.
 The framework evolution should reflect Indigenous community priorities.
 
 ### Suggested Citation
 
-Freeland, P. A. (2025). Tiered Sovereign Data Framework: Indigenous Data Sovereignty Standard, Version 0.9.6. Affiliated Tribes of Northwest Indians. Licensed under CC-BY-NC-SA 4.0.
+Freeland, P. A. (2025). Tiered Sovereign Data Framework: Indigenous Data Sovereignty Standard, Version 0.9.7. Affiliated Tribes of Northwest Indians. Licensed under CC-BY-NC-SA 4.0.
 
 ---
 
@@ -65,7 +65,7 @@ When data systems fail to recognize Indigenous Nations as they see themselves, t
 
 ### 1.4 The Four Tier Classification Model
 
-To translate foundational principles into implementable policy, this document introduces the Four-Tier Classification System. This system is the core innovation of the Standard, providing a clear, enforceable mechanism for Indigenous Nations to govern their data relations, protect their knowledge, and exercise their sovereignty. It operationalizes CARE (Carroll et al., 2020), OCAP® (FNIGC, 2014), and UNDRIP into specific, enforceable classifications.
+To translate foundational principles into implementable policy, this document introduces the Four-Tier Classification System. This system is the core innovation of the Standard, providing a clear mechanism for Indigenous Nations to govern their data relations, protect their knowledge, and exercise their sovereignty. It operationalizes CARE (Carroll et al., 2020), OCAP® (FNIGC, 2014), and UNDRIP into specific, operational classifications.
 
 ## Part 2: Foundational Principles and Distinctions
 
@@ -221,7 +221,7 @@ _These principles are adapted from the Convergence Systems Architecture framewor
 
 ## 3.0 The Four-Tier Data Classification System
 
-The Four-Tier Data Classification system is the central innovation of the TSDF Standard. Its purpose is to provide clear, enforceable rules for data sharing, protection, and control across all four sovereignty domains (Data, Network, Digital, Computational). This system moves foundational principles from aspiration to practical implementation.
+The Four-Tier Data Classification system is the central innovation of the TSDF Standard. Its purpose is to provide clear, operational rules for data sharing, protection, and control across all four sovereignty domains (Data, Network, Digital, Computational). This system moves foundational principles from aspiration to practical implementation.
 
 ### 3.1 Tier Definitions
 
@@ -706,7 +706,7 @@ Following David-Chavez's (2024) scale of engagement, partnerships should progres
 
 ### 5.3 The Legal Authority of Tribal Research Codes
 
-This Standard affirms that **Tribal research codes, protocols, and data agreements are enforceable law** governing all data-related activities within a Tribe's jurisdiction. Researchers and external partners are legally and ethically bound to comply with:
+This Standard acknowledges that **Tribal law and regulations are the supreme law** within each Tribe's jurisdiction. The TSDF honors and adheres to those laws and regulations. Tribal research codes, protocols, and data agreements govern all data-related activities within a Tribe's jurisdiction and are enforceable under applicable Tribal law. Researchers and external partners are legally and ethically bound to comply with:
 
 - Tribal Institutional Review Boards (IRBs)
 - Designated research oversight bodies

@@ -778,6 +778,7 @@ footer .fine { grid-column: 1 / -1; border-top: 1px solid var(--line-soft); padd
   footer .wrap { grid-template-columns: 1fr; }
 }
 @media (max-width: 620px) {
+  .wrap { padding-left: 20px; padding-right: 20px; }
   .tier-cards, .principles, .domain-grid { grid-template-columns: 1fr; }
   .tier-detail .cols { grid-template-columns: 1fr; }
   .redflags { columns: 1; }
@@ -787,6 +788,10 @@ footer .fine { grid-column: 1 / -1; border-top: 1px solid var(--line-soft); padd
   .first-callout { grid-template-columns: 1fr; padding: 24px; }
   .func-step { grid-template-columns: 36px 1fr; gap: 12px; }
   .lit-feature { padding: 24px 22px; }
+  .std-toc { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .std-toc a { min-width: 0; padding: 8px 10px; font-size: 12px; line-height: 1.35; overflow-wrap: anywhere; }
+  .std-section summary { gap: 12px; padding: 18px 16px; }
+  .std-section .body { padding: 0 16px 18px; }
   .std-table { display: block; overflow-x: auto; }
   .cite-block { white-space: pre-wrap; overflow-wrap: anywhere; }
 }

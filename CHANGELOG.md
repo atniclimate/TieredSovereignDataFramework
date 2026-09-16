@@ -2,6 +2,15 @@
 
 All notable changes to the Tiered Sovereign Data Framework will be documented in this file.
 
+## [0.9.8] - 2026-07-14
+
+### Changed
+
+- Refined Section 3.2 as context-dependent classification and ingestion while preserving T3 as the protective default for unclassified Indigenous material entering automated bulk ingestion.
+- Added explicit treatment for documented public federal/state sources, human-directed entry with acknowledged unknowns, user-managed own-material bulk opt-outs, and scoped local/development disablement.
+- Clarified that T0 status does not waive source conditions or override Indigenous authority and existing restrictions.
+- Updated Section 8.1, the decision guide, repository metadata, and public site to reflect the refined context-dependent rule.
+
 ## [0.9.7] - 2026-07-14
 
 ### Changed

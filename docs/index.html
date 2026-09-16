@@ -6,7 +6,7 @@
 <title>Tiered Sovereign Data Framework · Indigenous Data Sovereignty Standard</title>
 <meta name="description" content="The Tiered Sovereign Data Framework (TSDF) gives Indigenous Nations a clear, operational four-tier system for governing data, operationalizing CARE, OCAP, and UNDRIP, with provenance designed to support IEEE 2890-2025. Literature, compliance walkthroughs, and the ATNI-GeoPackager data wrapper. Published by the Affiliated Tribes of Northwest Indians.">
 <meta property="og:title" content="Tiered Sovereign Data Framework">
-<meta property="og:description" content="A four-tier Indigenous Data Sovereignty standard: T0 Open · T1 Network · T2 Negotiated · T3 Sovereign. When in doubt, classify as T3.">
+<meta property="og:description" content="A four-tier Indigenous Data Sovereignty standard: T0 Open · T1 Network · T2 Negotiated · T3 Sovereign. Context-dependent ingestion preserves T3 as the protective default for unclassified Indigenous bulk data.">
 <meta property="og:type" content="website">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23000000'/%3E%3Ccircle cx='50' cy='50' r='38' fill='none' stroke='%23e6e6e6' stroke-width='4'/%3E%3Ccircle cx='50' cy='50' r='27' fill='none' stroke='%239aa0a7' stroke-width='4'/%3E%3Ccircle cx='50' cy='50' r='17' fill='none' stroke='%23d98a91' stroke-width='4'/%3E%3Ccircle cx='50' cy='50' r='8' fill='%23c9303c'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -70,13 +70,13 @@
     <div class="wrap">
       <p class="eyebrow eyebrow-red reveal">The Four Tiers</p>
       <h2 class="reveal">Four tiers, one direction of care</h2>
-      <p class="section-lede reveal" style="max-width: 92ch">Every piece of Indigenous data, from public press releases to ceremonial knowledge,<br>is classified into one of four tiers. <strong>Each tier answers the same four questions:</strong><br>what is stored, how it moves, how it is accessed, and how it may be transformed.</p>
+      <p class="section-lede reveal" style="max-width: 92ch">Indigenous data, from public press releases to ceremonial knowledge, is governed through four tiers when classification is established; Section 3.2 defines how acknowledged unknowns are handled during ingestion. <strong>Each tier answers the same four questions:</strong><br>what is stored, how it moves, how it is accessed, and how it may be transformed.</p>
 
       <div class="tier-cards reveal" role="tablist" aria-label="Tier selector">
         <button class="tier-card" style="--tc: var(--t0)" data-tier="t0" role="tab">
           <span class="code">T0 · OPEN</span>
           <h3>Open / Public</h3>
-          <p>Formally released for public benefit by sovereign Indigenous decision. Release is never a default.</p>
+          <p>Released for public access by an authorized source. Indigenous release is never presumed; documented public federal/state sources retain their conditions.</p>
         </button>
         <button class="tier-card" style="--tc: var(--t1)" data-tier="t1" role="tab">
           <span class="code">T1 · NETWORK</span>
@@ -100,8 +100,8 @@
       <div class="callout-t3 reveal">
         <div class="mark">T3</div>
         <div>
-          <h3>When in doubt, classify as T3.</h3>
-          <p>The harm is asymmetric: over-classification delays access until review, and that is correctable. Under-classification can publish sacred knowledge or disclose a burial site, and that is often irreversible. Only authorized human decision-makers may downgrade a classification. Systems may automate protective upgrades, never downgrades.</p>
+          <h3>T3 remains the protective default for unclassified Indigenous bulk data.</h3>
+          <p>The harm is asymmetric: over-classification delays access until review, and that is correctable. Under-classification can publish sacred knowledge or disclose a burial site, and that is often irreversible. Context-dependent ingestion records human-acknowledged unknowns and documented public federal/state sources without weakening Indigenous authority. Only authorized human decision-makers may downgrade a classification. Systems may automate protective upgrades, never downgrades.</p>
         </div>
       </div>
     </div>
@@ -220,9 +220,9 @@
 <div class="tab-panel" id="panel-standard">
   <section class="band">
     <div class="wrap">
-      <p class="eyebrow">TSDF Standard · v0.9.7 (pre-release)</p>
+      <p class="eyebrow">TSDF Standard · v0.9.8 (pre-release)</p>
       <h2>The Standard: Fully Articulated</h2>
-      <p class="section-lede">Every part of the Standard below, with a plain-language descriptor of what it does and the rules it carries. <span class="term" data-term="dotted">Dotted terms</span> open a definition; the full glossary is at the bottom. For the authoritative text, read the <a href="https://github.com/atniclimate/TieredSovereignDataFramework/blob/main/standard/TSDF-Standard-v0.9.7.md">standard document on GitHub</a>. Tribal law and regulations are supreme within Tribal jurisdiction; TSDF honors and adheres to them. An official 1.0 will not be released without full authorization by resolution of ATNI.</p>
+      <p class="section-lede">Every part of the Standard below, with a plain-language descriptor of what it does and the rules it carries. <span class="term" data-term="dotted">Dotted terms</span> open a definition; the full glossary is at the bottom. Version 0.9.8 refines context-dependent ingestion while preserving T3 as the protective default for unclassified Indigenous material entering automated bulk ingestion. For the authoritative text, read the <a href="https://github.com/atniclimate/TieredSovereignDataFramework/blob/main/standard/TSDF-Standard-v0.9.8.md">standard document on GitHub</a>. Tribal law and regulations are supreme within Tribal jurisdiction; TSDF honors and adheres to them. An official 1.0 will not be released without full authorization by resolution of ATNI.</p>
       <div class="contour-rule" aria-hidden="true"></div>
 
       <div class="standard-layout">
@@ -280,11 +280,11 @@
               <summary><span class="num">03</span><h3>The Four-Tier Data Classification System</h3><span class="twirl">▶</span></summary>
               <div class="body">
                 <p class="what">What this part does</p>
-                <p>The core of the Standard: precise definitions for T0–T3, the default rule, and minimum requirements in each sovereignty domain per tier.</p>
+                <p>The core of the Standard: precise definitions for T0–T3, context-dependent classification and ingestion, and minimum requirements in each sovereignty domain per tier.</p>
                 <table class="std-table">
                   <thead><tr><th>Tier</th><th>Definition</th><th>Critical principle</th></tr></thead>
                   <tbody>
-                    <tr><td><span class="chip t0">T0 OPEN</span></td><td>Formally and publicly released by the sovereign Indigenous entity for collective benefit</td><td>Release is an affirmative act of governance, never a default</td></tr>
+                    <tr><td><span class="chip t0">T0 OPEN</span></td><td>Formally released for public access by an authorized source, including documented public federal/state sources</td><td>Indigenous release is an affirmative act of governance; source conditions remain in effect</td></tr>
                     <tr><td><span class="chip t1">T1 NETWORK</span></td><td>Shared among trusted Indigenous network members under reciprocal protocols</td><td>Reciprocity: relationships are mutual and ongoing, not transactional</td></tr>
                     <tr><td><span class="chip t2">T2 NEGOTIATED</span></td><td>Shared with specific external partners through explicit, documented agreements</td><td><span class="term" data-term="FPIC">FPIC</span> as an ongoing, revocable relationship, not a one-time transaction</td></tr>
                     <tr><td><span class="chip t3">T3 SOVEREIGN</span></td><td>Complete Indigenous control; never leaves community-controlled systems</td><td>Architectural guarantees: external access technically impossible, not just prohibited</td></tr>
@@ -292,7 +292,7 @@
                 </table>
                 <p class="what">Rules that travel with every tier</p>
                 <ul>
-                  <li><strong>Default to T3</strong> when classification is uncertain or unassigned (the asymmetric-harm principle).</li>
+                  <li><strong>Context-dependent protective default.</strong> Unclassified Indigenous material entering automated bulk ingestion defaults to T3. Human-directed entry records available provenance and acknowledged unknowns; documented public federal/state sources are T0, subject to source conditions.</li>
                   <li><strong>Inward movement (toward T3) may be automated</strong>, triggered by agreement expiry, protocol violation, or provenance break. <strong>Outward movement requires an authorized human decision</strong>, documented with rationale. Automated downgrade is prohibited.</li>
                   <li><strong>T3 honors <span class="term" data-term="Strategic Invisibility">strategic invisibility</span></strong>; the choice to remain unseen is itself an exercise of sovereignty. T3 also carries internal protocols: the tier restricts external access; internal governance (clan, gender, ceremonial role) determines internal access.</li>
                   <li><strong>Each tier specifies requirements across all four domains</strong> (transmission pathways, storage platforms, access mechanisms, and AI/ML authorization) plus per-tier provenance requirements designed to support IEEE 2890-2025.</li>
@@ -385,7 +385,7 @@
               <summary><span class="num">08</span><h3>Adoption &amp; Implementation</h3><span class="twirl">▶</span></summary>
               <div class="body">
                 <p class="what">What this part does</p>
-                <p>Step-by-step adoption paths for five audiences: Indigenous Nations (assess holdings, designate governance, default unclassified data to T3, update research codes), research partners (recognize the Standard, adapt IRB protocols, implement provenance), technology providers (tier-based access control, window architecture, Indigenous-controlled encryption keys), federal partners (consultation protocols, FOIA handling), and interTribal network operators (federated governance, T0 commons, graceful degradation when connectivity fails).</p>
+                <p>Step-by-step adoption paths for five audiences: Indigenous Nations apply the context-dependent classification rules and preserve T3 for unclassified Indigenous bulk material; research partners recognize the Standard, adapt IRB protocols, and implement provenance; technology providers implement tier-based controls and window architecture; federal partners establish consultation protocols and address FOIA; and interTribal network operators support federated governance and T0 commons.</p>
                 <p>See the <a href="#adopt" data-goto="adopt">Use &amp; Adapt</a> tab for these paths in full.</p>
               </div>
             </details>
@@ -783,7 +783,7 @@
         <p class="eyebrow reveal">Auditable, Not Aspirational</p>
         <h2 class="reveal">Compliance means something a reviewer can verify</h2>
         <p class="section-lede reveal">Section 9 of the Standard carries checklists for provenance, CARE, OCAP®, Local Contexts, and each sovereignty domain, so a claim of alignment can be examined item by item rather than taken on faith. And the next layer is already in development: <a href="#geopackage" data-goto="geopackage">ATNI-GeoPackager</a> builds these requirements into the data artifact itself.</p>
-        <p class="reveal"><a class="btn btn-primary" href="https://github.com/atniclimate/TieredSovereignDataFramework/blob/main/standard/TSDF-Standard-v0.9.7.md">Read the Standard&rsquo;s compliance checklists</a></p>
+        <p class="reveal"><a class="btn btn-primary" href="https://github.com/atniclimate/TieredSovereignDataFramework/blob/main/standard/TSDF-Standard-v0.9.8.md">Read the Standard&rsquo;s compliance checklists</a></p>
       </div>
     </div>
   </section>
@@ -825,7 +825,7 @@
       </div>
 
       <h3 class="reveal" style="margin-top: 40px">Status</h3>
-      <p class="reveal" style="max-width: 80ch; color: var(--ink-soft)">ATNI-GeoPackager is working software in active development at ATNI, maturing alongside the Standard&rsquo;s v0.9.7 release as part of a broader sovereign geospatial platform. The sovereign ceremony process and clause-level IEEE 2890-2025 verification are the current front of the work, and design details will continue to be refined with the Nations the tooling serves. Conformance language here follows the same honesty rule as the rest of this site: designed to support IEEE 2890-2025, with verification underway. Questions and interest: <a href="mailto:climate@atnitribes.org">climate@atnitribes.org</a>.</p>
+      <p class="reveal" style="max-width: 80ch; color: var(--ink-soft)">ATNI-GeoPackager is working software in active development at ATNI, maturing alongside the Standard&rsquo;s v0.9.8 release as part of a broader sovereign geospatial platform. The sovereign ceremony process and clause-level IEEE 2890-2025 verification are the current front of the work, and design details will continue to be refined with the Nations the tooling serves. Conformance language here follows the same honesty rule as the rest of this site: designed to support IEEE 2890-2025, with verification underway. Questions and interest: <a href="mailto:climate@atnitribes.org">climate@atnitribes.org</a>.</p>
     </div>
   </section>
 </div>
@@ -870,7 +870,7 @@
           <span class="n">01</span>
           <div>
             <h3>Indigenous Nations</h3>
-            <p>Review data holdings against the tier definitions · default everything unclassified to T3 · designate a governance body for classification · update your Tribal research code to reference the tiers · determine partner requirements (Standard §7) · assess infrastructure for window-architecture sharing.</p>
+            <p>Review data holdings against the tier definitions · apply the context-dependent ingestion rules · preserve T3 as the protective default for unclassified Indigenous bulk material · designate a governance body for classification · update your Tribal research code to reference the tiers · determine partner requirements (Standard §7) · assess infrastructure for window-architecture sharing.</p>
           </div>
         </div>
         <div class="adopt-step reveal">
@@ -904,13 +904,13 @@
       </div>
 
       <h2 style="margin-top: 56px" class="reveal">Cite the framework</h2>
-      <p class="reveal">Pre-release, v0.9.7. Comment and proposed amendments are welcomed at <a href="mailto:climate@atnitribes.org">climate@atnitribes.org</a>. An official 1.0 release will not occur without full authorization by resolution of the Affiliated Tribes of Northwest Indians.</p>
+      <p class="reveal">Pre-release, v0.9.8. Version 0.9.8 refines context-dependent ingestion while retaining T3 as the protective default for unclassified Indigenous bulk material. Comment and proposed amendments are welcomed at <a href="mailto:climate@atnitribes.org">climate@atnitribes.org</a>. An official 1.0 release will not occur without full authorization by resolution of the Affiliated Tribes of Northwest Indians.</p>
       <div class="cite-block reveal">@misc{freeland2025tsdf,
   author    = {Freeland, Patrick A.},
   title     = {Tiered Sovereign Data Framework:
                Indigenous Data Sovereignty Standard},
   year      = {2025},
-  version   = {0.9.7},
+  version   = {0.9.8},
   publisher = {Affiliated Tribes of Northwest Indians},
   url       = {https://github.com/atniclimate/
                TieredSovereignDataFramework},
@@ -941,7 +941,7 @@
     <div>
       <h4>Repository</h4>
       <a href="https://github.com/atniclimate/TieredSovereignDataFramework">GitHub</a>
-      <a href="https://github.com/atniclimate/TieredSovereignDataFramework/blob/main/standard/TSDF-Standard-v0.9.7.md">Standard (full text)</a>
+      <a href="https://github.com/atniclimate/TieredSovereignDataFramework/blob/main/standard/TSDF-Standard-v0.9.8.md">Standard (full text)</a>
       <a href="https://github.com/atniclimate/TieredSovereignDataFramework/blob/main/standard/tier-decision-guide.md">Tier Decision Guide</a>
       <a href="https://github.com/atniclimate/TieredSovereignDataFramework/tree/main/literature">Literature (source)</a>
     </div>
@@ -950,7 +950,7 @@
       <a href="mailto:climate@atnitribes.org">climate@atnitribes.org</a>
       <a href="https://atnitribes.org">atnitribes.org</a>
     </div>
-    <p class="fine">Sovereignty is not bestowed, it is inherent. · When in doubt, classify as T3.</p>
+    <p class="fine">Sovereignty is not bestowed, it is inherent. · T3 remains the protective default for unclassified Indigenous bulk data.</p>
   </div>
 </footer>
 

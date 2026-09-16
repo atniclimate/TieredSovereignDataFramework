@@ -1,7 +1,7 @@
 # Tiered Sovereign Data Framework: Indigenous Data Sovereignty Standard
 
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
-[![Version](https://img.shields.io/badge/version-0.9.7-blue.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-0.9.8-blue.svg)](CHANGELOG.md)
 
 > **🌐 Interactive site:** [atniclimate.github.io/TieredSovereignDataFramework](https://atniclimate.github.io/TieredSovereignDataFramework/) — explore the four tiers, walk the classification decision tree, and see the framework applied to real project patterns.
 
@@ -23,16 +23,16 @@ The Tiered Sovereign Data Framework (TSDF) provides Indigenous Nations with a cl
 
 | Tier | Name | Definition |
 |------|------|------------|
-| **T0** | Open/Public | Data formally released for public benefit by sovereign Indigenous decision |
+| **T0** | Open/Public | Data released for public access by an authorized source; Indigenous release requires sovereign decision |
 | **T1** | Network | Data shared among Indigenous network members via reciprocal protocols |
 | **T2** | Negotiated | Data shared with external partners through formal agreements |
 | **T3** | Sovereign | Data under complete Indigenous control; never leaves community systems |
 
 ### Core Principle
 
-> **When in doubt, classify as T3.**
+> **Indigenous data without a documented classification remains protected by the T3 default in automated bulk ingestion.**
 
-Over-classification is correctable; under-classification may cause irreversible harm.
+Context matters: human-directed entry records acknowledged unknowns rather than inventing a tier, while documented public federal/state sources are T0 subject to source conditions. Over-classification is correctable; under-classification may cause irreversible harm.
 
 ---
 
@@ -45,7 +45,7 @@ TieredSovereignDataFramework/
 ├── CITATION.cff                        # Academic citation metadata
 ├── CHANGELOG.md                        # Version history
 ├── standard/
-│   ├── TSDF-Standard-v0.9.7.md           # Full standard document
+│   ├── TSDF-Standard-v0.9.8.md           # Full standard document
 │   └── tier-decision-guide.md          # Classification decision guide
 └── literature/
     ├── idsov-climate-review.md         # Systematic review: IDS in climate research
@@ -59,9 +59,9 @@ TieredSovereignDataFramework/
 
 ### For Indigenous Nations
 
-1. **Review the Standard**: Read `standard/TSDF-Standard-v0.9.7.md` for the complete framework
+1. **Review the Standard**: Read `standard/TSDF-Standard-v0.9.8.md` for the complete framework
 2. **Use the Decision Guide**: Apply `standard/tier-decision-guide.md` for classification decisions
-3. **Default to T3**: When classification is uncertain, protect first
+3. **Apply context-dependent classification**: Preserve T3 as the protective default for unclassified Indigenous bulk material; record human-acknowledged unknowns and documented public federal/state sources as specified in Section 3.2
 4. **Adapt as needed**: This framework supports your existing governance structures
 
 ### For Research Partners
@@ -147,7 +147,7 @@ If you use this framework in research or policy development, please cite:
   author = {Freeland, Patrick A.},
   title = {Tiered Sovereign Data Framework: Indigenous Data Sovereignty Standard},
   year = {2025},
-  version = {0.9.7},
+  version = {0.9.8},
   publisher = {Affiliated Tribes of Northwest Indians},
   url = {https://github.com/atniclimate/TieredSovereignDataFramework},
   license = {CC-BY-NC-SA-4.0}
@@ -190,5 +190,5 @@ This framework builds upon decades of Indigenous data sovereignty scholarship an
 
 **Author:** Patrick A. Freeland
 **Organization:** Affiliated Tribes of Northwest Indians
-**Version:** 0.9.7
+**Version:** 0.9.8
 **License:** CC BY-NC-SA 4.0

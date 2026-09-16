@@ -1,6 +1,6 @@
 # Tiered Sovereign Data Framework
 
-**Version:** 0.9.7
+**Version:** 0.9.8
 **Revised:** 2026-07-14
 **Author:** Patrick A. Freeland
 **Organization:** Affiliated Tribes of Northwest Indians
@@ -26,7 +26,7 @@ Full license text: https://creativecommons.org/licenses/by-nc-sa/4.0/
 
 ### Indigenous Governance Notice
 
-The *Tiered Sovereign Data Framework (TSDF)* is currently pre-release (v0.9.7). Additional comment and feedback is being sought to improve depth and incorporate broadly current standards and guidance for work with Indigenous data ecosystems. An official 1.0 release will not occur without full authorization by resolution of the Affiliated Tribes of Northwest Indians.
+The *Tiered Sovereign Data Framework (TSDF)* is currently pre-release (v0.9.8). Additional comment and feedback is being sought to improve depth and incorporate broadly current standards and guidance for work with Indigenous data ecosystems. An official 1.0 release will not occur without full authorization by resolution of the Affiliated Tribes of Northwest Indians.
 
 While this document is openly licensed, implementations of this framework that govern Indigenous community data must be developed in partnership with those communities and in accordance with applicable Indigenous data governance principles (CARE, OCAP, community-specific protocols).
 
@@ -35,7 +35,7 @@ The framework evolution should reflect Indigenous community priorities.
 
 ### Suggested Citation
 
-Freeland, P. A. (2025). Tiered Sovereign Data Framework: Indigenous Data Sovereignty Standard, Version 0.9.7. Affiliated Tribes of Northwest Indians. Licensed under CC-BY-NC-SA 4.0.
+Freeland, P. A. (2025). Tiered Sovereign Data Framework: Indigenous Data Sovereignty Standard, Version 0.9.8. Affiliated Tribes of Northwest Indians. Licensed under CC-BY-NC-SA 4.0.
 
 ---
 
@@ -96,9 +96,9 @@ This Standard applies to a comprehensive and holistic definition of Indigenous D
 
 This framework parallels the "Water Back" and "Land Back" movements; asserting that data generated from Indigenous territories carries the same sovereignty claims as the territories themselves.
 
-## 2.4 The Convergence Systems Architecture
+### 2.4 The Convergence Systems Architecture
 
-2.4.1 Four Sovereignty Domains
+### 2.4.1 Four Sovereignty Domains
 
 Dr. Marisa Elena Duarte's work on **Network Sovereignty** demonstrates that data sovereignty is precarious without infrastructure sovereignty (Duarte, 2017). Dr. Keolu Fox extends this to **Sovereign Compute**, asserting that sovereignty must encompass not just where data is stored but where and how it is processed. This Standard addresses four intersecting and interdependent domains:
 
@@ -227,17 +227,17 @@ The Four-Tier Data Classification system is the central innovation of the TSDF S
 
 #### T0: Open/Public Access
 
-**Definition:** Data that has been formally and publicly released by the sovereign Indigenous entity for the collective benefit of all.
+**Definition:** Data formally released for public access by an authorized source. This includes information released by a sovereign Indigenous entity and publicly released federal or state datasets, documents, and publications.
 
-**Purpose & Scope:** This tier is for information that an Indigenous Nation has explicitly decided to make available without restriction, such as public announcements, educational materials, or certain research findings intended for a broad audience.
+**Purpose & Scope:** This tier is for information made publicly available through an authorized release. Indigenous Nations may explicitly make available public announcements, educational materials, or research findings intended for a broad audience. Public federal and state sources are recorded as T0 with their provenance, citations, and applicable source conditions preserved.
 
-**Critical Principle:** Classification as T0 is an **affirmative act of Indigenous governance**. **Public release is never a default**; it requires deliberate sovereign decision.
+**Critical Principle:** For Indigenous-governed information, classification as T0 is an **affirmative act of Indigenous governance**. **Public release is never presumed**; it requires deliberate sovereign decision. Recording an independently published federal or state source as T0 recognizes that source's public release; it does not constitute an Indigenous release decision, override restrictions on Indigenous information, or establish unrestricted reuse.
 
 **Sovereignty Domain Implications:**
 - **Data:** Open access; attribution requirements may apply
 - **Network:** May traverse any transmission infrastructure
 - **Digital:** May reside on public platforms and services
-- **Computational:** Training and inference permitted per the terms of the sovereign release. A release decision may attach license or label conditions that constrain AI/ML use; public availability alone is never the authorization, the sovereign release is
+- **Computational:** Training and inference permitted only per the terms of the authorized release. A release decision may attach license or label conditions that constrain AI/ML use; public availability alone is never the authorization.
 
 **Examples:**
 - Published Tribal government press releases
@@ -357,17 +357,33 @@ Communities may implement some, all, or none of these approaches based on their 
 
 ---
 
-### 3.2 The Default Classification Principle
+### 3.2 Context-Dependent Classification and Ingestion
 
-> **All data with an uncertain or unassigned classification must default to T3 (Sovereign).**
+**Core Principle:** Classification reflects the source, existing restrictions, responsible Data Actor, and method of ingestion. Missing information alone does not require T3 classification in every context. The automatic T3 default applies to unclassified material entering through automated bulk ingestion, subject to the distinctions below.
 
-This principle is a foundational safeguard rooted in the **asymmetric harm argument:**
+**Protective Principle:** Under-classification can cause profound and irreversible harm: once sacred knowledge or a burial-site location is released, it cannot be unreleased. Over-classification may delay access, but the delay can be corrected through Indigenous-led governance and reclassification. Systems may automate protective upgrades toward greater protection, but must not execute downgrades. Only authorized human decision-makers may reclassify Indigenous-governed data to a less restrictive tier.
 
-- **Under-classification harm:** The inappropriate release of sensitive or restricted data is profound and often **irreversible**. Once sacred knowledge is published, it cannot be unpublished. Once a burial site location is disclosed, it cannot be un-disclosed.
+**Unknown Classification:** Unknown classification is a recorded status, not an additional TSDF tier. It does not itself establish that material is public, restricted, approved for release, or authorized for a particular use.
 
-- **Over-classification consequence:** A delay that can be corrected through proper Indigenous-led governance and reclassification processes.
+**Human-Directed Entry:** When a human Data Actor enters, selects, or reviews data or sources, the system must support deliberate classification without automatically assigning T3 solely because classification or provenance information is incomplete. The Data Actor must provide available provenance and source/citation identification. Information that is unavailable must remain explicitly recorded as unknown, with the Data Actor's acknowledgement. Unknown information must not be fabricated or treated as established.
 
-This "protect-first" approach prioritizes the safety and integrity of Indigenous knowledge systems. **Only authorized human decision-makers can downgrade classifications.** Automated systems may suggest upgrades (toward greater protection) but cannot execute downgrades.
+**Public Federal and State Sources:** Publicly released federal and state datasets, documents, and publications are recorded as T0, including when acquired through automated ingestion. The system must retain source identification, citation information, available evidence of public release, and applicable source conditions. Incomplete bibliographic information does not by itself change these public sources to T3; unavailable information remains explicitly unknown.
+
+This provision does not classify every government-held record as public. It does not override existing restrictions on Indigenous information or automatically make a combined or derived dataset T0 merely because it incorporates a public government source. T0 classification does not waive licensing, privacy, attribution, or other applicable conditions.
+
+**Large Data and Datasets:** A combined or derived dataset must retain the highest known tier among its interrelated data. Where automated bulk ingestion contains unclassified material, the result defaults to T3 pending review unless the material is a documented public federal or state source. A public source does not reduce restrictions inherited from other material in the dataset.
+
+**Automated Bulk Ingestion:** When software ingests material in bulk without a human Data Actor entering or reviewing the individual sources, material lacking an established classification defaults to T3 pending review. Existing classifications and documented public federal or state sources must be recognized rather than indiscriminately replaced with T3. The system must identify the automated process and its accountable human, preserve available provenance, and record unresolved information as unknown.
+
+**User-Managed Bulk Ingestion:** A human Data Actor may opt out of the automatic T3 default when using software to ingest their own materials. The opt-out must be explicit and recorded with the responsible actor and its scope. The software may generate provenance records and citations from available source metadata, but must not invent missing facts or represent software-generated assertions as human acknowledgements.
+
+Opting out does not automatically assign T0. Classification may be explicitly assigned, inherited, or left unknown. Ownership or possession of a copy does not authorize removal of restrictions established by another rights holder or Indigenous governing authority.
+
+**Software Development and Prototyping:** Local, development, prototype, and continuous-integration processes may use an explicit option to disable TSDF operational controls, including for user-managed ingestion. While disabled, TSDF controls must not be represented as active. Where the software continues to create TSDF records, those records must identify the disabled state and its scope.
+
+Disabling controls does not erase existing classifications, change ownership, override Tribal law or agreements, or authorize disclosure. Before material enters a governed shared service or external workflow, the applicable classification, provenance, and authorization requirements must be evaluated anew. Local storage alone does not authorize bypassing restrictions on another party's data.
+
+**Preservation of Authority and Existing Restrictions:** These ingestion distinctions do not authorize automated downgrades of existing classifications. Reclassification of Indigenous-governed data remains with the authorized Indigenous individuals or designated governing body. Tribal law, regulations, and applicable Tribal governance decisions remain supreme; the TSDF operates in adherence to them.
 
 ---
 
@@ -379,7 +395,7 @@ This section specifies minimum requirements across all four sovereignty domains 
 
 | Tier | Classification Authority | Access Determination | Reclassification |
 |------|-------------------------|---------------------|------------------|
-| T0 | Sovereign decision to release | Open to all | Upgrade: any time; Downgrade from T1+: sovereign decision |
+| T0 | Authorized source release; Indigenous release requires sovereign decision | Open subject to source conditions | Upgrade: any time; Downgrade from T1+: sovereign decision |
 | T1 | Source Nation governance | Network protocols | Upgrade: automatic on protocol violation; Downgrade: source Nation only |
 | T2 | Source Nation governance | Per-agreement | Upgrade: automatic on agreement expiry/violation; Downgrade: source Nation only |
 | T3 | Source Nation governance | Internal protocols only | Downgrade: sovereign decision with documented rationale |
@@ -406,7 +422,7 @@ This section specifies minimum requirements across all four sovereignty domains 
 
 | Tier | Training Authorization | Inference Authorization | Derivative Governance |
 |------|----------------------|------------------------|---------------------|
-| T0 | Permitted | Permitted | Attribution required; no inherited restrictions |
+| T0 | Per authorized release and source conditions | Per authorized release and source conditions | Attribution and source conditions retained; no inherited restrictions unless documented |
 | T1 | Network approval required | Network scope only | Provenance inheritance; network sharing permitted; external sharing requires source authorization |
 | T2 | Per-agreement only | Per-agreement only | Provenance inheritance; uses bound by agreement scope; renegotiation required for expanded use |
 | T3 | Prohibited externally | Prohibited externally | Internal governance only; no external derivatives permitted |
@@ -747,7 +763,7 @@ Artificial intelligence and machine learning technologies present unique risks a
 
 |Tier|Training|Inference|Rationale|
 |---|---|---|---|
-|T0|Permitted|Permitted|Public release implies broad use authorization|
+|T0|Per authorized release and source conditions|Per authorized release and source conditions|Public availability does not waive license, label, attribution, privacy, or other source conditions|
 |T1|Network approval required|Network scope only|AI benefits should remain within Indigenous network|
 |T2|Per agreement only|Per agreement only|Explicit consent required for each AI application|
 |T3|Prohibited externally|Prohibited externally|Sovereign data never enters external AI systems; see rule below|
@@ -1157,7 +1173,7 @@ This Standard integrates IEEE standards for partner accountability without subor
 1. **Review and assess** existing data holdings against tier definitions
 2. **Map sovereignty domains**: Identify current governance capacity across Data, Network, Digital, and Computational sovereignty
 3. **Establish or designate** governance body for classification decisions
-4. **Default all unclassified data to T3** pending review
+4. **Apply the context-dependent classification and ingestion rules in Section 3.2:** record documented public federal and state sources as T0; retain human-acknowledged unknowns without automatically assigning T3; default unclassified automated bulk ingestion to T3; and support explicit own-material bulk opt-outs and scoped local/development disablement. Preserve existing restrictions and Indigenous classification authority.
 5. **Develop or update** Tribal Research Code to reference TSDF tiers
 6. **Train staff** on classification criteria and procedures
 7. **Determine partner accountability requirements** based on Section 7.0

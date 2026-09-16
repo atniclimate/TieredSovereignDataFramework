@@ -2,7 +2,7 @@
 
 Practical guidance for classifying Indigenous data using the Tiered Sovereign Data Framework.
 
-**Version:** 0.9.7
+**Version:** 0.9.8
 **Author:** Patrick A. Freeland
 **Organization:** Affiliated Tribes of Northwest Indians
 **License:** CC-BY-NC-SA 4.0
@@ -12,40 +12,49 @@ Practical guidance for classifying Indigenous data using the Tiered Sovereign Da
 ## Quick Decision Tree
 
 ```
-START: Is this data about/from Indigenous Peoples, lands, waters, or relations?
+START: Is this a documented public federal/state source with no inherited restriction?
 │
-├─ NO → TSDF does not apply; use standard data governance
+├─ YES → T0 (Open), subject to source conditions
 │
-└─ YES → Does it involve sacred, ceremonial, or restricted cultural knowledge?
+└─ NO → Is this data about/from Indigenous Peoples, lands, waters, or relations?
     │
-    ├─ YES → T3 (Sovereign)
+    ├─ NO → TSDF does not apply; use standard data governance
     │
-    └─ NO/UNSURE → Could disclosure endanger people, places, or resources?
+    └─ YES → Does it involve sacred, ceremonial, or restricted cultural knowledge?
         │
         ├─ YES → T3 (Sovereign)
         │
-        └─ NO → Is this individual-level data (health, enrollment, personal)?
+        └─ NO/UNSURE → Could disclosure endanger people, places, or resources?
             │
             ├─ YES → T3 (Sovereign)
             │
-            └─ NO → Has the Indigenous governing body explicitly released this?
+            └─ NO → Is this individual-level data (health, enrollment, personal)?
                 │
-                ├─ YES, for public → T0 (Open)
+                ├─ YES → T3 (Sovereign)
                 │
-                ├─ YES, for network → T1 (Network)
-                │
-                ├─ YES, for specific partners → T2 (Negotiated)
-                │
-                └─ NO explicit release → T3 (Sovereign) [DEFAULT]
+                └─ NO → Has the Indigenous governing body explicitly released this?
+                    │
+                    ├─ YES, for public → T0 (Open)
+                    │
+                    ├─ YES, for network → T1 (Network)
+                    │
+                    ├─ YES, for specific partners → T2 (Negotiated)
+                    │
+                    └─ NO explicit release → T3 (Sovereign) [PROTECTIVE DEFAULT]
 ```
 
 ---
 
-## The Default Rule
+## Indigenous Data Protective Default
 
-> **When in doubt, classify as T3.**
+> **Unclassified Indigenous material entering automated bulk ingestion defaults to T3.**
 
-This is not conservative caution—it is the correct application of the Standard's asymmetric harm principle:
+This is the correct application of the Standard's asymmetric-harm principle. It preserves the T3 protective default for Indigenous material while Section 3.2 recognizes defined ingestion contexts:
+
+- Human-directed entry must record available provenance, source/citation identification, and human-acknowledged unknowns; incomplete information alone does not automatically assign T3.
+- Documented public federal/state sources are T0, including automated acquisition, subject to source conditions and without overriding Indigenous restrictions.
+- User-managed bulk ingestion of the Data Actor's own material may use an explicit, recorded opt-out from the automatic T3 default.
+- Existing classifications and inherited restrictions are retained; software may not automatically downgrade them.
 
 | Classification Error | Consequence | Reversible? |
 |---------------------|-------------|-------------|
@@ -163,10 +172,10 @@ This is not conservative caution—it is the correct application of the Standard
 ```yaml
 record:
   tsdf_tier: "T0"
-  release_decision:
-    authorized_by: "[Governance body]"
-    date: "[Release date]"
-    purpose: "[Public benefit purpose]"
+  public_release:
+    authorized_by: "[Indigenous governance body or public source authority]"
+    evidence: "[Release record, publication, or source notice]"
+    conditions: "[License, label, attribution, privacy, or other source terms]"
   attribution:
     nation: "[Originating Nation]"
     required_citation: "[How to cite]"
@@ -270,7 +279,7 @@ The following data types should ALWAYS be classified T3 unless explicit governan
 ### Mistake 1: Assuming public = T0
 
 **Wrong:** "This data is publicly available elsewhere, so it's T0."
-**Correct:** The originating Nation decides classification, regardless of what others have done with similar data.
+**Correct:** Indigenous-governed information requires an Indigenous release decision. A documented public federal/state source may be T0, but this does not override inherited restrictions or waive source conditions.
 
 ### Mistake 2: Partner request = automatic T2
 
@@ -298,7 +307,7 @@ When classification is unclear:
 3. **Consult knowledge holders** — Especially for TEK or cultural data
 4. **Escalate to governance body** — For novel situations
 5. **Document the decision** — For future reference
-6. **Default to T3** — Until decision is made
+6. **Apply Section 3.2** — Automated bulk ingestion of unclassified Indigenous material defaults to T3. For human-directed entry, record provenance and acknowledged unknowns while obtaining the applicable classification decision.
 
 ---
 

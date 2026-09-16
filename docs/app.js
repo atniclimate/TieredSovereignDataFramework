@@ -5,14 +5,14 @@
 
   var REDUCED = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-  /* ================= TIER DATA (from TSDF-Standard v0.9.7) ================= */
+  /* ================= TIER DATA (from TSDF-Standard v0.9.8) ================= */
   var TIERS = {
     t0: {
       code: "T0 · OPEN / PUBLIC",
       name: "Open / Public Access",
       color: "var(--t0)",
-      def: "Data that has been formally and publicly released by the sovereign Indigenous entity for the collective benefit of all.",
-      principle: "Classification as T0 is an affirmative act of Indigenous governance. Public release is never a default; it requires deliberate sovereign decision.",
+      def: "Data formally released for public access by an authorized source, including documented public federal or state sources.",
+      principle: "For Indigenous-governed information, T0 is an affirmative act of Indigenous governance. Public release is never presumed; source conditions remain in effect.",
       examples: [
         "Published Tribal government press releases",
         "Educational materials explicitly released for public use",
@@ -24,7 +24,7 @@
         Data: "Open access; attribution requirements may apply",
         Network: "May traverse any transmission infrastructure",
         Digital: "May reside on public platforms and services",
-        Computational: "Training and inference per the terms of the sovereign release"
+        Computational: "Training and inference only per the authorized release and source conditions"
       },
       labels: "Local Contexts: TK Attribution (TK A), TK Verified (TK V)"
     },
@@ -95,10 +95,10 @@
   var GLOSSARY = {
     "dotted": { t: "Dotted terms", d: "Exactly like this: hover or tap a dotted term anywhere on this page to see its plain-language definition from the glossary." },
     "TSDF": { t: "TSDF", d: "The Tiered Sovereign Data Framework: four tiers (T0–T3) that let Indigenous Nations govern how their data is shared while protecting sensitive and culturally restricted information." },
-    "T0 (Open)": { t: "T0 · Open", d: "Data explicitly released by the governing Indigenous body for unrestricted public use; requires attribution to the originating Nation." },
+    "T0 (Open)": { t: "T0 · Open", d: "Data released for public access by an authorized source. Indigenous-governed information requires an Indigenous release decision; documented public federal/state sources retain their source conditions." },
     "T1 (Network)": { t: "T1 · Network", d: "Data shared among verified members of a trusted network under standing reciprocal protocols, not released to the general public." },
     "T2 (Negotiated)": { t: "T2 · Negotiated", d: "Data shared with specific external partners under a formal, documented agreement specifying permitted uses, benefit-sharing, and expiration." },
-    "T3 (Sovereign)": { t: "T3 · Sovereign", d: "The most protected tier: sacred, ceremonial, individual, or otherwise sensitive data kept under complete community control; the default when in doubt." },
+    "T3 (Sovereign)": { t: "T3 · Sovereign", d: "The most protected tier: sacred, ceremonial, individual, or otherwise sensitive data kept under complete community control; the protective default for unclassified Indigenous material entering automated bulk ingestion." },
     "CARE Principles": { t: "CARE Principles", d: "Collective Benefit, Authority to Control, Responsibility, Ethics: a governance framework from the Global Indigenous Data Alliance asking whether data should be shared, by whom, and under what conditions." },
     "FAIR Principles": { t: "FAIR Principles", d: "Findable, Accessible, Interoperable, Reusable: a technical data-management standard. It says whether data can be shared; it is silent on governance, power, and ethics." },
     "OCAP": { t: "OCAP®", d: "Ownership, Control, Access, Possession: principles from Canada's First Nations Information Governance Centre (est. 1998). Where OCAP® exceeds TSDF, OCAP® prevails for First Nations data." },
